@@ -1,0 +1,1670 @@
+[2024-11-22T20:10:16+08:00][error] [0]Call to undefined method app\Request::path()[D:\Desktop\x\php\ThinkPHP\app\middleware\CheckLogin.php:13]
+[2024-11-22T20:10:19+08:00][error] [0]Call to undefined method app\Request::path()[D:\Desktop\x\php\ThinkPHP\app\middleware\CheckLogin.php:13]
+[2024-11-22T20:10:54+08:00][error] [0]Call to undefined method app\Request::path()[D:\Desktop\x\php\ThinkPHP\app\middleware\CheckLogin.php:13]
+[2024-11-22T20:11:02+08:00][error] [0]Call to undefined method app\Request::path()[D:\Desktop\x\php\ThinkPHP\app\middleware\CheckLogin.php:13]
+[2024-11-22T20:11:07+08:00][error] [0]Call to undefined method app\Request::path()[D:\Desktop\x\php\ThinkPHP\app\middleware\CheckLogin.php:13]
+[2024-11-22T20:11:24+08:00][error] [0]Call to undefined method app\Request::path()[D:\Desktop\x\php\ThinkPHP\app\middleware\CheckLogin.php:13]
+[2024-11-22T20:12:11+08:00][error] [0]Class "app\middleware\Log" not found[D:\Desktop\x\php\ThinkPHP\app\middleware\CheckLogin.php:14]
+[2024-11-22T20:12:21+08:00][error] [0]Class "app\middleware\Log" not found[D:\Desktop\x\php\ThinkPHP\app\middleware\CheckLogin.php:14]
+[2024-11-22T20:13:01+08:00][error] [0]call_user_func_array(): Argument #1 ($callback) must be a valid callback, class app\Request does not have a method "path"[D:\Desktop\x\php\ThinkPHP\vendor\topthink\framework\src\think\Facade.php:97]
+[2024-11-22T20:13:03+08:00][error] [0]call_user_func_array(): Argument #1 ($callback) must be a valid callback, class app\Request does not have a method "path"[D:\Desktop\x\php\ThinkPHP\vendor\topthink\framework\src\think\Facade.php:97]
+[2024-11-22T20:13:36+08:00][info] Request path: 
+[2024-11-22T20:13:36+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:36+08:00][info] Request path: index/login
+[2024-11-22T20:13:36+08:00][info] User is logged in, proceeding with request.
+[2024-11-22T20:13:39+08:00][info] Request path: 
+[2024-11-22T20:13:39+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:40+08:00][info] Request path: index/login
+[2024-11-22T20:13:40+08:00][info] User is logged in, proceeding with request.
+[2024-11-22T20:13:42+08:00][info] Request path: 
+[2024-11-22T20:13:42+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:42+08:00][info] Request path: index/login
+[2024-11-22T20:13:42+08:00][info] User is logged in, proceeding with request.
+[2024-11-22T20:13:44+08:00][info] Request path: index/handle-login
+[2024-11-22T20:13:44+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:44+08:00][info] Request path: index/index/login
+[2024-11-22T20:13:44+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:44+08:00][info] Request path: index/index/index/login
+[2024-11-22T20:13:44+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:44+08:00][info] Request path: index/index/index/index/login
+[2024-11-22T20:13:44+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:44+08:00][info] Request path: index/index/index/index/index/login
+[2024-11-22T20:13:44+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:44+08:00][info] Request path: index/index/index/index/index/index/login
+[2024-11-22T20:13:44+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:44+08:00][info] Request path: index/index/index/index/index/index/index/login
+[2024-11-22T20:13:44+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:44+08:00][info] Request path: index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:44+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:44+08:00][info] Request path: index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:44+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:44+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:44+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:44+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:44+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:44+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:44+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:44+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:44+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:44+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:44+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:44+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:44+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:44+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:44+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:44+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:44+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:44+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:44+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:44+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:44+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:44+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:44+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:44+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:44+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:46+08:00][info] Request path: index/handle-login
+[2024-11-22T20:13:46+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:46+08:00][info] Request path: index/index/login
+[2024-11-22T20:13:46+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:46+08:00][info] Request path: index/index/index/login
+[2024-11-22T20:13:46+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:46+08:00][info] Request path: index/index/index/index/login
+[2024-11-22T20:13:46+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:46+08:00][info] Request path: index/index/index/index/index/login
+[2024-11-22T20:13:46+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:46+08:00][info] Request path: index/index/index/index/index/index/login
+[2024-11-22T20:13:46+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:46+08:00][info] Request path: index/index/index/index/index/index/index/login
+[2024-11-22T20:13:46+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:46+08:00][info] Request path: index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:46+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:46+08:00][info] Request path: index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:46+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:46+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:46+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:46+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:46+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:46+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:46+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:46+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:46+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:46+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:46+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:46+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:46+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:47+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:47+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:47+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:47+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:47+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:47+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:47+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:47+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:47+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:47+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:47+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:47+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:48+08:00][info] Request path: index/login
+[2024-11-22T20:13:48+08:00][info] User is logged in, proceeding with request.
+[2024-11-22T20:13:49+08:00][info] Request path: index/handle-login
+[2024-11-22T20:13:49+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:49+08:00][info] Request path: index/index/login
+[2024-11-22T20:13:49+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:49+08:00][info] Request path: index/index/index/login
+[2024-11-22T20:13:49+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:49+08:00][info] Request path: index/index/index/index/login
+[2024-11-22T20:13:49+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:49+08:00][info] Request path: index/index/index/index/index/login
+[2024-11-22T20:13:49+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:49+08:00][info] Request path: index/index/index/index/index/index/login
+[2024-11-22T20:13:49+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:49+08:00][info] Request path: index/index/index/index/index/index/index/login
+[2024-11-22T20:13:49+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:49+08:00][info] Request path: index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:49+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:49+08:00][info] Request path: index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:49+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:49+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:49+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:49+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:49+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:49+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:49+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:49+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:49+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:49+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:49+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:49+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:49+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:49+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:49+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:49+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:49+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:49+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:49+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:49+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:49+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:49+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:49+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:49+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:49+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:50+08:00][info] Request path: index/handle-login
+[2024-11-22T20:13:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:50+08:00][info] Request path: index/index/login
+[2024-11-22T20:13:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:50+08:00][info] Request path: index/index/index/login
+[2024-11-22T20:13:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:50+08:00][info] Request path: index/index/index/index/login
+[2024-11-22T20:13:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:50+08:00][info] Request path: index/index/index/index/index/login
+[2024-11-22T20:13:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:50+08:00][info] Request path: index/index/index/index/index/index/login
+[2024-11-22T20:13:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:50+08:00][info] Request path: index/handle-login
+[2024-11-22T20:13:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/index/index/index/index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/handle-login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/index/index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/index/index/index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/index/index/index/index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/index/index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/index/index/index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/index/index/index/index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:51+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/handle-login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/handle-login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/handle-login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/index/index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/index/index/index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/index/index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/index/index/index/index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/index/index/index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:52+08:00][info] Request path: index/index/index/index/index/index/index/login
+[2024-11-22T20:13:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:53+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:54+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:54+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:54+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:54+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:54+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:54+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:54+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:54+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:54+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:54+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:54+08:00][info] Request path: index/handle-login
+[2024-11-22T20:13:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:54+08:00][info] Request path: index/index/login
+[2024-11-22T20:13:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:54+08:00][info] Request path: index/index/index/login
+[2024-11-22T20:13:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:54+08:00][info] Request path: index/index/index/index/login
+[2024-11-22T20:13:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:54+08:00][info] Request path: index/index/index/index/index/login
+[2024-11-22T20:13:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:54+08:00][info] Request path: index/index/index/index/index/index/login
+[2024-11-22T20:13:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:54+08:00][info] Request path: index/index/index/index/index/index/index/login
+[2024-11-22T20:13:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:54+08:00][info] Request path: index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:54+08:00][info] Request path: index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:54+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:54+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:54+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:54+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:54+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:54+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:54+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:54+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:54+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:54+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:54+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:54+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:55+08:00][info] Request path: index/handle-login
+[2024-11-22T20:13:55+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:56+08:00][info] Request path: index/index/login
+[2024-11-22T20:13:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:56+08:00][info] Request path: index/index/index/login
+[2024-11-22T20:13:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:56+08:00][info] Request path: index/index/index/index/login
+[2024-11-22T20:13:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:56+08:00][info] Request path: index/index/index/index/index/login
+[2024-11-22T20:13:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:56+08:00][info] Request path: index/index/index/index/index/index/login
+[2024-11-22T20:13:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:56+08:00][info] Request path: index/index/index/index/index/index/index/login
+[2024-11-22T20:13:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:56+08:00][info] Request path: index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:56+08:00][info] Request path: index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:56+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:56+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:56+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:56+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:56+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:56+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:56+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:56+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:56+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:56+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:56+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:56+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:13:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:59+08:00][info] Request path: 
+[2024-11-22T20:13:59+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:13:59+08:00][info] Request path: index/login
+[2024-11-22T20:13:59+08:00][info] User is logged in, proceeding with request.
+[2024-11-22T20:14:01+08:00][info] Request path: index/handle-login
+[2024-11-22T20:14:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:01+08:00][info] Request path: index/index/login
+[2024-11-22T20:14:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:01+08:00][info] Request path: index/index/index/login
+[2024-11-22T20:14:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:01+08:00][info] Request path: index/index/index/index/login
+[2024-11-22T20:14:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:01+08:00][info] Request path: index/index/index/index/index/login
+[2024-11-22T20:14:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:01+08:00][info] Request path: index/index/index/index/index/index/login
+[2024-11-22T20:14:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:01+08:00][info] Request path: index/index/index/index/index/index/index/login
+[2024-11-22T20:14:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:01+08:00][info] Request path: index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:01+08:00][info] Request path: index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:01+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:01+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:01+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:01+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:01+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:01+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:01+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:01+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:02+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:02+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:02+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:02+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:02+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:02+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:02+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:02+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:03+08:00][info] Request path: index/handle-login
+[2024-11-22T20:14:03+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:03+08:00][info] Request path: index/index/login
+[2024-11-22T20:14:03+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:03+08:00][info] Request path: index/index/index/login
+[2024-11-22T20:14:03+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:03+08:00][info] Request path: index/index/index/index/login
+[2024-11-22T20:14:03+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:03+08:00][info] Request path: index/index/index/index/index/login
+[2024-11-22T20:14:03+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:03+08:00][info] Request path: index/index/index/index/index/index/login
+[2024-11-22T20:14:03+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:03+08:00][info] Request path: index/index/index/index/index/index/index/login
+[2024-11-22T20:14:03+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:03+08:00][info] Request path: index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:03+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:03+08:00][info] Request path: index/handle-login
+[2024-11-22T20:14:03+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:03+08:00][info] Request path: index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:03+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:03+08:00][info] Request path: index/index/login
+[2024-11-22T20:14:03+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:03+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:03+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:03+08:00][info] Request path: index/index/index/login
+[2024-11-22T20:14:03+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:03+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:03+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:03+08:00][info] Request path: index/index/index/index/login
+[2024-11-22T20:14:03+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:03+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:03+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:03+08:00][info] Request path: index/handle-login
+[2024-11-22T20:14:03+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:03+08:00][info] Request path: index/index/index/index/index/login
+[2024-11-22T20:14:03+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:03+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:03+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/index/index/index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/handle-login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/index/index/index/index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/index/index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/index/index/index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/index/index/index/index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/index/index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/index/index/index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/index/index/index/index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:04+08:00][info] Request path: index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:05+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:05+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:05+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:05+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:05+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:05+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:05+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:05+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:05+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:05+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:05+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:05+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:05+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:05+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:05+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:05+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:05+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:05+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:05+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:05+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:05+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:05+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:05+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:05+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:05+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:05+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:05+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:05+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:05+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:06+08:00][info] Request path: index/handle-login
+[2024-11-22T20:14:06+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:06+08:00][info] Request path: index/index/login
+[2024-11-22T20:14:06+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:06+08:00][info] Request path: index/index/index/login
+[2024-11-22T20:14:06+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:06+08:00][info] Request path: index/index/index/index/login
+[2024-11-22T20:14:06+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:06+08:00][info] Request path: index/index/index/index/index/login
+[2024-11-22T20:14:06+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:06+08:00][info] Request path: index/index/index/index/index/index/login
+[2024-11-22T20:14:06+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:06+08:00][info] Request path: index/index/index/index/index/index/index/login
+[2024-11-22T20:14:06+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:06+08:00][info] Request path: index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:06+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:06+08:00][info] Request path: index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:06+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:06+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:06+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:06+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:06+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:06+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:06+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:06+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:06+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:06+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:06+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:06+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:06+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:06+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:06+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:06+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:06+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:06+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:06+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:06+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:06+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:06+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:06+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:06+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:06+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:50+08:00][info] Request path: index/handle-login
+[2024-11-22T20:14:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:50+08:00][info] Request path: index/index/login
+[2024-11-22T20:14:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:50+08:00][info] Request path: index/index/index/login
+[2024-11-22T20:14:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:50+08:00][info] Request path: index/index/index/index/login
+[2024-11-22T20:14:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:50+08:00][info] Request path: index/index/index/index/index/login
+[2024-11-22T20:14:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:50+08:00][info] Request path: index/index/index/index/index/index/login
+[2024-11-22T20:14:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:50+08:00][info] Request path: index/index/index/index/index/index/index/login
+[2024-11-22T20:14:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:50+08:00][info] Request path: index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:50+08:00][info] Request path: index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:50+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:50+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:50+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:50+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:50+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:50+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:50+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:50+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:50+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:50+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:50+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:14:50+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:14:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:05+08:00][info] Request path: index/handle-login
+[2024-11-22T20:15:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:05+08:00][info] Request path: index/index/login
+[2024-11-22T20:15:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:05+08:00][info] Request path: index/index/index/login
+[2024-11-22T20:15:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:05+08:00][info] Request path: index/index/index/index/login
+[2024-11-22T20:15:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:05+08:00][info] Request path: index/index/index/index/index/login
+[2024-11-22T20:15:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:05+08:00][info] Request path: index/index/index/index/index/index/login
+[2024-11-22T20:15:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:05+08:00][info] Request path: index/index/index/index/index/index/index/login
+[2024-11-22T20:15:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:05+08:00][info] Request path: index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:05+08:00][info] Request path: index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:05+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:05+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:06+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:06+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:06+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:06+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:06+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:06+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:06+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:06+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:06+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:06+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:06+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:06+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:06+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:06+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:06+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:06+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:06+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:06+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:06+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:06+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:10+08:00][info] Request path: index/handle-login
+[2024-11-22T20:15:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:10+08:00][info] Request path: index/index/login
+[2024-11-22T20:15:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:10+08:00][info] Request path: index/index/index/login
+[2024-11-22T20:15:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:10+08:00][info] Request path: index/index/index/index/login
+[2024-11-22T20:15:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:10+08:00][info] Request path: index/index/index/index/index/login
+[2024-11-22T20:15:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:10+08:00][info] Request path: index/index/index/index/index/index/login
+[2024-11-22T20:15:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:10+08:00][info] Request path: index/index/index/index/index/index/index/login
+[2024-11-22T20:15:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:10+08:00][info] Request path: index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:10+08:00][info] Request path: index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:10+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:10+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:10+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:10+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:10+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:10+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:10+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:10+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:10+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:10+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:10+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:10+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:13+08:00][info] Request path: index/login
+[2024-11-22T20:15:13+08:00][info] User is logged in, proceeding with request.
+[2024-11-22T20:15:17+08:00][info] Request path: index/handle-login
+[2024-11-22T20:15:17+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:17+08:00][info] Request path: index/index/login
+[2024-11-22T20:15:17+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:17+08:00][info] Request path: index/index/index/login
+[2024-11-22T20:15:17+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/index/index/index/login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/index/index/index/index/login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/index/index/index/index/index/login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/index/index/index/index/index/index/login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/handle-login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/index/login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/index/index/login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/handle-login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/index/index/index/login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/index/login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/index/index/index/index/login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/index/index/login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/index/index/index/index/index/login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/handle-login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/index/index/index/login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/index/index/index/index/index/index/login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/index/login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/index/index/index/index/login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/index/index/login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/index/index/index/index/index/login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/index/index/index/login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/index/index/index/index/index/index/login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:18+08:00][info] Request path: index/index/index/index/index/login
+[2024-11-22T20:15:18+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:19+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:19+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:19+08:00][info] Request path: index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:19+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:19+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:19+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:19+08:00][info] Request path: index/index/index/index/index/index/login
+[2024-11-22T20:15:19+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:19+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:19+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:19+08:00][info] Request path: index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:19+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:19+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:19+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:19+08:00][info] Request path: index/index/index/index/index/index/index/login
+[2024-11-22T20:15:19+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:19+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:19+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:19+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:19+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:19+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:19+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:19+08:00][info] Request path: index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:19+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:19+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:19+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:19+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:19+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:19+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:19+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:19+08:00][info] Request path: index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:19+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:19+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:19+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:19+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:19+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:19+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:19+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:19+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:19+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:19+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:19+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:19+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:19+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:19+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:19+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:19+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:19+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:19+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:19+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:19+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:19+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:19+08:00][info] Request path: index/login
+[2024-11-22T20:15:19+08:00][info] User is logged in, proceeding with request.
+[2024-11-22T20:15:19+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:19+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:19+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:19+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:19+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:19+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:22+08:00][info] Request path: 、
+[2024-11-22T20:15:22+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:22+08:00][info] Request path: index/login
+[2024-11-22T20:15:22+08:00][info] User is logged in, proceeding with request.
+[2024-11-22T20:15:23+08:00][info] Request path: index/handle-login
+[2024-11-22T20:15:23+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:23+08:00][info] Request path: index/index/login
+[2024-11-22T20:15:23+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:23+08:00][info] Request path: index/index/index/login
+[2024-11-22T20:15:23+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:23+08:00][info] Request path: index/index/index/index/login
+[2024-11-22T20:15:23+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:23+08:00][info] Request path: index/index/index/index/index/login
+[2024-11-22T20:15:23+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:23+08:00][info] Request path: index/index/index/index/index/index/login
+[2024-11-22T20:15:23+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:23+08:00][info] Request path: index/index/index/index/index/index/index/login
+[2024-11-22T20:15:23+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:23+08:00][info] Request path: index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:23+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:23+08:00][info] Request path: index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:23+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:23+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:23+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:23+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:23+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:23+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:23+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:23+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:23+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:23+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:23+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:23+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:23+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:23+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:23+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:23+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:23+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:23+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:23+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:23+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:23+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:23+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:23+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:15:23+08:00][info] Request path: index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/index/login
+[2024-11-22T20:15:23+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:52+08:00][info] Request path: index/login
+[2024-11-22T20:17:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:52+08:00][info] Request path: index/login
+[2024-11-22T20:17:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:52+08:00][info] Request path: index/login
+[2024-11-22T20:17:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:52+08:00][info] Request path: index/login
+[2024-11-22T20:17:52+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:53+08:00][info] Request path: index/login
+[2024-11-22T20:17:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:53+08:00][info] Request path: index/login
+[2024-11-22T20:17:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:53+08:00][info] Request path: index/login
+[2024-11-22T20:17:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:53+08:00][info] Request path: index/login
+[2024-11-22T20:17:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:53+08:00][info] Request path: index/login
+[2024-11-22T20:17:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:53+08:00][info] Request path: index/login
+[2024-11-22T20:17:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:53+08:00][info] Request path: index/login
+[2024-11-22T20:17:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:53+08:00][info] Request path: index/login
+[2024-11-22T20:17:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:53+08:00][info] Request path: index/login
+[2024-11-22T20:17:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:53+08:00][info] Request path: index/login
+[2024-11-22T20:17:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:53+08:00][info] Request path: index/login
+[2024-11-22T20:17:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:53+08:00][info] Request path: index/login
+[2024-11-22T20:17:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:53+08:00][info] Request path: index/login
+[2024-11-22T20:17:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:53+08:00][info] Request path: index/login
+[2024-11-22T20:17:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:53+08:00][info] Request path: index/login
+[2024-11-22T20:17:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:53+08:00][info] Request path: index/login
+[2024-11-22T20:17:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:54+08:00][info] Request path: index/login
+[2024-11-22T20:17:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:54+08:00][info] Request path: index/login
+[2024-11-22T20:17:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:54+08:00][info] Request path: index/login
+[2024-11-22T20:17:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:54+08:00][info] Request path: index/login
+[2024-11-22T20:17:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:54+08:00][info] Request path: index/login
+[2024-11-22T20:17:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:54+08:00][info] Request path: index/login
+[2024-11-22T20:17:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:54+08:00][info] Request path: index/login
+[2024-11-22T20:17:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:54+08:00][info] Request path: index/login
+[2024-11-22T20:17:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:54+08:00][info] Request path: index/login
+[2024-11-22T20:17:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:54+08:00][info] Request path: index/login
+[2024-11-22T20:17:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:54+08:00][info] Request path: index/login
+[2024-11-22T20:17:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:54+08:00][info] Request path: index/login
+[2024-11-22T20:17:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:54+08:00][info] Request path: index/login
+[2024-11-22T20:17:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:54+08:00][info] Request path: index/login
+[2024-11-22T20:17:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:54+08:00][info] Request path: index/login
+[2024-11-22T20:17:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:55+08:00][info] Request path: index/login
+[2024-11-22T20:17:55+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:55+08:00][info] Request path: index/login
+[2024-11-22T20:17:55+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:55+08:00][info] Request path: index/login
+[2024-11-22T20:17:55+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:55+08:00][info] Request path: index/login
+[2024-11-22T20:17:55+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:55+08:00][info] Request path: index/login
+[2024-11-22T20:17:55+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:56+08:00][info] Request path: index/login
+[2024-11-22T20:17:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:56+08:00][info] Request path: index/login
+[2024-11-22T20:17:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:56+08:00][info] Request path: index/login
+[2024-11-22T20:17:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:56+08:00][info] Request path: index/login
+[2024-11-22T20:17:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:56+08:00][info] Request path: index/login
+[2024-11-22T20:17:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:56+08:00][info] Request path: index/login
+[2024-11-22T20:17:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:57+08:00][info] Request path: index/login
+[2024-11-22T20:17:57+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:57+08:00][info] Request path: index/login
+[2024-11-22T20:17:57+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:57+08:00][info] Request path: index/login
+[2024-11-22T20:17:57+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:57+08:00][info] Request path: index/login
+[2024-11-22T20:17:57+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:57+08:00][info] Request path: index/login
+[2024-11-22T20:17:57+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:57+08:00][info] Request path: index/login
+[2024-11-22T20:17:57+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:57+08:00][info] Request path: index/login
+[2024-11-22T20:17:57+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:57+08:00][info] Request path: index/login
+[2024-11-22T20:17:57+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:57+08:00][info] Request path: index/login
+[2024-11-22T20:17:57+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:57+08:00][info] Request path: index/login
+[2024-11-22T20:17:57+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:57+08:00][info] Request path: index/login
+[2024-11-22T20:17:57+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:58+08:00][info] Request path: index/login
+[2024-11-22T20:17:58+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:58+08:00][info] Request path: index/login
+[2024-11-22T20:17:58+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:17:58+08:00][info] Request path: index/login
+[2024-11-22T20:17:58+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:00+08:00][info] Request path: 
+[2024-11-22T20:18:00+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:01+08:00][info] Request path: index/login
+[2024-11-22T20:18:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:01+08:00][info] Request path: index/login
+[2024-11-22T20:18:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:01+08:00][info] Request path: index/login
+[2024-11-22T20:18:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:01+08:00][info] Request path: index/login
+[2024-11-22T20:18:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:01+08:00][info] Request path: index/login
+[2024-11-22T20:18:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:01+08:00][info] Request path: index/login
+[2024-11-22T20:18:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:01+08:00][info] Request path: index/login
+[2024-11-22T20:18:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:01+08:00][info] Request path: index/login
+[2024-11-22T20:18:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:01+08:00][info] Request path: index/login
+[2024-11-22T20:18:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:01+08:00][info] Request path: index/login
+[2024-11-22T20:18:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:02+08:00][info] Request path: index/login
+[2024-11-22T20:18:02+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:02+08:00][info] Request path: index/login
+[2024-11-22T20:18:02+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:02+08:00][info] Request path: index/login
+[2024-11-22T20:18:02+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:02+08:00][info] Request path: index/login
+[2024-11-22T20:18:02+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:02+08:00][info] Request path: index/login
+[2024-11-22T20:18:02+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:02+08:00][info] Request path: index/login
+[2024-11-22T20:18:02+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:02+08:00][info] Request path: index/login
+[2024-11-22T20:18:02+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:02+08:00][info] Request path: index/login
+[2024-11-22T20:18:02+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:02+08:00][info] Request path: index/login
+[2024-11-22T20:18:02+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:03+08:00][info] Request path: index/login
+[2024-11-22T20:18:03+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:03+08:00][info] Request path: index/login
+[2024-11-22T20:18:03+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:04+08:00][info] Request path: index/login
+[2024-11-22T20:18:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:04+08:00][info] Request path: index/login
+[2024-11-22T20:18:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:04+08:00][info] Request path: index/login
+[2024-11-22T20:18:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:04+08:00][info] Request path: index/login
+[2024-11-22T20:18:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:04+08:00][info] Request path: index/login
+[2024-11-22T20:18:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:04+08:00][info] Request path: index/login
+[2024-11-22T20:18:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:04+08:00][info] Request path: index/login
+[2024-11-22T20:18:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:04+08:00][info] Request path: index/login
+[2024-11-22T20:18:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:04+08:00][info] Request path: index/login
+[2024-11-22T20:18:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:04+08:00][info] Request path: index/login
+[2024-11-22T20:18:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:05+08:00][info] Request path: index/login
+[2024-11-22T20:18:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:05+08:00][info] Request path: index/login
+[2024-11-22T20:18:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:05+08:00][info] Request path: index/login
+[2024-11-22T20:18:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:05+08:00][info] Request path: index/login
+[2024-11-22T20:18:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:05+08:00][info] Request path: index/login
+[2024-11-22T20:18:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:05+08:00][info] Request path: index/login
+[2024-11-22T20:18:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:05+08:00][info] Request path: index/login
+[2024-11-22T20:18:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:05+08:00][info] Request path: index/login
+[2024-11-22T20:18:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:10+08:00][info] Request path: index/login
+[2024-11-22T20:18:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:10+08:00][info] Request path: index/login
+[2024-11-22T20:18:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:10+08:00][info] Request path: index/login
+[2024-11-22T20:18:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:10+08:00][info] Request path: index/login
+[2024-11-22T20:18:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:10+08:00][info] Request path: index/login
+[2024-11-22T20:18:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:10+08:00][info] Request path: index/login
+[2024-11-22T20:18:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:10+08:00][info] Request path: index/login
+[2024-11-22T20:18:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:10+08:00][info] Request path: index/login
+[2024-11-22T20:18:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:11+08:00][info] Request path: index/login
+[2024-11-22T20:18:11+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:11+08:00][info] Request path: index/login
+[2024-11-22T20:18:11+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:11+08:00][info] Request path: index/login
+[2024-11-22T20:18:11+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:11+08:00][info] Request path: index/login
+[2024-11-22T20:18:11+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:11+08:00][info] Request path: index/login
+[2024-11-22T20:18:11+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:11+08:00][info] Request path: index/login
+[2024-11-22T20:18:11+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:11+08:00][info] Request path: index/login
+[2024-11-22T20:18:11+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:11+08:00][info] Request path: index/login
+[2024-11-22T20:18:11+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:11+08:00][info] Request path: index/login
+[2024-11-22T20:18:11+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:11+08:00][info] Request path: index/login
+[2024-11-22T20:18:11+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:11+08:00][info] Request path: index/login
+[2024-11-22T20:18:11+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:11+08:00][info] Request path: index/login
+[2024-11-22T20:18:11+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:47+08:00][info] Request path: index/login
+[2024-11-22T20:18:47+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:47+08:00][info] Request path: index/login
+[2024-11-22T20:18:47+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:47+08:00][info] Request path: index/login
+[2024-11-22T20:18:47+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:47+08:00][info] Request path: index/login
+[2024-11-22T20:18:47+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:47+08:00][info] Request path: index/login
+[2024-11-22T20:18:47+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:47+08:00][info] Request path: index/login
+[2024-11-22T20:18:47+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:47+08:00][info] Request path: index/login
+[2024-11-22T20:18:47+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:47+08:00][info] Request path: index/login
+[2024-11-22T20:18:47+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:47+08:00][info] Request path: index/login
+[2024-11-22T20:18:47+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:47+08:00][info] Request path: index/login
+[2024-11-22T20:18:47+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:47+08:00][info] Request path: index/login
+[2024-11-22T20:18:47+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:47+08:00][info] Request path: index/login
+[2024-11-22T20:18:47+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:47+08:00][info] Request path: index/login
+[2024-11-22T20:18:47+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:47+08:00][info] Request path: index/login
+[2024-11-22T20:18:47+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:47+08:00][info] Request path: index/login
+[2024-11-22T20:18:47+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:47+08:00][info] Request path: index/login
+[2024-11-22T20:18:47+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:47+08:00][info] Request path: index/login
+[2024-11-22T20:18:47+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:47+08:00][info] Request path: index/login
+[2024-11-22T20:18:47+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:47+08:00][info] Request path: index/login
+[2024-11-22T20:18:47+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:47+08:00][info] Request path: index/login
+[2024-11-22T20:18:47+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:49+08:00][info] Request path: index/login
+[2024-11-22T20:18:49+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:49+08:00][info] Request path: index/login
+[2024-11-22T20:18:49+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:49+08:00][info] Request path: index/login
+[2024-11-22T20:18:49+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:49+08:00][info] Request path: index/login
+[2024-11-22T20:18:49+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:50+08:00][info] Request path: index/login
+[2024-11-22T20:18:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:50+08:00][info] Request path: index/login
+[2024-11-22T20:18:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:50+08:00][info] Request path: index/login
+[2024-11-22T20:18:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:50+08:00][info] Request path: index/login
+[2024-11-22T20:18:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:50+08:00][info] Request path: index/login
+[2024-11-22T20:18:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:50+08:00][info] Request path: index/login
+[2024-11-22T20:18:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:50+08:00][info] Request path: index/login
+[2024-11-22T20:18:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:50+08:00][info] Request path: index/login
+[2024-11-22T20:18:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:50+08:00][info] Request path: index/login
+[2024-11-22T20:18:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:50+08:00][info] Request path: index/login
+[2024-11-22T20:18:50+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:51+08:00][info] Request path: index/login
+[2024-11-22T20:18:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:51+08:00][info] Request path: index/login
+[2024-11-22T20:18:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:51+08:00][info] Request path: index/login
+[2024-11-22T20:18:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:51+08:00][info] Request path: index/login
+[2024-11-22T20:18:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:51+08:00][info] Request path: index/login
+[2024-11-22T20:18:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:51+08:00][info] Request path: index/login
+[2024-11-22T20:18:51+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:53+08:00][info] Request path: index
+[2024-11-22T20:18:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:53+08:00][info] Request path: index/login
+[2024-11-22T20:18:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:53+08:00][info] Request path: index/login
+[2024-11-22T20:18:53+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:54+08:00][info] Request path: index/login
+[2024-11-22T20:18:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:54+08:00][info] Request path: index/login
+[2024-11-22T20:18:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:54+08:00][info] Request path: index/login
+[2024-11-22T20:18:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:54+08:00][info] Request path: index/login
+[2024-11-22T20:18:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:54+08:00][info] Request path: index/login
+[2024-11-22T20:18:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:54+08:00][info] Request path: index/login
+[2024-11-22T20:18:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:54+08:00][info] Request path: index/login
+[2024-11-22T20:18:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:54+08:00][info] Request path: index/login
+[2024-11-22T20:18:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:54+08:00][info] Request path: index/login
+[2024-11-22T20:18:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:54+08:00][info] Request path: index/login
+[2024-11-22T20:18:54+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:55+08:00][info] Request path: index/login
+[2024-11-22T20:18:55+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:55+08:00][info] Request path: index/login
+[2024-11-22T20:18:55+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:55+08:00][info] Request path: index/login
+[2024-11-22T20:18:55+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:55+08:00][info] Request path: index/login
+[2024-11-22T20:18:55+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:55+08:00][info] Request path: index/login
+[2024-11-22T20:18:55+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:55+08:00][info] Request path: index/login
+[2024-11-22T20:18:55+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:55+08:00][info] Request path: index/login
+[2024-11-22T20:18:55+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:56+08:00][info] Request path: login
+[2024-11-22T20:18:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:56+08:00][info] Request path: index/login
+[2024-11-22T20:18:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:56+08:00][info] Request path: index/login
+[2024-11-22T20:18:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:57+08:00][info] Request path: index/login
+[2024-11-22T20:18:57+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:57+08:00][info] Request path: index/login
+[2024-11-22T20:18:57+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:57+08:00][info] Request path: index/login
+[2024-11-22T20:18:57+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:57+08:00][info] Request path: index/login
+[2024-11-22T20:18:57+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:57+08:00][info] Request path: index/login
+[2024-11-22T20:18:57+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:57+08:00][info] Request path: index/login
+[2024-11-22T20:18:57+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:57+08:00][info] Request path: index/login
+[2024-11-22T20:18:57+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:57+08:00][info] Request path: index/login
+[2024-11-22T20:18:57+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:57+08:00][info] Request path: index/login
+[2024-11-22T20:18:57+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:57+08:00][info] Request path: index/login
+[2024-11-22T20:18:57+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:57+08:00][info] Request path: index/login
+[2024-11-22T20:18:57+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:58+08:00][info] Request path: index/login
+[2024-11-22T20:18:58+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:58+08:00][info] Request path: index/login
+[2024-11-22T20:18:58+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:58+08:00][info] Request path: index/login
+[2024-11-22T20:18:58+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:58+08:00][info] Request path: index/login
+[2024-11-22T20:18:58+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:58+08:00][info] Request path: index/login
+[2024-11-22T20:18:58+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:58+08:00][info] Request path: index/login
+[2024-11-22T20:18:58+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:59+08:00][info] Request path: index/login
+[2024-11-22T20:18:59+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:59+08:00][info] Request path: index/login
+[2024-11-22T20:18:59+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:59+08:00][info] Request path: index/login
+[2024-11-22T20:18:59+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:18:59+08:00][info] Request path: index/login
+[2024-11-22T20:18:59+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:00+08:00][info] Request path: index/login
+[2024-11-22T20:19:00+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:00+08:00][info] Request path: index/login
+[2024-11-22T20:19:00+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:00+08:00][info] Request path: index/login
+[2024-11-22T20:19:00+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:00+08:00][info] Request path: index/login
+[2024-11-22T20:19:00+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:00+08:00][info] Request path: index/login
+[2024-11-22T20:19:00+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:00+08:00][info] Request path: 
+[2024-11-22T20:19:00+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:00+08:00][info] Request path: index/login
+[2024-11-22T20:19:00+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:00+08:00][info] Request path: index/login
+[2024-11-22T20:19:00+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:00+08:00][info] Request path: index/login
+[2024-11-22T20:19:00+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:00+08:00][info] Request path: index/login
+[2024-11-22T20:19:00+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:01+08:00][info] Request path: index/login
+[2024-11-22T20:19:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:01+08:00][info] Request path: index/login
+[2024-11-22T20:19:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:01+08:00][info] Request path: index/login
+[2024-11-22T20:19:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:01+08:00][info] Request path: index/login
+[2024-11-22T20:19:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:01+08:00][info] Request path: index/login
+[2024-11-22T20:19:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:01+08:00][info] Request path: index/login
+[2024-11-22T20:19:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:01+08:00][info] Request path: index/login
+[2024-11-22T20:19:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:01+08:00][info] Request path: index/login
+[2024-11-22T20:19:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:01+08:00][info] Request path: index/login
+[2024-11-22T20:19:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:01+08:00][info] Request path: index/login
+[2024-11-22T20:19:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:02+08:00][info] Request path: index/login
+[2024-11-22T20:19:02+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:02+08:00][info] Request path: index/login
+[2024-11-22T20:19:02+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:02+08:00][info] Request path: index/login
+[2024-11-22T20:19:02+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:02+08:00][info] Request path: index/login
+[2024-11-22T20:19:02+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:02+08:00][info] Request path: index/login
+[2024-11-22T20:19:02+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:03+08:00][info] Request path: index/login
+[2024-11-22T20:19:03+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:03+08:00][info] Request path: index/login
+[2024-11-22T20:19:03+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:03+08:00][info] Request path: index/login
+[2024-11-22T20:19:03+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:03+08:00][info] Request path: index/login
+[2024-11-22T20:19:03+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:03+08:00][info] Request path: index/login
+[2024-11-22T20:19:03+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:04+08:00][info] Request path: index/login
+[2024-11-22T20:19:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:04+08:00][info] Request path: index/login
+[2024-11-22T20:19:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:04+08:00][info] Request path: index/login
+[2024-11-22T20:19:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:04+08:00][info] Request path: index/login
+[2024-11-22T20:19:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:04+08:00][info] Request path: index/login
+[2024-11-22T20:19:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:04+08:00][info] Request path: index/login
+[2024-11-22T20:19:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:04+08:00][info] Request path: index/login
+[2024-11-22T20:19:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:04+08:00][info] Request path: index/login
+[2024-11-22T20:19:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:04+08:00][info] Request path: index/login
+[2024-11-22T20:19:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:04+08:00][info] Request path: index/login
+[2024-11-22T20:19:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:04+08:00][info] Request path: index/login
+[2024-11-22T20:19:04+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:05+08:00][info] Request path: index/login
+[2024-11-22T20:19:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:05+08:00][info] Request path: index/login
+[2024-11-22T20:19:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:05+08:00][info] Request path: index/login
+[2024-11-22T20:19:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:05+08:00][info] Request path: index/login
+[2024-11-22T20:19:05+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:10+08:00][info] Request path: index/login
+[2024-11-22T20:19:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:10+08:00][info] Request path: index/login
+[2024-11-22T20:19:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:10+08:00][info] Request path: index/login
+[2024-11-22T20:19:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:10+08:00][info] Request path: index/login
+[2024-11-22T20:19:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:10+08:00][info] Request path: index/login
+[2024-11-22T20:19:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:10+08:00][info] Request path: index/login
+[2024-11-22T20:19:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:10+08:00][info] Request path: index/login
+[2024-11-22T20:19:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:10+08:00][info] Request path: index/login
+[2024-11-22T20:19:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:10+08:00][info] Request path: index/login
+[2024-11-22T20:19:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:10+08:00][info] Request path: index/login
+[2024-11-22T20:19:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:10+08:00][info] Request path: index/login
+[2024-11-22T20:19:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:10+08:00][info] Request path: index/login
+[2024-11-22T20:19:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:10+08:00][info] Request path: index/login
+[2024-11-22T20:19:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:10+08:00][info] Request path: index/login
+[2024-11-22T20:19:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:10+08:00][info] Request path: index/login
+[2024-11-22T20:19:10+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:11+08:00][info] Request path: index/login
+[2024-11-22T20:19:11+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:11+08:00][info] Request path: index/login
+[2024-11-22T20:19:11+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:11+08:00][info] Request path: index/login
+[2024-11-22T20:19:11+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:11+08:00][info] Request path: index/login
+[2024-11-22T20:19:11+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:11+08:00][info] Request path: index/login
+[2024-11-22T20:19:11+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:55+08:00][info] Request path: index/login
+[2024-11-22T20:19:55+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:56+08:00][info] Request path: index/login
+[2024-11-22T20:19:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:56+08:00][info] Request path: index/login
+[2024-11-22T20:19:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:56+08:00][info] Request path: index/login
+[2024-11-22T20:19:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:56+08:00][info] Request path: index/login
+[2024-11-22T20:19:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:56+08:00][info] Request path: index/login
+[2024-11-22T20:19:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:56+08:00][info] Request path: index/login
+[2024-11-22T20:19:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:56+08:00][info] Request path: index/login
+[2024-11-22T20:19:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:56+08:00][info] Request path: index/login
+[2024-11-22T20:19:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:56+08:00][info] Request path: index/login
+[2024-11-22T20:19:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:56+08:00][info] Request path: index/login
+[2024-11-22T20:19:56+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:57+08:00][info] Request path: index/login
+[2024-11-22T20:19:57+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:57+08:00][info] Request path: index/login
+[2024-11-22T20:19:57+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:57+08:00][info] Request path: index/login
+[2024-11-22T20:19:57+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:57+08:00][info] Request path: index/login
+[2024-11-22T20:19:57+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:57+08:00][info] Request path: index/login
+[2024-11-22T20:19:57+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:57+08:00][info] Request path: index/login
+[2024-11-22T20:19:57+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:57+08:00][info] Request path: index/login
+[2024-11-22T20:19:57+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:57+08:00][info] Request path: index/login
+[2024-11-22T20:19:57+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:19:57+08:00][info] Request path: index/login
+[2024-11-22T20:19:57+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:20:00+08:00][info] Request path: 
+[2024-11-22T20:20:00+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:20:00+08:00][info] Request path: index/login
+[2024-11-22T20:20:00+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:20:00+08:00][info] Request path: index/login
+[2024-11-22T20:20:00+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:20:00+08:00][info] Request path: index/login
+[2024-11-22T20:20:00+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:20:00+08:00][info] Request path: index/login
+[2024-11-22T20:20:00+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:20:00+08:00][info] Request path: index/login
+[2024-11-22T20:20:00+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:20:00+08:00][info] Request path: index/login
+[2024-11-22T20:20:00+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:20:00+08:00][info] Request path: index/login
+[2024-11-22T20:20:00+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:20:00+08:00][info] Request path: index/login
+[2024-11-22T20:20:00+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:20:00+08:00][info] Request path: index/login
+[2024-11-22T20:20:00+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:20:01+08:00][info] Request path: index/login
+[2024-11-22T20:20:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:20:01+08:00][info] Request path: index/login
+[2024-11-22T20:20:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:20:01+08:00][info] Request path: index/login
+[2024-11-22T20:20:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:20:01+08:00][info] Request path: index/login
+[2024-11-22T20:20:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:20:01+08:00][info] Request path: index/login
+[2024-11-22T20:20:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:20:01+08:00][info] Request path: index/login
+[2024-11-22T20:20:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:20:01+08:00][info] Request path: index/login
+[2024-11-22T20:20:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:20:01+08:00][info] Request path: index/login
+[2024-11-22T20:20:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:20:01+08:00][info] Request path: index/login
+[2024-11-22T20:20:01+08:00][info] User not logged in, redirecting to login page.
+[2024-11-22T20:20:01+08:00][info] Request path: index/login
+[2024-11-22T20:20:01+08:00][info] User not logged in, redirecting to login page.

@@ -1,0 +1,454 @@
+[2024-12-03T10:58:36+08:00][error] [10501]SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。[D:\Desktop\x\php\ThinkPHP\vendor\topthink\think-orm\src\db\PDOConnection.php:836]
+[2024-12-03T10:59:57+08:00][sql] CONNECT:[ UseTime:0.002062s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T10:59:57+08:00][sql] -- 创建用户机器人表
+CREATE TABLE IF NOT EXISTS users_bot (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    QQ VARCHAR(255) NOT NULL,
+    AppID VARCHAR(255) NOT NULL,
+    Token VARCHAR(255) NOT NULL,
+    AppSecret VARCHAR(255) NOT NULL,
+    AccessToken VARCHAR(255) DEFAULT NULL,
+    AccessToken_time BIGINT DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8; [ RunTime:0.022522s ]
+[2024-12-03T10:59:57+08:00][sql] -- 创建用户表
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    qq VARCHAR(20) DEFAULT NULL,
+    email VARCHAR(100) DEFAULT NULL,
+    name VARCHAR(100) DEFAULT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8; [ RunTime:0.006289s ]
+[2024-12-03T10:59:57+08:00][sql] -- 创建日志表
+CREATE TABLE IF NOT EXISTS log (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    time DATETIME NOT NULL,
+    type VARCHAR(50) NOT NULL,
+    union_openid VARCHAR(255) NOT NULL,
+    group_openid VARCHAR(255) DEFAULT NULL,
+    content TEXT NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8; [ RunTime:0.005383s ]
+[2024-12-03T10:59:57+08:00][sql] -- 创建机器人每日活跃数据表
+CREATE TABLE IF NOT EXISTS bot_dau (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    date DATE NOT NULL,
+    received_messages INT DEFAULT 0,
+    sent_messages INT DEFAULT 0,
+    user_count INT DEFAULT 0,
+    group_count INT DEFAULT 0,
+    usage_frequency INT DEFAULT 0,
+    channel_private_chat INT DEFAULT 0,
+    group_private_chat INT DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8; [ RunTime:0.005377s ]
+[2024-12-03T10:59:57+08:00][sql] -- 创建机器人用户信息表
+CREATE TABLE IF NOT EXISTS bot_userinfo (
+    id INT NOT NULL AUTO_INCREMENT,
+    union_openid VARCHAR(255) NOT NULL,
+    permission INT DEFAULT NULL,  -- 权限字段改为 INT 类型
+    points INT DEFAULT 0,
+    balance DECIMAL(10, 2) DEFAULT 0.00,
+    sign_in_date DATE DEFAULT NULL,
+    post_date DATE NOT NULL,
+    post_count INT DEFAULT 0,
+    PRIMARY KEY (id),
+    UNIQUE KEY unique_union_openid (union_openid)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8; [ RunTime:0.005311s ]
+[2024-12-03T10:59:57+08:00][sql] -- 创建机器人菜单表
+CREATE TABLE IF NOT EXISTS bot_menu (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    menu VARCHAR(255) NOT NULL,        -- 菜单名称或标题
+    content TEXT NOT NULL,             -- 菜单内容或描述
+    permission INT DEFAULT 0,          -- 权限级别，默认为0（普通用户）
+    status TINYINT(1) DEFAULT 1        -- 状态，1表示启用，0表示禁用，默认启用
+) ENGINE=InnoDB DEFAULT CHARSET=utf8; [ RunTime:0.005332s ]
+[2024-12-03T10:59:57+08:00][sql] TRUNCATE TABLE users_bot [ RunTime:0.051700s ]
+[2024-12-03T10:59:57+08:00][sql] ALTER TABLE users_bot AUTO_INCREMENT = 1 [ RunTime:0.013254s ]
+[2024-12-03T10:59:57+08:00][sql] TRUNCATE TABLE users [ RunTime:0.064986s ]
+[2024-12-03T10:59:57+08:00][sql] ALTER TABLE users AUTO_INCREMENT = 1 [ RunTime:0.012464s ]
+[2024-12-03T10:59:57+08:00][sql] TRUNCATE TABLE log [ RunTime:0.044050s ]
+[2024-12-03T10:59:57+08:00][sql] ALTER TABLE log AUTO_INCREMENT = 1 [ RunTime:0.010380s ]
+[2024-12-03T10:59:57+08:00][sql] TRUNCATE TABLE bot_dau [ RunTime:0.037908s ]
+[2024-12-03T10:59:57+08:00][sql] ALTER TABLE bot_dau AUTO_INCREMENT = 1 [ RunTime:0.008770s ]
+[2024-12-03T10:59:57+08:00][sql] TRUNCATE TABLE bot_userinfo [ RunTime:0.058953s ]
+[2024-12-03T10:59:57+08:00][sql] ALTER TABLE bot_userinfo AUTO_INCREMENT = 1 [ RunTime:0.007841s ]
+[2024-12-03T10:59:57+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.003887s ]
+[2024-12-03T10:59:57+08:00][sql] INSERT INTO `users` SET `username` = 'xiaole' , `password` = '37EAD208EB59F2CEA05B7618AD62C52F' , `qq` = '3057054240' , `email` = '3057054240@qq.com' , `name` = '小乐' [ RunTime:0.002998s ]
+[2024-12-03T10:59:59+08:00][sql] CONNECT:[ UseTime:0.001489s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T10:59:59+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.002739s ]
+[2024-12-03T10:59:59+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000914s ]
+[2024-12-03T11:00:01+08:00][sql] CONNECT:[ UseTime:0.001154s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T11:00:01+08:00][sql] SHOW FULL COLUMNS FROM `bot_dau` [ RunTime:0.001716s ]
+[2024-12-03T11:00:01+08:00][sql] SELECT SUM(`received_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000543s ]
+[2024-12-03T11:00:01+08:00][sql] SELECT SUM(`sent_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000383s ]
+[2024-12-03T11:00:01+08:00][sql] SELECT SUM(`user_count`) AS think_sum FROM `bot_dau` [ RunTime:0.000243s ]
+[2024-12-03T11:00:01+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001146s ]
+[2024-12-03T11:00:01+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.000514s ]
+[2024-12-03T11:00:04+08:00][sql] CONNECT:[ UseTime:0.001767s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T11:00:04+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001788s ]
+[2024-12-03T11:00:04+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000771s ]
+[2024-12-03T11:03:15+08:00][sql] CONNECT:[ UseTime:0.014485s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T11:03:15+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.003829s ]
+[2024-12-03T11:03:15+08:00][sql] INSERT INTO `users_bot` SET `QQ` = '3889363006' , `AppID` = '102450011' , `Token` = 'awXVgSf8hzKehxLZZ8jAz0jOzimzpvd6' , `AppSecret` = 'nrv05AFKPUagmsy4AHOVcjqx4CKSaiqy' [ RunTime:0.007100s ]
+[2024-12-03T11:03:17+08:00][sql] CONNECT:[ UseTime:0.001446s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T11:03:17+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002982s ]
+[2024-12-03T11:03:17+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000937s ]
+[2024-12-03T11:04:00+08:00][sql] CONNECT:[ UseTime:0.001331s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T11:04:00+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001658s ]
+[2024-12-03T11:04:00+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000939s ]
+[2024-12-03T11:04:02+08:00][sql] CONNECT:[ UseTime:0.001614s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T11:04:02+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002508s ]
+[2024-12-03T11:04:02+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000857s ]
+[2024-12-03T11:06:39+08:00][sql] CONNECT:[ UseTime:0.006582s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T11:06:39+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002896s ]
+[2024-12-03T11:06:39+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.001017s ]
+[2024-12-03T11:06:40+08:00][sql] CONNECT:[ UseTime:0.001823s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T11:06:40+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.003210s ]
+[2024-12-03T11:06:40+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000919s ]
+[2024-12-03T11:12:42+08:00][sql] CONNECT:[ UseTime:0.009263s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T11:12:42+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001917s ]
+[2024-12-03T11:12:42+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000727s ]
+[2024-12-03T11:12:50+08:00][sql] CONNECT:[ UseTime:0.015524s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T11:12:50+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001731s ]
+[2024-12-03T11:12:50+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000686s ]
+[2024-12-03T11:22:43+08:00][sql] CONNECT:[ UseTime:0.012887s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T11:22:43+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001377s ]
+[2024-12-03T11:22:43+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000518s ]
+[2024-12-03T11:37:01+08:00][sql] CONNECT:[ UseTime:0.001542s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T11:37:01+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001308s ]
+[2024-12-03T11:37:01+08:00][sql] INSERT INTO `log` SET `time` = '2024-12-03 11:37:01' , `type` = '回调验证' , `union_openid` = '102450011' , `group_openid` = '-' , `content` = '-' [ RunTime:0.004286s ]
+[2024-12-03T11:37:01+08:00][sql] SELECT COUNT(*) AS think_count FROM `log` [ RunTime:0.001040s ]
+[2024-12-03T11:37:29+08:00][sql] CONNECT:[ UseTime:0.000969s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T11:37:29+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001037s ]
+[2024-12-03T11:37:29+08:00][sql] INSERT INTO `log` SET `time` = '2024-12-03 11:37:29' , `type` = '回调验证' , `union_openid` = '102450011' , `group_openid` = '-' , `content` = '-' [ RunTime:0.004191s ]
+[2024-12-03T11:37:29+08:00][sql] SELECT COUNT(*) AS think_count FROM `log` [ RunTime:0.001328s ]
+[2024-12-03T11:43:10+08:00][error] [0]Too few arguments to function le_menu(), 1 passed in D:\Desktop\x\php\ThinkPHP\app\index\controller\text.php on line 15 and exactly 2 expected[D:\Desktop\x\php\ThinkPHP\app\index\helper\Messageprocessing.php:2]
+[2024-12-03T11:46:27+08:00][error] [0]Class "Query" not found[D:\Desktop\x\php\ThinkPHP\app\index\helper\tool\tool.php:207]
+[2024-12-03T11:48:15+08:00][error] [0]Non-static method think\db\BaseQuery::table() cannot be called statically[D:\Desktop\x\php\ThinkPHP\app\index\helper\tool\tool.php:208]
+[2024-12-03T11:48:23+08:00][error] [0]Non-static method think\db\BaseQuery::table() cannot be called statically[D:\Desktop\x\php\ThinkPHP\app\index\helper\tool\tool.php:208]
+[2024-12-03T11:52:51+08:00][sql] CONNECT:[ UseTime:0.001208s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T11:52:51+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.001431s ]
+[2024-12-03T11:52:51+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '菜单' [ RunTime:0.000297s ]
+[2024-12-03T11:52:51+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '菜单' LIMIT 1 [ RunTime:0.000151s ]
+[2024-12-03T11:52:51+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '菜单' LIMIT 1 [ RunTime:0.000131s ]
+[2024-12-03T11:52:51+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.000881s ]
+[2024-12-03T11:52:51+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000231s ]
+[2024-12-03T11:52:51+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '菜单' LIMIT 1 [ RunTime:0.000124s ]
+[2024-12-03T12:05:57+08:00][sql] CONNECT:[ UseTime:0.001266s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T12:05:57+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.001378s ]
+[2024-12-03T12:05:57+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '菜单' [ RunTime:0.000263s ]
+[2024-12-03T12:05:57+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '菜单' LIMIT 1 [ RunTime:0.000131s ]
+[2024-12-03T12:05:57+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '菜单' LIMIT 1 [ RunTime:0.000111s ]
+[2024-12-03T12:05:57+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.000623s ]
+[2024-12-03T12:05:57+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000345s ]
+[2024-12-03T12:05:57+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '菜单' LIMIT 1 [ RunTime:0.000138s ]
+[2024-12-03T19:39:20+08:00][sql] CONNECT:[ UseTime:0.001611s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T19:39:20+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.004150s ]
+[2024-12-03T19:39:20+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '运行信息' [ RunTime:0.000324s ]
+[2024-12-03T19:39:20+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000135s ]
+[2024-12-03T19:39:20+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000115s ]
+[2024-12-03T19:39:20+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.000820s ]
+[2024-12-03T19:39:20+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000701s ]
+[2024-12-03T19:39:20+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000129s ]
+[2024-12-03T19:40:02+08:00][sql] CONNECT:[ UseTime:0.014932s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T19:40:02+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.001362s ]
+[2024-12-03T19:40:02+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '运行信息' [ RunTime:0.000249s ]
+[2024-12-03T19:40:02+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000132s ]
+[2024-12-03T19:40:02+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000111s ]
+[2024-12-03T19:40:02+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.000617s ]
+[2024-12-03T19:40:02+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000217s ]
+[2024-12-03T19:40:02+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000138s ]
+[2024-12-03T19:40:02+08:00][error] [0]Class "COM" not found[D:\Desktop\x\php\ThinkPHP\app\index\helper\tool\tool.php:34]
+[2024-12-03T19:45:50+08:00][sql] CONNECT:[ UseTime:0.001362s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T19:45:50+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.001568s ]
+[2024-12-03T19:45:50+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '运行信息' [ RunTime:0.000380s ]
+[2024-12-03T19:45:50+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000270s ]
+[2024-12-03T19:45:50+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000134s ]
+[2024-12-03T19:45:50+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.000614s ]
+[2024-12-03T19:45:50+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000210s ]
+[2024-12-03T19:45:50+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000127s ]
+[2024-12-03T19:50:08+08:00][sql] CONNECT:[ UseTime:0.001590s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T19:50:08+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.001571s ]
+[2024-12-03T19:50:08+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '运行信息' [ RunTime:0.000690s ]
+[2024-12-03T19:50:08+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000504s ]
+[2024-12-03T19:50:08+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000445s ]
+[2024-12-03T19:50:08+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.000912s ]
+[2024-12-03T19:50:08+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000500s ]
+[2024-12-03T19:50:08+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000319s ]
+[2024-12-03T20:00:48+08:00][sql] CONNECT:[ UseTime:0.001236s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T20:00:48+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.001441s ]
+[2024-12-03T20:00:48+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '运行信息' [ RunTime:0.000252s ]
+[2024-12-03T20:00:48+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000214s ]
+[2024-12-03T20:00:48+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000314s ]
+[2024-12-03T20:00:48+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.000643s ]
+[2024-12-03T20:00:48+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000204s ]
+[2024-12-03T20:00:48+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000127s ]
+[2024-12-03T20:00:52+08:00][sql] CONNECT:[ UseTime:0.001573s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T20:00:52+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.003722s ]
+[2024-12-03T20:00:52+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '运行信息' [ RunTime:0.000914s ]
+[2024-12-03T20:00:52+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000632s ]
+[2024-12-03T20:00:52+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000543s ]
+[2024-12-03T20:00:52+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.001652s ]
+[2024-12-03T20:00:52+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000651s ]
+[2024-12-03T20:00:52+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000435s ]
+[2024-12-03T20:01:39+08:00][sql] CONNECT:[ UseTime:0.001839s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T20:01:39+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.001721s ]
+[2024-12-03T20:01:39+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '运行信息' [ RunTime:0.000646s ]
+[2024-12-03T20:01:39+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000290s ]
+[2024-12-03T20:01:39+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000248s ]
+[2024-12-03T20:01:39+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.001397s ]
+[2024-12-03T20:01:39+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000426s ]
+[2024-12-03T20:01:39+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000260s ]
+[2024-12-03T20:01:41+08:00][sql] CONNECT:[ UseTime:0.001151s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T20:01:41+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.001758s ]
+[2024-12-03T20:01:41+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '运行信息' [ RunTime:0.000662s ]
+[2024-12-03T20:01:41+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000484s ]
+[2024-12-03T20:01:41+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000432s ]
+[2024-12-03T20:01:41+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.001451s ]
+[2024-12-03T20:01:41+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000442s ]
+[2024-12-03T20:01:41+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000277s ]
+[2024-12-03T20:01:41+08:00][sql] CONNECT:[ UseTime:0.000611s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T20:01:41+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.002233s ]
+[2024-12-03T20:01:41+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '运行信息' [ RunTime:0.000436s ]
+[2024-12-03T20:01:41+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000260s ]
+[2024-12-03T20:01:41+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000233s ]
+[2024-12-03T20:01:41+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.001061s ]
+[2024-12-03T20:01:41+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.001060s ]
+[2024-12-03T20:01:41+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000291s ]
+[2024-12-03T20:09:02+08:00][sql] CONNECT:[ UseTime:0.001212s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T20:09:02+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.001494s ]
+[2024-12-03T20:09:02+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '运行信息' [ RunTime:0.000307s ]
+[2024-12-03T20:09:02+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000219s ]
+[2024-12-03T20:09:02+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000137s ]
+[2024-12-03T20:09:02+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.000654s ]
+[2024-12-03T20:09:02+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000204s ]
+[2024-12-03T20:09:02+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000125s ]
+[2024-12-03T20:15:46+08:00][sql] CONNECT:[ UseTime:0.002118s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T20:15:46+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.001646s ]
+[2024-12-03T20:15:46+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '运行信息' [ RunTime:0.000871s ]
+[2024-12-03T20:15:46+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000576s ]
+[2024-12-03T20:15:46+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000465s ]
+[2024-12-03T20:15:46+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.001757s ]
+[2024-12-03T20:15:46+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000750s ]
+[2024-12-03T20:15:46+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000479s ]
+[2024-12-03T20:15:48+08:00][sql] CONNECT:[ UseTime:0.001841s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T20:15:48+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.002752s ]
+[2024-12-03T20:15:48+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '运行信息' [ RunTime:0.000866s ]
+[2024-12-03T20:15:48+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000487s ]
+[2024-12-03T20:15:48+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000482s ]
+[2024-12-03T20:15:48+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.001562s ]
+[2024-12-03T20:15:48+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000563s ]
+[2024-12-03T20:15:48+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000457s ]
+[2024-12-03T20:16:09+08:00][sql] CONNECT:[ UseTime:0.002953s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T20:16:09+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.001403s ]
+[2024-12-03T20:16:09+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '运行信息' [ RunTime:0.000277s ]
+[2024-12-03T20:16:09+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000187s ]
+[2024-12-03T20:16:09+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000135s ]
+[2024-12-03T20:16:09+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.000727s ]
+[2024-12-03T20:16:09+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000213s ]
+[2024-12-03T20:16:09+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000141s ]
+[2024-12-03T20:21:46+08:00][sql] CONNECT:[ UseTime:0.001366s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T20:21:46+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.001499s ]
+[2024-12-03T20:21:46+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '运行信息' [ RunTime:0.000395s ]
+[2024-12-03T20:21:46+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000142s ]
+[2024-12-03T20:21:46+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000116s ]
+[2024-12-03T20:21:46+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.000633s ]
+[2024-12-03T20:21:46+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000200s ]
+[2024-12-03T20:21:46+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000130s ]
+[2024-12-03T20:24:02+08:00][sql] CONNECT:[ UseTime:0.019096s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T20:24:02+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.001674s ]
+[2024-12-03T20:24:02+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '运行信息' [ RunTime:0.000262s ]
+[2024-12-03T20:24:02+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000130s ]
+[2024-12-03T20:24:02+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000113s ]
+[2024-12-03T20:24:02+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.000611s ]
+[2024-12-03T20:24:02+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000418s ]
+[2024-12-03T20:24:02+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000157s ]
+[2024-12-03T20:25:43+08:00][error] [0]语法错误: unexpected token ";", expecting "]"[D:\Desktop\x\php\ThinkPHP\app\index\helper\tool\tool.php:18]
+[2024-12-03T20:25:50+08:00][sql] CONNECT:[ UseTime:0.001339s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T20:25:50+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.002570s ]
+[2024-12-03T20:25:50+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '运行信息' [ RunTime:0.000725s ]
+[2024-12-03T20:25:50+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000512s ]
+[2024-12-03T20:25:50+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000321s ]
+[2024-12-03T20:25:50+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.001509s ]
+[2024-12-03T20:25:50+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000476s ]
+[2024-12-03T20:25:50+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000273s ]
+[2024-12-03T20:32:06+08:00][sql] CONNECT:[ UseTime:0.001362s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T20:32:06+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.001504s ]
+[2024-12-03T20:32:06+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '运行信息' [ RunTime:0.000270s ]
+[2024-12-03T20:32:06+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000135s ]
+[2024-12-03T20:32:06+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000115s ]
+[2024-12-03T20:32:06+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.000634s ]
+[2024-12-03T20:32:06+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000197s ]
+[2024-12-03T20:32:06+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000125s ]
+[2024-12-03T20:32:06+08:00][error] [0]implode(): Argument #2 ($array) must be of type ?array, string given[D:\Desktop\x\php\ThinkPHP\app\index\helper\tool\tool.php:38]
+[2024-12-03T20:33:34+08:00][sql] CONNECT:[ UseTime:0.002329s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T20:33:34+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.001484s ]
+[2024-12-03T20:33:34+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '运行信息' [ RunTime:0.000216s ]
+[2024-12-03T20:33:34+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000135s ]
+[2024-12-03T20:33:34+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000110s ]
+[2024-12-03T20:33:34+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.000608s ]
+[2024-12-03T20:33:34+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000196s ]
+[2024-12-03T20:33:34+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000127s ]
+[2024-12-03T20:33:34+08:00][error] [0]Division by zero[D:\Desktop\x\php\ThinkPHP\app\index\helper\tool\tool.php:45]
+[2024-12-03T20:34:43+08:00][sql] CONNECT:[ UseTime:0.016570s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T20:34:43+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.001348s ]
+[2024-12-03T20:34:43+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '运行信息' [ RunTime:0.000372s ]
+[2024-12-03T20:34:43+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000290s ]
+[2024-12-03T20:34:43+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000258s ]
+[2024-12-03T20:34:43+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.000649s ]
+[2024-12-03T20:34:43+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000193s ]
+[2024-12-03T20:34:43+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000150s ]
+[2024-12-03T20:41:01+08:00][sql] CONNECT:[ UseTime:0.001479s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T20:41:01+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.001393s ]
+[2024-12-03T20:41:01+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '运行信息' [ RunTime:0.000212s ]
+[2024-12-03T20:41:01+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000128s ]
+[2024-12-03T20:41:01+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000111s ]
+[2024-12-03T20:41:01+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.000621s ]
+[2024-12-03T20:41:01+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000162s ]
+[2024-12-03T20:41:01+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000123s ]
+[2024-12-03T20:47:09+08:00][sql] CONNECT:[ UseTime:0.001323s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T20:47:09+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.001237s ]
+[2024-12-03T20:47:09+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '运行信息' [ RunTime:0.000192s ]
+[2024-12-03T20:47:09+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000132s ]
+[2024-12-03T20:47:09+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000115s ]
+[2024-12-03T20:47:09+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.000617s ]
+[2024-12-03T20:47:09+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000162s ]
+[2024-12-03T20:47:09+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000136s ]
+[2024-12-03T20:56:42+08:00][sql] CONNECT:[ UseTime:0.001209s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T20:56:42+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.001401s ]
+[2024-12-03T20:56:42+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '运行信息' [ RunTime:0.000433s ]
+[2024-12-03T20:56:42+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000297s ]
+[2024-12-03T20:56:42+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000160s ]
+[2024-12-03T20:56:42+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.000633s ]
+[2024-12-03T20:56:42+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000178s ]
+[2024-12-03T20:56:42+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000129s ]
+[2024-12-03T20:56:42+08:00][error] [0]str_replace(): Argument #2 ($replace) must be of type string when argument #1 ($search) is a string[D:\Desktop\x\php\ThinkPHP\app\index\helper\tool\tool.php:25]
+[2024-12-03T20:57:09+08:00][sql] CONNECT:[ UseTime:0.000883s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T20:57:09+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.001330s ]
+[2024-12-03T20:57:09+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '运行信息' [ RunTime:0.000230s ]
+[2024-12-03T20:57:09+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000134s ]
+[2024-12-03T20:57:09+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000111s ]
+[2024-12-03T20:57:09+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.000625s ]
+[2024-12-03T20:57:09+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000194s ]
+[2024-12-03T20:57:09+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000129s ]
+[2024-12-03T20:57:21+08:00][sql] CONNECT:[ UseTime:0.001071s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T20:57:21+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.001234s ]
+[2024-12-03T20:57:21+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '运行信息' [ RunTime:0.000194s ]
+[2024-12-03T20:57:21+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000139s ]
+[2024-12-03T20:57:21+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000117s ]
+[2024-12-03T20:57:21+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.000617s ]
+[2024-12-03T20:57:21+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000156s ]
+[2024-12-03T20:57:21+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000124s ]
+[2024-12-03T20:57:21+08:00][error] [0]str_replace(): Argument #2 ($replace) must be of type string when argument #1 ($search) is a string[D:\Desktop\x\php\ThinkPHP\app\index\helper\tool\tool.php:25]
+[2024-12-03T20:58:01+08:00][sql] CONNECT:[ UseTime:0.001269s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T20:58:01+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.001368s ]
+[2024-12-03T20:58:01+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '运行信息' [ RunTime:0.000292s ]
+[2024-12-03T20:58:01+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000322s ]
+[2024-12-03T20:58:01+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000322s ]
+[2024-12-03T20:58:01+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.000905s ]
+[2024-12-03T20:58:01+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000226s ]
+[2024-12-03T20:58:01+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000149s ]
+[2024-12-03T20:58:01+08:00][error] [0]Call to undefined function str()[D:\Desktop\x\php\ThinkPHP\app\index\helper\tool\tool.php:15]
+[2024-12-03T20:58:54+08:00][sql] CONNECT:[ UseTime:0.009791s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T20:58:54+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.001204s ]
+[2024-12-03T20:58:54+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '运行信息' [ RunTime:0.000200s ]
+[2024-12-03T20:58:54+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000133s ]
+[2024-12-03T20:58:54+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000115s ]
+[2024-12-03T20:58:54+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.000633s ]
+[2024-12-03T20:58:54+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000151s ]
+[2024-12-03T20:58:54+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000124s ]
+[2024-12-03T20:58:54+08:00][error] [0]Unsupported operand types: array / int[D:\Desktop\x\php\ThinkPHP\app\index\helper\tool\tool.php:58]
+[2024-12-03T20:59:41+08:00][sql] CONNECT:[ UseTime:0.001200s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T20:59:41+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.001280s ]
+[2024-12-03T20:59:41+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '运行信息' [ RunTime:0.000354s ]
+[2024-12-03T20:59:41+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000157s ]
+[2024-12-03T20:59:41+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000121s ]
+[2024-12-03T20:59:41+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.000662s ]
+[2024-12-03T20:59:41+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000161s ]
+[2024-12-03T20:59:41+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000126s ]
+[2024-12-03T20:59:41+08:00][error] [0]Unsupported operand types: array / int[D:\Desktop\x\php\ThinkPHP\app\index\helper\tool\tool.php:56]
+[2024-12-03T21:00:00+08:00][sql] CONNECT:[ UseTime:0.005581s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T21:00:00+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.001256s ]
+[2024-12-03T21:00:00+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '运行信息' [ RunTime:0.000332s ]
+[2024-12-03T21:00:00+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000227s ]
+[2024-12-03T21:00:00+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000135s ]
+[2024-12-03T21:00:00+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.000682s ]
+[2024-12-03T21:00:00+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000162s ]
+[2024-12-03T21:00:00+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000124s ]
+[2024-12-03T21:00:00+08:00][error] [0]Unsupported operand types: array / int[D:\Desktop\x\php\ThinkPHP\app\index\helper\tool\tool.php:56]
+[2024-12-03T21:00:05+08:00][sql] CONNECT:[ UseTime:0.001734s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T21:00:05+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.001549s ]
+[2024-12-03T21:00:05+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '运行信息' [ RunTime:0.000402s ]
+[2024-12-03T21:00:05+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000356s ]
+[2024-12-03T21:00:05+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000270s ]
+[2024-12-03T21:00:05+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.000721s ]
+[2024-12-03T21:00:05+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000554s ]
+[2024-12-03T21:00:05+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000421s ]
+[2024-12-03T21:00:05+08:00][error] [0]Unsupported operand types: array / int[D:\Desktop\x\php\ThinkPHP\app\index\helper\tool\tool.php:56]
+[2024-12-03T21:00:45+08:00][sql] CONNECT:[ UseTime:0.020160s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T21:00:45+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.001144s ]
+[2024-12-03T21:00:45+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '运行信息' [ RunTime:0.000188s ]
+[2024-12-03T21:00:45+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000132s ]
+[2024-12-03T21:00:45+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000120s ]
+[2024-12-03T21:00:45+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.000619s ]
+[2024-12-03T21:00:45+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000176s ]
+[2024-12-03T21:00:45+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000131s ]
+[2024-12-03T21:06:57+08:00][sql] CONNECT:[ UseTime:0.001611s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T21:06:57+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.001326s ]
+[2024-12-03T21:06:57+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '运行信息' [ RunTime:0.000208s ]
+[2024-12-03T21:06:57+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000132s ]
+[2024-12-03T21:06:57+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000386s ]
+[2024-12-03T21:06:57+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.000699s ]
+[2024-12-03T21:06:57+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000274s ]
+[2024-12-03T21:06:57+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000179s ]
+[2024-12-03T21:28:12+08:00][sql] CONNECT:[ UseTime:0.001748s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T21:28:12+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.002573s ]
+[2024-12-03T21:28:12+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '运行信息' [ RunTime:0.000490s ]
+[2024-12-03T21:28:12+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000624s ]
+[2024-12-03T21:28:12+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000501s ]
+[2024-12-03T21:28:12+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.001583s ]
+[2024-12-03T21:28:12+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000605s ]
+[2024-12-03T21:28:12+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '运行信息' LIMIT 1 [ RunTime:0.000309s ]
+[2024-12-03T21:28:12+08:00][sql] SELECT `points` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000565s ]
+[2024-12-03T21:28:12+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000457s ]
+[2024-12-03T21:28:12+08:00][sql] SELECT `balance` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000426s ]
+[2024-12-03T21:28:24+08:00][sql] CONNECT:[ UseTime:0.010920s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T21:28:24+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.001187s ]
+[2024-12-03T21:28:24+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '我的信息' [ RunTime:0.000211s ]
+[2024-12-03T21:28:24+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '我的信息' LIMIT 1 [ RunTime:0.000136s ]
+[2024-12-03T21:28:24+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '我的信息' LIMIT 1 [ RunTime:0.000116s ]
+[2024-12-03T21:28:24+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.000614s ]
+[2024-12-03T21:28:24+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000206s ]
+[2024-12-03T21:28:24+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '我的信息' LIMIT 1 [ RunTime:0.000128s ]
+[2024-12-03T21:28:24+08:00][sql] SELECT `points` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000128s ]
+[2024-12-03T21:28:24+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000108s ]
+[2024-12-03T21:28:24+08:00][sql] SELECT `balance` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000104s ]
+[2024-12-03T21:30:56+08:00][sql] CONNECT:[ UseTime:0.013373s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T21:30:56+08:00][sql] SHOW FULL COLUMNS FROM `bot_menu` [ RunTime:0.001617s ]
+[2024-12-03T21:30:56+08:00][sql] SELECT COUNT(*) AS think_count FROM `bot_menu` WHERE  `menu` = '我的信息' [ RunTime:0.000283s ]
+[2024-12-03T21:30:56+08:00][sql] SELECT `status` FROM `bot_menu` WHERE  `menu` = '我的信息' LIMIT 1 [ RunTime:0.000294s ]
+[2024-12-03T21:30:56+08:00][sql] SELECT `permission` FROM `bot_menu` WHERE  `menu` = '我的信息' LIMIT 1 [ RunTime:0.000300s ]
+[2024-12-03T21:30:56+08:00][sql] SHOW FULL COLUMNS FROM `bot_userinfo` [ RunTime:0.000895s ]
+[2024-12-03T21:30:56+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000403s ]
+[2024-12-03T21:30:56+08:00][sql] SELECT `content` FROM `bot_menu` WHERE  `menu` = '我的信息' LIMIT 1 [ RunTime:0.000261s ]
+[2024-12-03T21:30:56+08:00][sql] SELECT `points` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000293s ]
+[2024-12-03T21:30:56+08:00][sql] SELECT `permission` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000245s ]
+[2024-12-03T21:30:56+08:00][sql] SELECT `balance` FROM `bot_userinfo` WHERE  `union_openid` = '51690C10640588D7830D58026BA236AC' LIMIT 1 [ RunTime:0.000235s ]
+[2024-12-03T21:43:42+08:00][sql] CONNECT:[ UseTime:0.001529s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T21:43:42+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.003333s ]
+[2024-12-03T21:43:42+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.001165s ]
+[2024-12-03T21:43:44+08:00][sql] CONNECT:[ UseTime:0.001634s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T21:43:44+08:00][sql] SHOW FULL COLUMNS FROM `bot_dau` [ RunTime:0.001326s ]
+[2024-12-03T21:43:44+08:00][sql] SELECT SUM(`received_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.001908s ]
+[2024-12-03T21:43:44+08:00][sql] SELECT SUM(`sent_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000200s ]
+[2024-12-03T21:43:44+08:00][sql] SELECT SUM(`user_count`) AS think_sum FROM `bot_dau` [ RunTime:0.000178s ]
+[2024-12-03T21:43:44+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001764s ]
+[2024-12-03T21:43:44+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.004268s ]
+[2024-12-03T21:51:19+08:00][error] [0]语法错误: unexpected token "]"[D:\Desktop\x\php\ThinkPHP\app\index\helper\tool\tool.php:28]
+[2024-12-03T21:51:38+08:00][sql] CONNECT:[ UseTime:0.002190s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-03T21:51:38+08:00][sql] SHOW FULL COLUMNS FROM `bot_dau` [ RunTime:0.001587s ]
+[2024-12-03T21:51:38+08:00][sql] SELECT SUM(`received_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000259s ]
+[2024-12-03T21:51:38+08:00][sql] SELECT SUM(`sent_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000121s ]
+[2024-12-03T21:51:38+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.000783s ]
+[2024-12-03T21:51:38+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.001278s ]
+[2024-12-03T21:51:38+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.001183s ]

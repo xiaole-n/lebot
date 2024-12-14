@@ -1,0 +1,25 @@
+[2024-11-21T17:30:33+08:00][error] [0]Class "app\index\model\User" not found[D:\Desktop\x\php\ThinkPHP\app\index\controller\Index.php:34]
+[2024-11-21T17:32:13+08:00][error] [0]Call to undefined method think\Db::name()[D:\Desktop\x\php\ThinkPHP\app\index\controller\Index.php:36]
+[2024-11-21T17:32:16+08:00][error] [0]Call to undefined method think\Db::name()[D:\Desktop\x\php\ThinkPHP\app\index\controller\Index.php:36]
+[2024-11-21T17:33:23+08:00][error] [0]Class "app\index\controller\Db" not found[D:\Desktop\x\php\ThinkPHP\app\index\controller\Index.php:36]
+[2024-11-21T17:33:27+08:00][error] [0]Class "app\index\controller\Db" not found[D:\Desktop\x\php\ThinkPHP\app\index\controller\Index.php:36]
+[2024-11-21T17:33:42+08:00][error] [0]Call to undefined method think\Db::table()[D:\Desktop\x\php\ThinkPHP\app\index\controller\Index.php:36]
+[2024-11-21T17:56:36+08:00][sql] CONNECT:[ UseTime:0.001737s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-21T17:56:37+08:00][sql] CONNECT:[ UseTime:0.009251s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-21T17:57:11+08:00][sql] CONNECT:[ UseTime:0.001121s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-21T17:59:53+08:00][sql] CONNECT:[ UseTime:0.001963s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-21T17:59:53+08:00][sql] SHOW FULL COLUMNS FROM `user` [ RunTime:0.001841s ]
+[2024-11-21T17:59:53+08:00][sql] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.006832s ]
+[2024-11-21T18:53:27+08:00][sql] CONNECT:[ UseTime:0.002629s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-21T18:53:27+08:00][sql] SHOW FULL COLUMNS FROM `user` [ RunTime:0.003341s ]
+[2024-11-21T18:53:27+08:00][sql] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000732s ]
+[2024-11-21T18:53:28+08:00][sql] CONNECT:[ UseTime:0.001224s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-21T18:53:28+08:00][sql] SHOW FULL COLUMNS FROM `user` [ RunTime:0.003090s ]
+[2024-11-21T18:53:28+08:00][sql] SELECT * FROM `user` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000709s ]
+[2024-11-21T18:53:34+08:00][error] [0]模板文件不存在:D:\Desktop\x\php\ThinkPHP\app\index\view\index\login.html[D:\Desktop\x\php\ThinkPHP\vendor\topthink\think-view\src\Think.php:128]
+[2024-11-21T18:56:06+08:00][error] [0]模板文件不存在:D:\Desktop\x\php\ThinkPHP\app\index\view\index\login.html[D:\Desktop\x\php\ThinkPHP\vendor\topthink\think-view\src\Think.php:128]
+[2024-11-21T18:59:33+08:00][error] [0]模板文件不存在:D:\Desktop\x\php\ThinkPHP\app\index\view\login\login.html[D:\Desktop\x\php\ThinkPHP\vendor\topthink\think-view\src\Think.php:128]
+[2024-11-21T19:01:32+08:00][error] [0]模板文件不存在:D:\Desktop\x\php\ThinkPHP\app\index\view\login\login.html[D:\Desktop\x\php\ThinkPHP\vendor\topthink\think-view\src\Think.php:128]
+[2024-11-21T21:47:12+08:00][error] [0]类不存在: app\index\controller\Request[D:\Desktop\x\php\ThinkPHP\vendor\topthink\framework\src\think\Container.php:379]
+[2024-11-21T21:47:17+08:00][error] [0]类不存在: app\index\controller\Request[D:\Desktop\x\php\ThinkPHP\vendor\topthink\framework\src\think\Container.php:379]
+[2024-11-21T21:47:25+08:00][error] [0]类不存在: app\index\controller\Request[D:\Desktop\x\php\ThinkPHP\vendor\topthink\framework\src\think\Container.php:379]

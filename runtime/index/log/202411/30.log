@@ -1,0 +1,869 @@
+[2024-11-30T09:57:56+08:00][error] [10501]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)[D:\Desktop\x\php\ThinkPHP\vendor\topthink\think-orm\src\db\PDOConnection.php:836]
+[2024-11-30T09:58:01+08:00][error] [10501]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)[D:\Desktop\x\php\ThinkPHP\vendor\topthink\think-orm\src\db\PDOConnection.php:836]
+[2024-11-30T09:58:02+08:00][error] [10501]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)[D:\Desktop\x\php\ThinkPHP\vendor\topthink\think-orm\src\db\PDOConnection.php:836]
+[2024-11-30T09:58:13+08:00][sql] CONNECT:[ UseTime:0.001598s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T09:58:13+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.004817s ]
+[2024-11-30T09:58:13+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.005302s ]
+[2024-11-30T09:58:16+08:00][sql] CONNECT:[ UseTime:0.000907s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T09:58:16+08:00][sql] SHOW FULL COLUMNS FROM `bot_dau` [ RunTime:0.002452s ]
+[2024-11-30T09:58:16+08:00][sql] SELECT SUM(`received_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.001811s ]
+[2024-11-30T09:58:16+08:00][sql] SELECT SUM(`sent_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000194s ]
+[2024-11-30T09:58:16+08:00][sql] SELECT SUM(`user_count`) AS think_sum FROM `bot_dau` [ RunTime:0.000139s ]
+[2024-11-30T09:58:16+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001232s ]
+[2024-11-30T09:58:16+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.004559s ]
+[2024-11-30T10:13:43+08:00][error] [0]语法错误: unexpected token "<", expecting "]"[D:\Desktop\x\php\ThinkPHP\runtime\index\temp\63a283d196553f05de4afcf88cc12aa7.php:85]
+[2024-11-30T10:41:45+08:00][error] [2]require_once(installation_checks.php): Failed to open stream: No such file or directory[D:\Desktop\x\php\ThinkPHP\runtime\index\temp\63a283d196553f05de4afcf88cc12aa7.php:28]
+[2024-11-30T11:08:39+08:00][error] [2]require_once(installation_checks.php): Failed to open stream: No such file or directory[D:\Desktop\x\php\ThinkPHP\runtime\index\temp\63a283d196553f05de4afcf88cc12aa7.php:28]
+[2024-11-30T11:14:04+08:00][error] [0]Unmatched '}'[D:\Desktop\x\php\ThinkPHP\app\index\helper\tool\install.php:138]
+[2024-11-30T11:14:27+08:00][error] [2]require_once(installation_checks.php): Failed to open stream: No such file or directory[D:\Desktop\x\php\ThinkPHP\runtime\index\temp\63a283d196553f05de4afcf88cc12aa7.php:29]
+[2024-11-30T11:14:54+08:00][error] [0]Unmatched '}'[D:\Desktop\x\php\ThinkPHP\app\index\helper\tool\install.php:138]
+[2024-11-30T11:40:38+08:00][error] [0]Call to undefined function app\index\controller\checkDbConnection()[D:\Desktop\x\php\ThinkPHP\app\index\controller\text.php:13]
+[2024-11-30T11:41:13+08:00][error] [0]Class "think\db\Db" not found[D:\Desktop\x\php\ThinkPHP\app\index\helper\tool\install.php:57]
+[2024-11-30T11:42:10+08:00][error] [0]Class "think\db\Db" not found[D:\Desktop\x\php\ThinkPHP\app\index\helper\tool\install.php:60]
+[2024-11-30T11:44:17+08:00][sql] CONNECT:[ UseTime:0.005132s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T11:44:17+08:00][sql] SELECT 1 [ RunTime:0.000437s ]
+[2024-11-30T11:44:28+08:00][sql] CONNECT:[ UseTime:0.001779s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T11:44:28+08:00][sql] SELECT 1 [ RunTime:0.000446s ]
+[2024-11-30T11:44:28+08:00][sql] SELECT 1 [ RunTime:0.000477s ]
+[2024-11-30T11:44:56+08:00][sql] CONNECT:[ UseTime:0.001068s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T11:44:56+08:00][sql] SELECT 1 [ RunTime:0.000173s ]
+[2024-11-30T11:47:39+08:00][error] [0]Cannot access offset of type string on string[D:\Desktop\x\php\ThinkPHP\app\index\helper\tool\install.php:55]
+[2024-11-30T11:48:27+08:00][error] [0]Cannot access offset of type string on string[D:\Desktop\x\php\ThinkPHP\app\index\helper\tool\install.php:55]
+[2024-11-30T11:49:32+08:00][error] [0]Cannot access offset of type string on string[D:\Desktop\x\php\ThinkPHP\app\index\helper\tool\install.php:54]
+[2024-11-30T11:51:44+08:00][sql] CONNECT:[ UseTime:0.002163s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T11:51:44+08:00][sql] SHOW FULL COLUMNS FROM `bot_dau` [ RunTime:0.007505s ]
+[2024-11-30T11:51:44+08:00][sql] SELECT SUM(`received_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000904s ]
+[2024-11-30T11:51:44+08:00][sql] SELECT SUM(`sent_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000267s ]
+[2024-11-30T11:51:44+08:00][sql] SELECT SUM(`user_count`) AS think_sum FROM `bot_dau` [ RunTime:0.000206s ]
+[2024-11-30T11:51:44+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001390s ]
+[2024-11-30T11:51:44+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.002256s ]
+[2024-11-30T11:51:46+08:00][sql] CONNECT:[ UseTime:0.001728s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T11:51:46+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002327s ]
+[2024-11-30T11:51:46+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000593s ]
+[2024-11-30T11:51:51+08:00][sql] CONNECT:[ UseTime:0.001779s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T11:51:51+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001368s ]
+[2024-11-30T11:51:51+08:00][sql] INSERT INTO `users_bot` SET `QQ` = '213' , `AppID` = '21344' , `Token` = '214' , `AppSecret` = '124' [ RunTime:0.014653s ]
+[2024-11-30T11:51:53+08:00][sql] CONNECT:[ UseTime:0.001028s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T11:51:53+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001899s ]
+[2024-11-30T11:51:53+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000301s ]
+[2024-11-30T11:51:55+08:00][sql] CONNECT:[ UseTime:0.001418s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T11:51:55+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.003294s ]
+[2024-11-30T11:51:55+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.012405s ]
+[2024-11-30T11:54:04+08:00][sql] CONNECT:[ UseTime:0.020356s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T11:54:04+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001600s ]
+[2024-11-30T11:54:04+08:00][sql] INSERT INTO `log` SET `time` = '2024-11-30 11:54:04' , `type` = '回调验证' , `union_openid` = '102450011' , `group_openid` = '-' , `content` = '-' [ RunTime:0.007078s ]
+[2024-11-30T11:54:04+08:00][sql] SELECT COUNT(*) AS think_count FROM `log` [ RunTime:0.001319s ]
+[2024-11-30T11:54:11+08:00][sql] CONNECT:[ UseTime:0.001688s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T11:54:11+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002090s ]
+[2024-11-30T11:54:11+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000390s ]
+[2024-11-30T11:54:14+08:00][sql] CONNECT:[ UseTime:0.003700s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T11:54:14+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001365s ]
+[2024-11-30T11:54:14+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000325s ]
+[2024-11-30T12:02:56+08:00][sql] CONNECT:[ UseTime:0.001698s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T12:02:56+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001667s ]
+[2024-11-30T12:02:56+08:00][sql] INSERT INTO `log` SET `time` = '2024-11-30 12:02:56' , `type` = '回调验证' , `union_openid` = '102450011' , `group_openid` = '-' , `content` = '-' [ RunTime:0.003853s ]
+[2024-11-30T12:02:56+08:00][sql] SELECT COUNT(*) AS think_count FROM `log` [ RunTime:0.000839s ]
+[2024-11-30T12:03:12+08:00][sql] CONNECT:[ UseTime:0.008872s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T12:03:12+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001359s ]
+[2024-11-30T12:03:12+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000276s ]
+[2024-11-30T12:03:15+08:00][sql] CONNECT:[ UseTime:0.011232s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T12:03:15+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001350s ]
+[2024-11-30T12:03:15+08:00][sql] INSERT INTO `log` SET `time` = '2024-11-30 12:03:15' , `type` = '回调验证' , `union_openid` = '102450011' , `group_openid` = '-' , `content` = '-' [ RunTime:0.003916s ]
+[2024-11-30T12:03:15+08:00][sql] SELECT COUNT(*) AS think_count FROM `log` [ RunTime:0.001173s ]
+[2024-11-30T14:53:01+08:00][sql] CONNECT:[ UseTime:0.014242s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T14:53:01+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.008517s ]
+[2024-11-30T14:53:01+08:00][sql] INSERT INTO `log` SET `time` = '2024-11-30 14:53:01' , `type` = '回调验证' , `union_openid` = '102450011' , `group_openid` = '-' , `content` = '-' [ RunTime:0.007748s ]
+[2024-11-30T14:53:01+08:00][sql] SELECT COUNT(*) AS think_count FROM `log` [ RunTime:0.003054s ]
+[2024-11-30T14:53:08+08:00][sql] CONNECT:[ UseTime:0.003190s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T14:53:08+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.008270s ]
+[2024-11-30T14:53:08+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000849s ]
+[2024-11-30T14:53:10+08:00][sql] CONNECT:[ UseTime:0.016596s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T14:53:10+08:00][sql] SHOW FULL COLUMNS FROM `bot_dau` [ RunTime:0.005161s ]
+[2024-11-30T14:53:10+08:00][sql] SELECT SUM(`received_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.001156s ]
+[2024-11-30T14:53:10+08:00][sql] SELECT SUM(`sent_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000592s ]
+[2024-11-30T14:53:10+08:00][sql] SELECT SUM(`user_count`) AS think_sum FROM `bot_dau` [ RunTime:0.000532s ]
+[2024-11-30T14:53:10+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001756s ]
+[2024-11-30T14:53:10+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.002124s ]
+[2024-11-30T18:57:01+08:00][sql] CONNECT:[ UseTime:0.004265s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T18:57:01+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.029452s ]
+[2024-11-30T18:57:01+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.007490s ]
+[2024-11-30T18:57:04+08:00][sql] CONNECT:[ UseTime:0.001902s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T18:57:04+08:00][sql] SHOW FULL COLUMNS FROM `bot_dau` [ RunTime:0.004439s ]
+[2024-11-30T18:57:04+08:00][sql] SELECT SUM(`received_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.005124s ]
+[2024-11-30T18:57:04+08:00][sql] SELECT SUM(`sent_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000356s ]
+[2024-11-30T18:57:04+08:00][sql] SELECT SUM(`user_count`) AS think_sum FROM `bot_dau` [ RunTime:0.000284s ]
+[2024-11-30T18:57:04+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001112s ]
+[2024-11-30T18:57:04+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.003616s ]
+[2024-11-30T18:57:30+08:00][sql] CONNECT:[ UseTime:0.001390s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T18:57:30+08:00][sql] SHOW FULL COLUMNS FROM `bot_dau` [ RunTime:0.004229s ]
+[2024-11-30T18:57:30+08:00][sql] SELECT SUM(`received_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000897s ]
+[2024-11-30T18:57:30+08:00][sql] SELECT SUM(`sent_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000601s ]
+[2024-11-30T18:57:30+08:00][sql] SELECT SUM(`user_count`) AS think_sum FROM `bot_dau` [ RunTime:0.000578s ]
+[2024-11-30T18:57:30+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002447s ]
+[2024-11-30T18:57:30+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.001903s ]
+[2024-11-30T18:57:34+08:00][sql] CONNECT:[ UseTime:0.001566s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T18:57:34+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002296s ]
+[2024-11-30T18:57:34+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000488s ]
+[2024-11-30T18:57:40+08:00][sql] CONNECT:[ UseTime:0.011337s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T18:57:40+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.003289s ]
+[2024-11-30T18:57:40+08:00][sql] DELETE FROM `users_bot` WHERE  `ID` = 35 [ RunTime:0.014209s ]
+[2024-11-30T18:57:40+08:00][sql] CONNECT:[ UseTime:0.002077s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T18:57:40+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002728s ]
+[2024-11-30T18:57:40+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000425s ]
+[2024-11-30T18:57:53+08:00][sql] CONNECT:[ UseTime:0.000999s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T18:57:53+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002385s ]
+[2024-11-30T18:57:53+08:00][sql] INSERT INTO `log` SET `time` = '2024-11-30 18:57:53' , `type` = '回调验证' , `union_openid` = '102450011' , `group_openid` = '-' , `content` = '-' [ RunTime:0.005872s ]
+[2024-11-30T18:57:53+08:00][sql] SELECT COUNT(*) AS think_count FROM `log` [ RunTime:0.001333s ]
+[2024-11-30T19:40:53+08:00][error] [10501]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)[D:\Desktop\x\php\ThinkPHP\vendor\topthink\think-orm\src\db\PDOConnection.php:836]
+[2024-11-30T19:41:01+08:00][error] [10501]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)[D:\Desktop\x\php\ThinkPHP\vendor\topthink\think-orm\src\db\PDOConnection.php:836]
+[2024-11-30T19:41:04+08:00][error] [10501]SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: YES)[D:\Desktop\x\php\ThinkPHP\vendor\topthink\think-orm\src\db\PDOConnection.php:836]
+[2024-11-30T19:41:15+08:00][sql] CONNECT:[ UseTime:0.001100s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T19:41:15+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.002398s ]
+[2024-11-30T19:41:15+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000332s ]
+[2024-11-30T19:41:17+08:00][sql] CONNECT:[ UseTime:0.013225s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T19:41:17+08:00][sql] SHOW FULL COLUMNS FROM `bot_dau` [ RunTime:0.001499s ]
+[2024-11-30T19:41:17+08:00][sql] SELECT SUM(`received_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000361s ]
+[2024-11-30T19:41:17+08:00][sql] SELECT SUM(`sent_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000126s ]
+[2024-11-30T19:41:17+08:00][sql] SELECT SUM(`user_count`) AS think_sum FROM `bot_dau` [ RunTime:0.000111s ]
+[2024-11-30T19:41:17+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.000614s ]
+[2024-11-30T19:41:17+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.001827s ]
+[2024-11-30T19:41:21+08:00][sql] CONNECT:[ UseTime:0.001828s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T19:41:21+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002743s ]
+[2024-11-30T19:41:21+08:00][sql] INSERT INTO `log` SET `time` = '2024-11-30 19:41:21' , `type` = '回调验证' , `union_openid` = '102450011' , `group_openid` = '-' , `content` = '-' [ RunTime:0.006281s ]
+[2024-11-30T19:41:21+08:00][sql] SELECT COUNT(*) AS think_count FROM `log` [ RunTime:0.007736s ]
+[2024-11-30T20:47:22+08:00][sql] CONNECT:[ UseTime:0.002757s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T20:47:22+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.006499s ]
+[2024-11-30T20:47:22+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000619s ]
+[2024-11-30T20:47:31+08:00][sql] CONNECT:[ UseTime:0.001742s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T20:47:31+08:00][sql] SHOW FULL COLUMNS FROM `bot_dau` [ RunTime:0.003173s ]
+[2024-11-30T20:47:31+08:00][sql] SELECT SUM(`received_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000945s ]
+[2024-11-30T20:47:31+08:00][sql] SELECT SUM(`sent_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000324s ]
+[2024-11-30T20:47:31+08:00][sql] SELECT SUM(`user_count`) AS think_sum FROM `bot_dau` [ RunTime:0.000328s ]
+[2024-11-30T20:47:31+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.000956s ]
+[2024-11-30T20:47:31+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.002767s ]
+[2024-11-30T20:47:37+08:00][sql] CONNECT:[ UseTime:0.001676s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T20:47:37+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.005948s ]
+[2024-11-30T20:47:37+08:00][sql] INSERT INTO `log` SET `time` = '2024-11-30 20:47:37' , `type` = '回调验证' , `union_openid` = '102450011' , `group_openid` = '-' , `content` = '-' [ RunTime:0.004535s ]
+[2024-11-30T20:47:37+08:00][sql] SELECT COUNT(*) AS think_count FROM `log` [ RunTime:0.001170s ]
+[2024-11-30T20:49:02+08:00][error] [0]call_user_func_array(): Argument #1 ($callback) must be a valid callback, class think\db\connector\Mysql does not have a method "beginTransaction"[D:\Desktop\x\php\ThinkPHP\vendor\topthink\think-orm\src\DbManager.php:399]
+[2024-11-30T20:52:31+08:00][error] [0]call_user_func_array(): Argument #1 ($callback) must be a valid callback, class think\db\connector\Mysql does not have a method "beginTransaction"[D:\Desktop\x\php\ThinkPHP\vendor\topthink\think-orm\src\DbManager.php:399]
+[2024-11-30T20:57:27+08:00][sql] CONNECT:[ UseTime:0.001588s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T20:57:27+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001727s ]
+[2024-11-30T20:57:27+08:00][sql] INSERT INTO `log` SET `time` = '2024-11-30 20:57:27' , `type` = '回调验证' , `union_openid` = '102450011' , `group_openid` = '-' , `content` = '-' [ RunTime:0.004840s ]
+[2024-11-30T20:57:27+08:00][sql] SELECT COUNT(*) AS think_count FROM `log` [ RunTime:0.001259s ]
+[2024-11-30T20:57:29+08:00][sql] CONNECT:[ UseTime:0.002030s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T20:57:29+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001473s ]
+[2024-11-30T20:57:29+08:00][sql] INSERT INTO `log` SET `time` = '2024-11-30 20:57:29' , `type` = '回调验证' , `union_openid` = '102450011' , `group_openid` = '-' , `content` = '-' [ RunTime:0.003349s ]
+[2024-11-30T20:57:29+08:00][sql] SELECT COUNT(*) AS think_count FROM `log` [ RunTime:0.001853s ]
+[2024-11-30T20:58:32+08:00][sql] CONNECT:[ UseTime:0.001669s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T20:58:32+08:00][sql] TRUNCATE TABLE users_bot [ RunTime:0.049371s ]
+[2024-11-30T20:58:32+08:00][sql] ALTER TABLE users_bot AUTO_INCREMENT = 1 [ RunTime:0.016396s ]
+[2024-11-30T20:58:32+08:00][sql] TRUNCATE TABLE users [ RunTime:0.047659s ]
+[2024-11-30T20:58:32+08:00][sql] ALTER TABLE users AUTO_INCREMENT = 1 [ RunTime:0.009133s ]
+[2024-11-30T20:58:32+08:00][sql] TRUNCATE TABLE log [ RunTime:0.035366s ]
+[2024-11-30T20:58:32+08:00][sql] ALTER TABLE log AUTO_INCREMENT = 1 [ RunTime:0.008335s ]
+[2024-11-30T20:58:32+08:00][sql] TRUNCATE TABLE bot_dau [ RunTime:0.036923s ]
+[2024-11-30T20:58:32+08:00][sql] ALTER TABLE bot_dau AUTO_INCREMENT = 1 [ RunTime:0.008203s ]
+[2024-11-30T20:58:32+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001043s ]
+[2024-11-30T20:58:32+08:00][sql] INSERT INTO `users` SET `username` = 'xiaolele' , `password` = 'e10adc3949ba59abbe56e057f20f883e' , `qq` = '54658686' , `email` = '656668846@qq.com' , `name` = '小乐乐' [ RunTime:0.003629s ]
+[2024-11-30T20:59:27+08:00][sql] CONNECT:[ UseTime:0.027117s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T20:59:27+08:00][sql] TRUNCATE TABLE users_bot [ RunTime:0.024080s ]
+[2024-11-30T20:59:27+08:00][sql] ALTER TABLE users_bot AUTO_INCREMENT = 1 [ RunTime:0.009435s ]
+[2024-11-30T20:59:27+08:00][sql] TRUNCATE TABLE users [ RunTime:0.038644s ]
+[2024-11-30T20:59:27+08:00][sql] ALTER TABLE users AUTO_INCREMENT = 1 [ RunTime:0.006454s ]
+[2024-11-30T20:59:27+08:00][sql] TRUNCATE TABLE log [ RunTime:0.027589s ]
+[2024-11-30T20:59:27+08:00][sql] ALTER TABLE log AUTO_INCREMENT = 1 [ RunTime:0.006290s ]
+[2024-11-30T20:59:27+08:00][sql] TRUNCATE TABLE bot_dau [ RunTime:0.027422s ]
+[2024-11-30T20:59:27+08:00][sql] ALTER TABLE bot_dau AUTO_INCREMENT = 1 [ RunTime:0.006906s ]
+[2024-11-30T20:59:27+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.000962s ]
+[2024-11-30T20:59:27+08:00][sql] INSERT INTO `users` SET `username` = 'xiaolele' , `password` = 'e10adc3949ba59abbe56e057f20f883e' , `qq` = '54658686' , `email` = '656668846@qq.com' , `name` = '小乐乐' [ RunTime:0.003266s ]
+[2024-11-30T21:33:55+08:00][sql] CONNECT:[ UseTime:0.002087s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:33:55+08:00][sql] CREATE TABLE IF NOT EXISTS users_bot (
+                        ID INT AUTO_INCREMENT PRIMARY KEY,
+                        QQ VARCHAR(255) NOT NULL,
+                        AppID VARCHAR(255) NOT NULL,
+                        Token VARCHAR(255) NOT NULL,
+                        AppSecret VARCHAR(255) NOT NULL,
+                        AccessToken VARCHAR(255) DEFAULT NULL,
+                        AccessToken_time BIGINT DEFAULT NULL
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; [ RunTime:0.002536s ]
+[2024-11-30T21:33:55+08:00][sql] CREATE TABLE IF NOT EXISTS users (
+                        id INT AUTO_INCREMENT PRIMARY KEY,
+                        username VARCHAR(255) NOT NULL UNIQUE,
+                        password VARCHAR(255) NOT NULL,
+                        qq VARCHAR(20) DEFAULT NULL,
+                        email VARCHAR(100) DEFAULT NULL,
+                        name VARCHAR(100) DEFAULT NULL,
+                        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; [ RunTime:0.002460s ]
+[2024-11-30T21:33:55+08:00][sql] CREATE TABLE IF NOT EXISTS log (
+                        id INT AUTO_INCREMENT PRIMARY KEY,
+                        time DATETIME NOT NULL,
+                        type VARCHAR(50) NOT NULL,
+                        union_openid VARCHAR(255) NOT NULL,
+                        group_openid VARCHAR(255) DEFAULT NULL,
+                        content TEXT NOT NULL
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; [ RunTime:0.001744s ]
+[2024-11-30T21:33:55+08:00][sql] CREATE TABLE IF NOT EXISTS bot_dau (
+                        id INT AUTO_INCREMENT PRIMARY KEY,
+                        date DATE NOT NULL,
+                        received_messages INT DEFAULT 0,
+                        sent_messages INT DEFAULT 0,
+                        user_count INT DEFAULT 0,
+                        group_count INT DEFAULT 0,
+                        usage_frequency INT DEFAULT 0,
+                        channel_private_chat INT DEFAULT 0,
+                        group_private_chat INT DEFAULT 0
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; [ RunTime:0.001893s ]
+[2024-11-30T21:33:55+08:00][sql] CREATE TABLE IF NOT EXISTS bot_userinfo (
+                        id INT NOT NULL AUTO_INCREMENT,
+                        union_openid VARCHAR(255) NOT NULL,
+                        permission VARCHAR(255) DEFAULT NULL,
+                        points INT DEFAULT 0,
+                        balance DECIMAL(10, 2) DEFAULT 0.00,
+                        sign_in_date DATE DEFAULT NULL,
+                        post_date DATE NOT NULL,
+                        post_count INT DEFAULT 0,
+                        PRIMARY KEY (id),
+                        UNIQUE KEY unique_union_openid (union_openid)
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; [ RunTime:0.001993s ]
+[2024-11-30T21:33:55+08:00][sql] TRUNCATE TABLE users_bot [ RunTime:0.047978s ]
+[2024-11-30T21:33:55+08:00][sql] ALTER TABLE users_bot AUTO_INCREMENT = 1 [ RunTime:0.009607s ]
+[2024-11-30T21:33:55+08:00][sql] TRUNCATE TABLE users [ RunTime:0.045705s ]
+[2024-11-30T21:33:55+08:00][sql] ALTER TABLE users AUTO_INCREMENT = 1 [ RunTime:0.011915s ]
+[2024-11-30T21:33:55+08:00][sql] TRUNCATE TABLE log [ RunTime:0.035501s ]
+[2024-11-30T21:33:55+08:00][sql] ALTER TABLE log AUTO_INCREMENT = 1 [ RunTime:0.008697s ]
+[2024-11-30T21:33:55+08:00][sql] TRUNCATE TABLE bot_dau [ RunTime:0.045457s ]
+[2024-11-30T21:33:55+08:00][sql] ALTER TABLE bot_dau AUTO_INCREMENT = 1 [ RunTime:0.007774s ]
+[2024-11-30T21:33:55+08:00][sql] TRUNCATE TABLE bot_userinfo [ RunTime:0.035567s ]
+[2024-11-30T21:33:55+08:00][sql] ALTER TABLE bot_userinfo AUTO_INCREMENT = 1 [ RunTime:0.007035s ]
+[2024-11-30T21:33:55+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001367s ]
+[2024-11-30T21:33:55+08:00][sql] INSERT INTO `users` SET `username` = 'xiaole' , `password` = 'e10adc3949ba59abbe56e057f20f883e' , `qq` = '54658686' , `email` = '656668846@qq.com' , `name` = '小乐乐' [ RunTime:0.003449s ]
+[2024-11-30T21:33:55+08:00][sql] CONNECT:[ UseTime:0.001734s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:33:55+08:00][sql] SHOW FULL COLUMNS FROM `bot_dau` [ RunTime:0.003121s ]
+[2024-11-30T21:33:55+08:00][sql] SELECT SUM(`received_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.001246s ]
+[2024-11-30T21:33:55+08:00][sql] SELECT SUM(`sent_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000420s ]
+[2024-11-30T21:33:55+08:00][sql] SELECT SUM(`user_count`) AS think_sum FROM `bot_dau` [ RunTime:0.000346s ]
+[2024-11-30T21:33:55+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.022089s ]
+[2024-11-30T21:33:55+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.003415s ]
+[2024-11-30T21:33:59+08:00][sql] CONNECT:[ UseTime:0.001277s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:33:59+08:00][sql] CREATE TABLE IF NOT EXISTS users_bot (
+                        ID INT AUTO_INCREMENT PRIMARY KEY,
+                        QQ VARCHAR(255) NOT NULL,
+                        AppID VARCHAR(255) NOT NULL,
+                        Token VARCHAR(255) NOT NULL,
+                        AppSecret VARCHAR(255) NOT NULL,
+                        AccessToken VARCHAR(255) DEFAULT NULL,
+                        AccessToken_time BIGINT DEFAULT NULL
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; [ RunTime:0.002664s ]
+[2024-11-30T21:33:59+08:00][sql] CREATE TABLE IF NOT EXISTS users (
+                        id INT AUTO_INCREMENT PRIMARY KEY,
+                        username VARCHAR(255) NOT NULL UNIQUE,
+                        password VARCHAR(255) NOT NULL,
+                        qq VARCHAR(20) DEFAULT NULL,
+                        email VARCHAR(100) DEFAULT NULL,
+                        name VARCHAR(100) DEFAULT NULL,
+                        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; [ RunTime:0.001147s ]
+[2024-11-30T21:33:59+08:00][sql] CREATE TABLE IF NOT EXISTS log (
+                        id INT AUTO_INCREMENT PRIMARY KEY,
+                        time DATETIME NOT NULL,
+                        type VARCHAR(50) NOT NULL,
+                        union_openid VARCHAR(255) NOT NULL,
+                        group_openid VARCHAR(255) DEFAULT NULL,
+                        content TEXT NOT NULL
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; [ RunTime:0.001125s ]
+[2024-11-30T21:33:59+08:00][sql] CREATE TABLE IF NOT EXISTS bot_dau (
+                        id INT AUTO_INCREMENT PRIMARY KEY,
+                        date DATE NOT NULL,
+                        received_messages INT DEFAULT 0,
+                        sent_messages INT DEFAULT 0,
+                        user_count INT DEFAULT 0,
+                        group_count INT DEFAULT 0,
+                        usage_frequency INT DEFAULT 0,
+                        channel_private_chat INT DEFAULT 0,
+                        group_private_chat INT DEFAULT 0
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; [ RunTime:0.001185s ]
+[2024-11-30T21:33:59+08:00][sql] CREATE TABLE IF NOT EXISTS bot_userinfo (
+                        id INT NOT NULL AUTO_INCREMENT,
+                        union_openid VARCHAR(255) NOT NULL,
+                        permission VARCHAR(255) DEFAULT NULL,
+                        points INT DEFAULT 0,
+                        balance DECIMAL(10, 2) DEFAULT 0.00,
+                        sign_in_date DATE DEFAULT NULL,
+                        post_date DATE NOT NULL,
+                        post_count INT DEFAULT 0,
+                        PRIMARY KEY (id),
+                        UNIQUE KEY unique_union_openid (union_openid)
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; [ RunTime:0.001112s ]
+[2024-11-30T21:33:59+08:00][sql] TRUNCATE TABLE users_bot [ RunTime:0.028241s ]
+[2024-11-30T21:33:59+08:00][sql] ALTER TABLE users_bot AUTO_INCREMENT = 1 [ RunTime:0.010205s ]
+[2024-11-30T21:33:59+08:00][sql] TRUNCATE TABLE users [ RunTime:0.073505s ]
+[2024-11-30T21:33:59+08:00][sql] ALTER TABLE users AUTO_INCREMENT = 1 [ RunTime:0.008381s ]
+[2024-11-30T21:33:59+08:00][sql] TRUNCATE TABLE log [ RunTime:0.030104s ]
+[2024-11-30T21:33:59+08:00][sql] ALTER TABLE log AUTO_INCREMENT = 1 [ RunTime:0.007121s ]
+[2024-11-30T21:33:59+08:00][sql] TRUNCATE TABLE bot_dau [ RunTime:0.026857s ]
+[2024-11-30T21:33:59+08:00][sql] ALTER TABLE bot_dau AUTO_INCREMENT = 1 [ RunTime:0.006874s ]
+[2024-11-30T21:33:59+08:00][sql] TRUNCATE TABLE bot_userinfo [ RunTime:0.029376s ]
+[2024-11-30T21:33:59+08:00][sql] ALTER TABLE bot_userinfo AUTO_INCREMENT = 1 [ RunTime:0.007393s ]
+[2024-11-30T21:33:59+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001260s ]
+[2024-11-30T21:33:59+08:00][sql] INSERT INTO `users` SET `username` = 'xiaole' , `password` = 'e10adc3949ba59abbe56e057f20f883e' , `qq` = '54658686' , `email` = '656668846@qq.com' , `name` = '小乐乐' [ RunTime:0.004780s ]
+[2024-11-30T21:34:00+08:00][sql] CONNECT:[ UseTime:0.001325s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:34:00+08:00][sql] SHOW FULL COLUMNS FROM `bot_dau` [ RunTime:0.002315s ]
+[2024-11-30T21:34:00+08:00][sql] SELECT SUM(`received_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000978s ]
+[2024-11-30T21:34:00+08:00][sql] SELECT SUM(`sent_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000246s ]
+[2024-11-30T21:34:00+08:00][sql] SELECT SUM(`user_count`) AS think_sum FROM `bot_dau` [ RunTime:0.000167s ]
+[2024-11-30T21:34:00+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.000830s ]
+[2024-11-30T21:34:00+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.000291s ]
+[2024-11-30T21:40:41+08:00][sql] CONNECT:[ UseTime:0.001447s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:40:41+08:00][sql] CREATE TABLE IF NOT EXISTS users_bot (
+                        ID INT AUTO_INCREMENT PRIMARY KEY,
+                        QQ VARCHAR(255) NOT NULL,
+                        AppID VARCHAR(255) NOT NULL,
+                        Token VARCHAR(255) NOT NULL,
+                        AppSecret VARCHAR(255) NOT NULL,
+                        AccessToken VARCHAR(255) DEFAULT NULL,
+                        AccessToken_time BIGINT DEFAULT NULL
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; [ RunTime:0.001613s ]
+[2024-11-30T21:40:41+08:00][sql] CREATE TABLE IF NOT EXISTS users (
+                        id INT AUTO_INCREMENT PRIMARY KEY,
+                        username VARCHAR(255) NOT NULL UNIQUE,
+                        password VARCHAR(255) NOT NULL,
+                        qq VARCHAR(20) DEFAULT NULL,
+                        email VARCHAR(100) DEFAULT NULL,
+                        name VARCHAR(100) DEFAULT NULL,
+                        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; [ RunTime:0.001113s ]
+[2024-11-30T21:40:41+08:00][sql] CREATE TABLE IF NOT EXISTS log (
+                        id INT AUTO_INCREMENT PRIMARY KEY,
+                        time DATETIME NOT NULL,
+                        type VARCHAR(50) NOT NULL,
+                        union_openid VARCHAR(255) NOT NULL,
+                        group_openid VARCHAR(255) DEFAULT NULL,
+                        content TEXT NOT NULL
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; [ RunTime:0.001168s ]
+[2024-11-30T21:40:41+08:00][sql] CREATE TABLE IF NOT EXISTS bot_dau (
+                        id INT AUTO_INCREMENT PRIMARY KEY,
+                        date DATE NOT NULL,
+                        received_messages INT DEFAULT 0,
+                        sent_messages INT DEFAULT 0,
+                        user_count INT DEFAULT 0,
+                        group_count INT DEFAULT 0,
+                        usage_frequency INT DEFAULT 0,
+                        channel_private_chat INT DEFAULT 0,
+                        group_private_chat INT DEFAULT 0
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; [ RunTime:0.001168s ]
+[2024-11-30T21:40:41+08:00][sql] CREATE TABLE IF NOT EXISTS bot_userinfo (
+                        id INT NOT NULL AUTO_INCREMENT,
+                        union_openid VARCHAR(255) NOT NULL,
+                        permission VARCHAR(255) DEFAULT NULL,
+                        points INT DEFAULT 0,
+                        balance DECIMAL(10, 2) DEFAULT 0.00,
+                        sign_in_date DATE DEFAULT NULL,
+                        post_date DATE NOT NULL,
+                        post_count INT DEFAULT 0,
+                        PRIMARY KEY (id),
+                        UNIQUE KEY unique_union_openid (union_openid)
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; [ RunTime:0.001120s ]
+[2024-11-30T21:40:41+08:00][sql] TRUNCATE TABLE users_bot [ RunTime:0.027328s ]
+[2024-11-30T21:40:41+08:00][sql] ALTER TABLE users_bot AUTO_INCREMENT = 1 [ RunTime:0.006626s ]
+[2024-11-30T21:40:41+08:00][sql] TRUNCATE TABLE users [ RunTime:0.035765s ]
+[2024-11-30T21:40:41+08:00][sql] ALTER TABLE users AUTO_INCREMENT = 1 [ RunTime:0.007059s ]
+[2024-11-30T21:40:41+08:00][sql] TRUNCATE TABLE log [ RunTime:0.026265s ]
+[2024-11-30T21:40:41+08:00][sql] ALTER TABLE log AUTO_INCREMENT = 1 [ RunTime:0.007192s ]
+[2024-11-30T21:40:41+08:00][sql] TRUNCATE TABLE bot_dau [ RunTime:0.097384s ]
+[2024-11-30T21:40:41+08:00][sql] ALTER TABLE bot_dau AUTO_INCREMENT = 1 [ RunTime:0.010472s ]
+[2024-11-30T21:40:41+08:00][sql] TRUNCATE TABLE bot_userinfo [ RunTime:0.052890s ]
+[2024-11-30T21:40:41+08:00][sql] ALTER TABLE bot_userinfo AUTO_INCREMENT = 1 [ RunTime:0.005900s ]
+[2024-11-30T21:40:41+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001149s ]
+[2024-11-30T21:40:41+08:00][sql] INSERT INTO `users` SET `username` = 'xiaole' , `password` = 'e10adc3949ba59abbe56e057f20f883e' , `qq` = '54658686' , `email` = '656668846@qq.com' , `name` = '小乐乐' [ RunTime:0.002669s ]
+[2024-11-30T21:41:18+08:00][sql] CONNECT:[ UseTime:0.018530s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:41:18+08:00][sql] CREATE TABLE IF NOT EXISTS users_bot (
+                        ID INT AUTO_INCREMENT PRIMARY KEY,
+                        QQ VARCHAR(255) NOT NULL,
+                        AppID VARCHAR(255) NOT NULL,
+                        Token VARCHAR(255) NOT NULL,
+                        AppSecret VARCHAR(255) NOT NULL,
+                        AccessToken VARCHAR(255) DEFAULT NULL,
+                        AccessToken_time BIGINT DEFAULT NULL
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; [ RunTime:0.001789s ]
+[2024-11-30T21:41:18+08:00][sql] CREATE TABLE IF NOT EXISTS users (
+                        id INT AUTO_INCREMENT PRIMARY KEY,
+                        username VARCHAR(255) NOT NULL UNIQUE,
+                        password VARCHAR(255) NOT NULL,
+                        qq VARCHAR(20) DEFAULT NULL,
+                        email VARCHAR(100) DEFAULT NULL,
+                        name VARCHAR(100) DEFAULT NULL,
+                        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; [ RunTime:0.001316s ]
+[2024-11-30T21:41:18+08:00][sql] CREATE TABLE IF NOT EXISTS log (
+                        id INT AUTO_INCREMENT PRIMARY KEY,
+                        time DATETIME NOT NULL,
+                        type VARCHAR(50) NOT NULL,
+                        union_openid VARCHAR(255) NOT NULL,
+                        group_openid VARCHAR(255) DEFAULT NULL,
+                        content TEXT NOT NULL
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; [ RunTime:0.001154s ]
+[2024-11-30T21:41:18+08:00][sql] CREATE TABLE IF NOT EXISTS bot_dau (
+                        id INT AUTO_INCREMENT PRIMARY KEY,
+                        date DATE NOT NULL,
+                        received_messages INT DEFAULT 0,
+                        sent_messages INT DEFAULT 0,
+                        user_count INT DEFAULT 0,
+                        group_count INT DEFAULT 0,
+                        usage_frequency INT DEFAULT 0,
+                        channel_private_chat INT DEFAULT 0,
+                        group_private_chat INT DEFAULT 0
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; [ RunTime:0.001231s ]
+[2024-11-30T21:41:18+08:00][sql] CREATE TABLE IF NOT EXISTS bot_userinfo (
+                        id INT NOT NULL AUTO_INCREMENT,
+                        union_openid VARCHAR(255) NOT NULL,
+                        permission VARCHAR(255) DEFAULT NULL,
+                        points INT DEFAULT 0,
+                        balance DECIMAL(10, 2) DEFAULT 0.00,
+                        sign_in_date DATE DEFAULT NULL,
+                        post_date DATE NOT NULL,
+                        post_count INT DEFAULT 0,
+                        PRIMARY KEY (id),
+                        UNIQUE KEY unique_union_openid (union_openid)
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; [ RunTime:0.001551s ]
+[2024-11-30T21:41:18+08:00][sql] TRUNCATE TABLE users_bot [ RunTime:0.028311s ]
+[2024-11-30T21:41:18+08:00][sql] ALTER TABLE users_bot AUTO_INCREMENT = 1 [ RunTime:0.007140s ]
+[2024-11-30T21:41:18+08:00][sql] TRUNCATE TABLE users [ RunTime:0.035252s ]
+[2024-11-30T21:41:18+08:00][sql] ALTER TABLE users AUTO_INCREMENT = 1 [ RunTime:0.006548s ]
+[2024-11-30T21:41:18+08:00][sql] TRUNCATE TABLE log [ RunTime:0.026638s ]
+[2024-11-30T21:41:18+08:00][sql] ALTER TABLE log AUTO_INCREMENT = 1 [ RunTime:0.007054s ]
+[2024-11-30T21:41:18+08:00][sql] TRUNCATE TABLE bot_dau [ RunTime:0.025453s ]
+[2024-11-30T21:41:18+08:00][sql] ALTER TABLE bot_dau AUTO_INCREMENT = 1 [ RunTime:0.007678s ]
+[2024-11-30T21:41:18+08:00][sql] TRUNCATE TABLE bot_userinfo [ RunTime:0.026057s ]
+[2024-11-30T21:41:18+08:00][sql] ALTER TABLE bot_userinfo AUTO_INCREMENT = 1 [ RunTime:0.007169s ]
+[2024-11-30T21:41:18+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001295s ]
+[2024-11-30T21:41:18+08:00][sql] INSERT INTO `users` SET `username` = 'xiaole' , `password` = 'e10adc3949ba59abbe56e057f20f883e' , `qq` = '54658686' , `email` = '656668846@qq.com' , `name` = '小乐乐' [ RunTime:0.003108s ]
+[2024-11-30T21:41:24+08:00][sql] CONNECT:[ UseTime:0.002125s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:41:24+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.002405s ]
+[2024-11-30T21:41:24+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.001027s ]
+[2024-11-30T21:41:29+08:00][sql] CONNECT:[ UseTime:0.001750s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:41:29+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.002623s ]
+[2024-11-30T21:41:29+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000944s ]
+[2024-11-30T21:41:32+08:00][sql] CONNECT:[ UseTime:0.001786s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:41:32+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.002272s ]
+[2024-11-30T21:41:32+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000944s ]
+[2024-11-30T21:41:45+08:00][sql] CONNECT:[ UseTime:0.001422s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:41:45+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.003174s ]
+[2024-11-30T21:41:45+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000966s ]
+[2024-11-30T21:41:54+08:00][sql] CONNECT:[ UseTime:0.002191s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:41:54+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.003069s ]
+[2024-11-30T21:41:54+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.001002s ]
+[2024-11-30T21:42:07+08:00][sql] CONNECT:[ UseTime:0.001359s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:42:07+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001183s ]
+[2024-11-30T21:42:07+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000532s ]
+[2024-11-30T21:43:23+08:00][sql] CONNECT:[ UseTime:0.012009s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:43:23+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.002709s ]
+[2024-11-30T21:43:23+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.001146s ]
+[2024-11-30T21:43:34+08:00][sql] CONNECT:[ UseTime:0.001700s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:43:34+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.002258s ]
+[2024-11-30T21:43:34+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000714s ]
+[2024-11-30T21:43:40+08:00][sql] CONNECT:[ UseTime:0.002287s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:43:40+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.004048s ]
+[2024-11-30T21:43:40+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.001379s ]
+[2024-11-30T21:43:57+08:00][sql] CONNECT:[ UseTime:0.000895s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:43:57+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001550s ]
+[2024-11-30T21:43:57+08:00][sql] SELECT * FROM `users` WHERE  `username` = '1' LIMIT 1 [ RunTime:0.000686s ]
+[2024-11-30T21:44:02+08:00][sql] CONNECT:[ UseTime:0.001868s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:44:02+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.003404s ]
+[2024-11-30T21:44:02+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaolele' LIMIT 1 [ RunTime:0.001080s ]
+[2024-11-30T21:44:06+08:00][sql] CONNECT:[ UseTime:0.001098s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:44:06+08:00][sql] SHOW FULL COLUMNS FROM `bot_dau` [ RunTime:0.001113s ]
+[2024-11-30T21:44:06+08:00][sql] SELECT SUM(`received_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000360s ]
+[2024-11-30T21:44:06+08:00][sql] SELECT SUM(`sent_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000158s ]
+[2024-11-30T21:44:06+08:00][sql] SELECT SUM(`user_count`) AS think_sum FROM `bot_dau` [ RunTime:0.000147s ]
+[2024-11-30T21:44:06+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.000746s ]
+[2024-11-30T21:44:06+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.000241s ]
+[2024-11-30T21:44:08+08:00][sql] CONNECT:[ UseTime:0.001552s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:44:08+08:00][sql] SHOW FULL COLUMNS FROM `bot_dau` [ RunTime:0.002343s ]
+[2024-11-30T21:44:08+08:00][sql] SELECT SUM(`received_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000802s ]
+[2024-11-30T21:44:08+08:00][sql] SELECT SUM(`sent_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000464s ]
+[2024-11-30T21:44:08+08:00][sql] SELECT SUM(`user_count`) AS think_sum FROM `bot_dau` [ RunTime:0.000396s ]
+[2024-11-30T21:44:08+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001517s ]
+[2024-11-30T21:44:08+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.000632s ]
+[2024-11-30T21:44:09+08:00][sql] CONNECT:[ UseTime:0.002265s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:44:09+08:00][sql] SHOW FULL COLUMNS FROM `bot_dau` [ RunTime:0.003521s ]
+[2024-11-30T21:44:09+08:00][sql] SELECT SUM(`received_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000966s ]
+[2024-11-30T21:44:09+08:00][sql] SELECT SUM(`sent_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000992s ]
+[2024-11-30T21:44:09+08:00][sql] SELECT SUM(`user_count`) AS think_sum FROM `bot_dau` [ RunTime:0.000283s ]
+[2024-11-30T21:44:09+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001009s ]
+[2024-11-30T21:44:09+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.000578s ]
+[2024-11-30T21:44:10+08:00][sql] CONNECT:[ UseTime:0.001903s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:44:10+08:00][sql] SHOW FULL COLUMNS FROM `bot_dau` [ RunTime:0.001437s ]
+[2024-11-30T21:44:10+08:00][sql] SELECT SUM(`received_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000862s ]
+[2024-11-30T21:44:10+08:00][sql] SELECT SUM(`sent_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000578s ]
+[2024-11-30T21:44:10+08:00][sql] SELECT SUM(`user_count`) AS think_sum FROM `bot_dau` [ RunTime:0.000526s ]
+[2024-11-30T21:44:10+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001894s ]
+[2024-11-30T21:44:10+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.000779s ]
+[2024-11-30T21:44:16+08:00][sql] CONNECT:[ UseTime:0.001801s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:44:16+08:00][sql] SHOW FULL COLUMNS FROM `bot_dau` [ RunTime:0.003634s ]
+[2024-11-30T21:44:16+08:00][sql] SELECT SUM(`received_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000777s ]
+[2024-11-30T21:44:16+08:00][sql] SELECT SUM(`sent_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000587s ]
+[2024-11-30T21:44:16+08:00][sql] SELECT SUM(`user_count`) AS think_sum FROM `bot_dau` [ RunTime:0.000674s ]
+[2024-11-30T21:44:16+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.000946s ]
+[2024-11-30T21:44:16+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.000216s ]
+[2024-11-30T21:44:17+08:00][sql] CONNECT:[ UseTime:0.002007s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:44:17+08:00][sql] SHOW FULL COLUMNS FROM `bot_dau` [ RunTime:0.001332s ]
+[2024-11-30T21:44:17+08:00][sql] SELECT SUM(`received_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000631s ]
+[2024-11-30T21:44:17+08:00][sql] SELECT SUM(`sent_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000297s ]
+[2024-11-30T21:44:17+08:00][sql] SELECT SUM(`user_count`) AS think_sum FROM `bot_dau` [ RunTime:0.000276s ]
+[2024-11-30T21:44:17+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001586s ]
+[2024-11-30T21:44:17+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.000522s ]
+[2024-11-30T21:44:22+08:00][sql] CONNECT:[ UseTime:0.002097s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:44:22+08:00][sql] SHOW FULL COLUMNS FROM `bot_dau` [ RunTime:0.001009s ]
+[2024-11-30T21:44:22+08:00][sql] SELECT SUM(`received_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000738s ]
+[2024-11-30T21:44:22+08:00][sql] SELECT SUM(`sent_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000548s ]
+[2024-11-30T21:44:22+08:00][sql] SELECT SUM(`user_count`) AS think_sum FROM `bot_dau` [ RunTime:0.000379s ]
+[2024-11-30T21:44:22+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001530s ]
+[2024-11-30T21:44:22+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.000480s ]
+[2024-11-30T21:44:24+08:00][sql] CONNECT:[ UseTime:0.014975s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:44:24+08:00][sql] SHOW FULL COLUMNS FROM `bot_dau` [ RunTime:0.002172s ]
+[2024-11-30T21:44:24+08:00][sql] SELECT SUM(`received_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000723s ]
+[2024-11-30T21:44:24+08:00][sql] SELECT SUM(`sent_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000408s ]
+[2024-11-30T21:44:24+08:00][sql] SELECT SUM(`user_count`) AS think_sum FROM `bot_dau` [ RunTime:0.000611s ]
+[2024-11-30T21:44:24+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001648s ]
+[2024-11-30T21:44:24+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.000779s ]
+[2024-11-30T21:44:26+08:00][sql] CONNECT:[ UseTime:0.020428s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:44:26+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001067s ]
+[2024-11-30T21:44:26+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000673s ]
+[2024-11-30T21:44:29+08:00][sql] CONNECT:[ UseTime:0.001746s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:44:29+08:00][sql] SHOW FULL COLUMNS FROM `bot_dau` [ RunTime:0.001086s ]
+[2024-11-30T21:44:29+08:00][sql] SELECT SUM(`received_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000292s ]
+[2024-11-30T21:44:29+08:00][sql] SELECT SUM(`sent_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000351s ]
+[2024-11-30T21:44:29+08:00][sql] SELECT SUM(`user_count`) AS think_sum FROM `bot_dau` [ RunTime:0.000296s ]
+[2024-11-30T21:44:29+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001388s ]
+[2024-11-30T21:44:29+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.000558s ]
+[2024-11-30T21:44:30+08:00][sql] CONNECT:[ UseTime:0.001010s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:44:30+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001730s ]
+[2024-11-30T21:44:30+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000604s ]
+[2024-11-30T21:44:36+08:00][sql] CONNECT:[ UseTime:0.006563s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:44:36+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002514s ]
+[2024-11-30T21:44:36+08:00][sql] INSERT INTO `users_bot` SET `QQ` = '11' , `AppID` = '21344' , `Token` = '214' , `AppSecret` = '124' [ RunTime:0.004640s ]
+[2024-11-30T21:44:38+08:00][sql] CONNECT:[ UseTime:0.001422s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:44:38+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001464s ]
+[2024-11-30T21:44:38+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000483s ]
+[2024-11-30T21:44:44+08:00][sql] CONNECT:[ UseTime:0.003484s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:44:44+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.002229s ]
+[2024-11-30T21:44:44+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000890s ]
+[2024-11-30T21:44:48+08:00][sql] CONNECT:[ UseTime:0.001394s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:44:48+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001233s ]
+[2024-11-30T21:44:48+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000554s ]
+[2024-11-30T21:44:51+08:00][sql] CONNECT:[ UseTime:0.001481s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:44:51+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.003060s ]
+[2024-11-30T21:44:51+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000853s ]
+[2024-11-30T21:44:56+08:00][sql] CONNECT:[ UseTime:0.007866s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:44:56+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.002667s ]
+[2024-11-30T21:44:56+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000850s ]
+[2024-11-30T21:44:57+08:00][sql] CONNECT:[ UseTime:0.001717s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:44:57+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.002305s ]
+[2024-11-30T21:44:57+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.001278s ]
+[2024-11-30T21:44:57+08:00][sql] CONNECT:[ UseTime:0.025355s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:44:57+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.002967s ]
+[2024-11-30T21:44:57+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.001209s ]
+[2024-11-30T21:45:04+08:00][sql] CONNECT:[ UseTime:0.002166s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:45:04+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001820s ]
+[2024-11-30T21:45:04+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.001164s ]
+[2024-11-30T21:45:47+08:00][sql] CONNECT:[ UseTime:0.001785s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:45:47+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.002103s ]
+[2024-11-30T21:45:47+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000681s ]
+[2024-11-30T21:45:53+08:00][sql] CONNECT:[ UseTime:0.001729s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:45:53+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001118s ]
+[2024-11-30T21:45:53+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000750s ]
+[2024-11-30T21:45:54+08:00][sql] CONNECT:[ UseTime:0.002009s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:45:54+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.002319s ]
+[2024-11-30T21:45:54+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000923s ]
+[2024-11-30T21:45:55+08:00][sql] CONNECT:[ UseTime:0.018027s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:45:55+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.002253s ]
+[2024-11-30T21:45:55+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000916s ]
+[2024-11-30T21:45:55+08:00][sql] CONNECT:[ UseTime:0.001447s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:45:55+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001685s ]
+[2024-11-30T21:45:55+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000402s ]
+[2024-11-30T21:45:55+08:00][sql] CONNECT:[ UseTime:0.014622s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:45:55+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001159s ]
+[2024-11-30T21:45:55+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000853s ]
+[2024-11-30T21:46:16+08:00][sql] CONNECT:[ UseTime:0.016846s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:46:16+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002916s ]
+[2024-11-30T21:46:16+08:00][sql] INSERT INTO `log` SET `time` = '2024-11-30 21:46:16' , `type` = '回调验证' , `union_openid` = '102450011' , `group_openid` = '-' , `content` = '-' [ RunTime:0.005721s ]
+[2024-11-30T21:46:16+08:00][sql] SELECT COUNT(*) AS think_count FROM `log` [ RunTime:0.002478s ]
+[2024-11-30T21:46:23+08:00][sql] CONNECT:[ UseTime:0.006562s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:46:23+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.002722s ]
+[2024-11-30T21:46:23+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000659s ]
+[2024-11-30T21:46:59+08:00][sql] CONNECT:[ UseTime:0.001197s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:46:59+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001167s ]
+[2024-11-30T21:46:59+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000190s ]
+[2024-11-30T21:47:01+08:00][sql] CONNECT:[ UseTime:0.023454s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:47:01+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001334s ]
+[2024-11-30T21:47:01+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000569s ]
+[2024-11-30T21:47:09+08:00][sql] CONNECT:[ UseTime:0.001590s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:47:09+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.003228s ]
+[2024-11-30T21:47:09+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000809s ]
+[2024-11-30T21:47:10+08:00][sql] CONNECT:[ UseTime:0.001738s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:47:10+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001759s ]
+[2024-11-30T21:47:10+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000503s ]
+[2024-11-30T21:47:10+08:00][sql] CONNECT:[ UseTime:0.002750s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:47:10+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001221s ]
+[2024-11-30T21:47:10+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000316s ]
+[2024-11-30T21:47:10+08:00][sql] CONNECT:[ UseTime:0.001794s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:47:10+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001250s ]
+[2024-11-30T21:47:10+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000197s ]
+[2024-11-30T21:47:11+08:00][sql] CONNECT:[ UseTime:0.001648s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:47:11+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001830s ]
+[2024-11-30T21:47:11+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000877s ]
+[2024-11-30T21:47:11+08:00][sql] CONNECT:[ UseTime:0.001584s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:47:11+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001835s ]
+[2024-11-30T21:47:11+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000513s ]
+[2024-11-30T21:47:11+08:00][sql] CONNECT:[ UseTime:0.002108s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:47:11+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001128s ]
+[2024-11-30T21:47:11+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000793s ]
+[2024-11-30T21:47:11+08:00][sql] CONNECT:[ UseTime:0.004763s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:47:11+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.012786s ]
+[2024-11-30T21:47:11+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000536s ]
+[2024-11-30T21:47:12+08:00][sql] CONNECT:[ UseTime:0.002041s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:47:12+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.002695s ]
+[2024-11-30T21:47:12+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000607s ]
+[2024-11-30T21:47:12+08:00][sql] CONNECT:[ UseTime:0.017048s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:47:12+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001179s ]
+[2024-11-30T21:47:12+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000589s ]
+[2024-11-30T21:47:12+08:00][sql] CONNECT:[ UseTime:0.001457s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:47:12+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001148s ]
+[2024-11-30T21:47:12+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000585s ]
+[2024-11-30T21:47:12+08:00][sql] CONNECT:[ UseTime:0.001770s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:47:12+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001026s ]
+[2024-11-30T21:47:12+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000508s ]
+[2024-11-30T21:47:12+08:00][sql] CONNECT:[ UseTime:0.001334s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:47:12+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001320s ]
+[2024-11-30T21:47:12+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000475s ]
+[2024-11-30T21:47:12+08:00][sql] CONNECT:[ UseTime:0.001577s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:47:12+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.003134s ]
+[2024-11-30T21:47:12+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000440s ]
+[2024-11-30T21:47:12+08:00][sql] CONNECT:[ UseTime:0.001456s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:47:12+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001878s ]
+[2024-11-30T21:47:12+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000636s ]
+[2024-11-30T21:47:13+08:00][sql] CONNECT:[ UseTime:0.001757s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:47:13+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.002293s ]
+[2024-11-30T21:47:13+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000841s ]
+[2024-11-30T21:49:14+08:00][sql] CONNECT:[ UseTime:0.001894s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:49:14+08:00][sql] CREATE TABLE IF NOT EXISTS users_bot (
+                        ID INT AUTO_INCREMENT PRIMARY KEY,
+                        QQ VARCHAR(255) NOT NULL,
+                        AppID VARCHAR(255) NOT NULL,
+                        Token VARCHAR(255) NOT NULL,
+                        AppSecret VARCHAR(255) NOT NULL,
+                        AccessToken VARCHAR(255) DEFAULT NULL,
+                        AccessToken_time BIGINT DEFAULT NULL
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; [ RunTime:0.004852s ]
+[2024-11-30T21:49:14+08:00][sql] CREATE TABLE IF NOT EXISTS users (
+                        id INT AUTO_INCREMENT PRIMARY KEY,
+                        username VARCHAR(255) NOT NULL UNIQUE,
+                        password VARCHAR(255) NOT NULL,
+                        qq VARCHAR(20) DEFAULT NULL,
+                        email VARCHAR(100) DEFAULT NULL,
+                        name VARCHAR(100) DEFAULT NULL,
+                        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; [ RunTime:0.002576s ]
+[2024-11-30T21:49:14+08:00][sql] CREATE TABLE IF NOT EXISTS log (
+                        id INT AUTO_INCREMENT PRIMARY KEY,
+                        time DATETIME NOT NULL,
+                        type VARCHAR(50) NOT NULL,
+                        union_openid VARCHAR(255) NOT NULL,
+                        group_openid VARCHAR(255) DEFAULT NULL,
+                        content TEXT NOT NULL
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; [ RunTime:0.002556s ]
+[2024-11-30T21:49:14+08:00][sql] CREATE TABLE IF NOT EXISTS bot_dau (
+                        id INT AUTO_INCREMENT PRIMARY KEY,
+                        date DATE NOT NULL,
+                        received_messages INT DEFAULT 0,
+                        sent_messages INT DEFAULT 0,
+                        user_count INT DEFAULT 0,
+                        group_count INT DEFAULT 0,
+                        usage_frequency INT DEFAULT 0,
+                        channel_private_chat INT DEFAULT 0,
+                        group_private_chat INT DEFAULT 0
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; [ RunTime:0.001826s ]
+[2024-11-30T21:49:14+08:00][sql] CREATE TABLE IF NOT EXISTS bot_userinfo (
+                        id INT NOT NULL AUTO_INCREMENT,
+                        union_openid VARCHAR(255) NOT NULL,
+                        permission VARCHAR(255) DEFAULT NULL,
+                        points INT DEFAULT 0,
+                        balance DECIMAL(10, 2) DEFAULT 0.00,
+                        sign_in_date DATE DEFAULT NULL,
+                        post_date DATE NOT NULL,
+                        post_count INT DEFAULT 0,
+                        PRIMARY KEY (id),
+                        UNIQUE KEY unique_union_openid (union_openid)
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; [ RunTime:0.002580s ]
+[2024-11-30T21:49:14+08:00][sql] TRUNCATE TABLE users_bot [ RunTime:0.045176s ]
+[2024-11-30T21:49:14+08:00][sql] ALTER TABLE users_bot AUTO_INCREMENT = 1 [ RunTime:0.009390s ]
+[2024-11-30T21:49:14+08:00][sql] TRUNCATE TABLE users [ RunTime:0.046990s ]
+[2024-11-30T21:49:14+08:00][sql] ALTER TABLE users AUTO_INCREMENT = 1 [ RunTime:0.009560s ]
+[2024-11-30T21:49:14+08:00][sql] TRUNCATE TABLE log [ RunTime:0.035175s ]
+[2024-11-30T21:49:14+08:00][sql] ALTER TABLE log AUTO_INCREMENT = 1 [ RunTime:0.008794s ]
+[2024-11-30T21:49:14+08:00][sql] TRUNCATE TABLE bot_dau [ RunTime:0.032003s ]
+[2024-11-30T21:49:14+08:00][sql] ALTER TABLE bot_dau AUTO_INCREMENT = 1 [ RunTime:0.007496s ]
+[2024-11-30T21:49:14+08:00][sql] TRUNCATE TABLE bot_userinfo [ RunTime:0.029463s ]
+[2024-11-30T21:49:14+08:00][sql] ALTER TABLE bot_userinfo AUTO_INCREMENT = 1 [ RunTime:0.007256s ]
+[2024-11-30T21:49:14+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.000897s ]
+[2024-11-30T21:49:14+08:00][sql] INSERT INTO `users` SET `username` = 'xiaole' , `password` = '37ead208eb59f2cea05b7618ad62c52f' , `qq` = '3057054240' , `email` = '3057054240@qq.com' , `name` = '小乐' [ RunTime:0.003521s ]
+[2024-11-30T21:49:17+08:00][sql] CONNECT:[ UseTime:0.001540s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:49:17+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001664s ]
+[2024-11-30T21:49:17+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000785s ]
+[2024-11-30T21:49:23+08:00][sql] CONNECT:[ UseTime:0.001441s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:49:23+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001909s ]
+[2024-11-30T21:49:23+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000876s ]
+[2024-11-30T21:54:30+08:00][sql] CONNECT:[ UseTime:0.014085s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:54:30+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001358s ]
+[2024-11-30T21:54:30+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000292s ]
+[2024-11-30T21:54:33+08:00][sql] CONNECT:[ UseTime:0.001377s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:54:33+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001840s ]
+[2024-11-30T21:54:33+08:00][sql] INSERT INTO `log` SET `time` = '2024-11-30 21:54:33' , `type` = '回调验证' , `union_openid` = '102450011' , `group_openid` = '-' , `content` = '-' [ RunTime:0.007446s ]
+[2024-11-30T21:54:33+08:00][sql] SELECT COUNT(*) AS think_count FROM `log` [ RunTime:0.001569s ]
+[2024-11-30T21:54:54+08:00][sql] CONNECT:[ UseTime:0.002225s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:54:54+08:00][sql] CREATE TABLE IF NOT EXISTS users_bot (
+                        ID INT AUTO_INCREMENT PRIMARY KEY,
+                        QQ VARCHAR(255) NOT NULL,
+                        AppID VARCHAR(255) NOT NULL,
+                        Token VARCHAR(255) NOT NULL,
+                        AppSecret VARCHAR(255) NOT NULL,
+                        AccessToken VARCHAR(255) DEFAULT NULL,
+                        AccessToken_time BIGINT DEFAULT NULL
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; [ RunTime:0.002926s ]
+[2024-11-30T21:54:54+08:00][sql] CREATE TABLE IF NOT EXISTS users (
+                        id INT AUTO_INCREMENT PRIMARY KEY,
+                        username VARCHAR(255) NOT NULL UNIQUE,
+                        password VARCHAR(255) NOT NULL,
+                        qq VARCHAR(20) DEFAULT NULL,
+                        email VARCHAR(100) DEFAULT NULL,
+                        name VARCHAR(100) DEFAULT NULL,
+                        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; [ RunTime:0.002322s ]
+[2024-11-30T21:54:54+08:00][sql] CREATE TABLE IF NOT EXISTS log (
+                        id INT AUTO_INCREMENT PRIMARY KEY,
+                        time DATETIME NOT NULL,
+                        type VARCHAR(50) NOT NULL,
+                        union_openid VARCHAR(255) NOT NULL,
+                        group_openid VARCHAR(255) DEFAULT NULL,
+                        content TEXT NOT NULL
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; [ RunTime:0.002426s ]
+[2024-11-30T21:54:54+08:00][sql] CREATE TABLE IF NOT EXISTS bot_dau (
+                        id INT AUTO_INCREMENT PRIMARY KEY,
+                        date DATE NOT NULL,
+                        received_messages INT DEFAULT 0,
+                        sent_messages INT DEFAULT 0,
+                        user_count INT DEFAULT 0,
+                        group_count INT DEFAULT 0,
+                        usage_frequency INT DEFAULT 0,
+                        channel_private_chat INT DEFAULT 0,
+                        group_private_chat INT DEFAULT 0
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; [ RunTime:0.002186s ]
+[2024-11-30T21:54:54+08:00][sql] CREATE TABLE IF NOT EXISTS bot_userinfo (
+                        id INT NOT NULL AUTO_INCREMENT,
+                        union_openid VARCHAR(255) NOT NULL,
+                        permission VARCHAR(255) DEFAULT NULL,
+                        points INT DEFAULT 0,
+                        balance DECIMAL(10, 2) DEFAULT 0.00,
+                        sign_in_date DATE DEFAULT NULL,
+                        post_date DATE NOT NULL,
+                        post_count INT DEFAULT 0,
+                        PRIMARY KEY (id),
+                        UNIQUE KEY unique_union_openid (union_openid)
+                    ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4; [ RunTime:0.002076s ]
+[2024-11-30T21:54:54+08:00][sql] TRUNCATE TABLE users_bot [ RunTime:0.033392s ]
+[2024-11-30T21:54:54+08:00][sql] ALTER TABLE users_bot AUTO_INCREMENT = 1 [ RunTime:0.007394s ]
+[2024-11-30T21:54:54+08:00][sql] TRUNCATE TABLE users [ RunTime:0.074432s ]
+[2024-11-30T21:54:54+08:00][sql] ALTER TABLE users AUTO_INCREMENT = 1 [ RunTime:0.007769s ]
+[2024-11-30T21:54:54+08:00][sql] TRUNCATE TABLE log [ RunTime:0.032181s ]
+[2024-11-30T21:54:54+08:00][sql] ALTER TABLE log AUTO_INCREMENT = 1 [ RunTime:0.006825s ]
+[2024-11-30T21:54:54+08:00][sql] TRUNCATE TABLE bot_dau [ RunTime:0.025403s ]
+[2024-11-30T21:54:54+08:00][sql] ALTER TABLE bot_dau AUTO_INCREMENT = 1 [ RunTime:0.006334s ]
+[2024-11-30T21:54:54+08:00][sql] TRUNCATE TABLE bot_userinfo [ RunTime:0.027196s ]
+[2024-11-30T21:54:54+08:00][sql] ALTER TABLE bot_userinfo AUTO_INCREMENT = 1 [ RunTime:0.006697s ]
+[2024-11-30T21:54:54+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.002710s ]
+[2024-11-30T21:54:54+08:00][sql] INSERT INTO `users` SET `username` = 'xiaole' , `password` = '37EAD208EB59F2CEA05B7618AD62C52F' , `qq` = '3057054240' , `email` = '3057054240@qq.com' , `name` = '小乐' [ RunTime:0.016075s ]
+[2024-11-30T21:54:57+08:00][sql] CONNECT:[ UseTime:0.014044s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:54:57+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001067s ]
+[2024-11-30T21:54:57+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000430s ]
+[2024-11-30T21:54:59+08:00][sql] CONNECT:[ UseTime:0.001403s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:54:59+08:00][sql] SHOW FULL COLUMNS FROM `bot_dau` [ RunTime:0.001355s ]
+[2024-11-30T21:54:59+08:00][sql] SELECT SUM(`received_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000633s ]
+[2024-11-30T21:54:59+08:00][sql] SELECT SUM(`sent_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000481s ]
+[2024-11-30T21:54:59+08:00][sql] SELECT SUM(`user_count`) AS think_sum FROM `bot_dau` [ RunTime:0.000430s ]
+[2024-11-30T21:54:59+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.000819s ]
+[2024-11-30T21:54:59+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.000433s ]
+[2024-11-30T21:56:05+08:00][sql] CONNECT:[ UseTime:0.001603s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:56:05+08:00][sql] SHOW FULL COLUMNS FROM `bot_dau` [ RunTime:0.001220s ]
+[2024-11-30T21:56:05+08:00][sql] SELECT SUM(`received_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000402s ]
+[2024-11-30T21:56:05+08:00][sql] SELECT SUM(`sent_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000396s ]
+[2024-11-30T21:56:05+08:00][sql] SELECT SUM(`user_count`) AS think_sum FROM `bot_dau` [ RunTime:0.000204s ]
+[2024-11-30T21:56:05+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.000900s ]
+[2024-11-30T21:56:05+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.000568s ]
+[2024-11-30T21:56:07+08:00][sql] CONNECT:[ UseTime:0.001389s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:56:07+08:00][sql] SHOW FULL COLUMNS FROM `bot_dau` [ RunTime:0.001077s ]
+[2024-11-30T21:56:07+08:00][sql] SELECT SUM(`received_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000412s ]
+[2024-11-30T21:56:07+08:00][sql] SELECT SUM(`sent_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000270s ]
+[2024-11-30T21:56:07+08:00][sql] SELECT SUM(`user_count`) AS think_sum FROM `bot_dau` [ RunTime:0.000236s ]
+[2024-11-30T21:56:07+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.000716s ]
+[2024-11-30T21:56:07+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.000331s ]
+[2024-11-30T21:56:23+08:00][sql] CONNECT:[ UseTime:0.001478s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:56:23+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.003173s ]
+[2024-11-30T21:56:23+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000983s ]
+[2024-11-30T21:56:25+08:00][sql] CONNECT:[ UseTime:0.001731s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:56:25+08:00][sql] SHOW FULL COLUMNS FROM `bot_dau` [ RunTime:0.002124s ]
+[2024-11-30T21:56:25+08:00][sql] SELECT SUM(`received_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000872s ]
+[2024-11-30T21:56:25+08:00][sql] SELECT SUM(`sent_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000360s ]
+[2024-11-30T21:56:25+08:00][sql] SELECT SUM(`user_count`) AS think_sum FROM `bot_dau` [ RunTime:0.000265s ]
+[2024-11-30T21:56:25+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001530s ]
+[2024-11-30T21:56:25+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.000226s ]
+[2024-11-30T21:56:30+08:00][sql] CONNECT:[ UseTime:0.001392s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T21:56:30+08:00][sql] SHOW FULL COLUMNS FROM `bot_dau` [ RunTime:0.001010s ]
+[2024-11-30T21:56:30+08:00][sql] SELECT SUM(`received_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000248s ]
+[2024-11-30T21:56:30+08:00][sql] SELECT SUM(`sent_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000144s ]
+[2024-11-30T21:56:30+08:00][sql] SELECT SUM(`user_count`) AS think_sum FROM `bot_dau` [ RunTime:0.000174s ]
+[2024-11-30T21:56:30+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.000664s ]
+[2024-11-30T21:56:30+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.000185s ]
+[2024-11-30T22:12:11+08:00][sql] CONNECT:[ UseTime:0.001414s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T22:12:11+08:00][sql] SHOW FULL COLUMNS FROM `bot_dau` [ RunTime:0.001472s ]
+[2024-11-30T22:12:11+08:00][sql] SELECT SUM(`received_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000424s ]
+[2024-11-30T22:12:11+08:00][sql] SELECT SUM(`sent_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000217s ]
+[2024-11-30T22:12:11+08:00][sql] SELECT SUM(`user_count`) AS think_sum FROM `bot_dau` [ RunTime:0.000104s ]
+[2024-11-30T22:12:11+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.000637s ]
+[2024-11-30T22:12:11+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.000215s ]
+[2024-11-30T22:12:12+08:00][sql] CONNECT:[ UseTime:0.011976s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T22:12:12+08:00][sql] SHOW FULL COLUMNS FROM `bot_dau` [ RunTime:0.001057s ]
+[2024-11-30T22:12:12+08:00][sql] SELECT SUM(`received_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000374s ]
+[2024-11-30T22:12:12+08:00][sql] SELECT SUM(`sent_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000203s ]
+[2024-11-30T22:12:12+08:00][sql] SELECT SUM(`user_count`) AS think_sum FROM `bot_dau` [ RunTime:0.000184s ]
+[2024-11-30T22:12:12+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001107s ]
+[2024-11-30T22:12:12+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.000353s ]
+[2024-11-30T22:13:08+08:00][error] [0]模板文件不存在:D:\Desktop\x\php\ThinkPHP\app\index\view\index\.html[D:\Desktop\x\php\ThinkPHP\vendor\topthink\think-view\src\Think.php:128]
+[2024-11-30T22:14:27+08:00][sql] CONNECT:[ UseTime:0.016968s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T22:14:27+08:00][sql] SHOW FULL COLUMNS FROM `bot_dau` [ RunTime:0.001184s ]
+[2024-11-30T22:14:27+08:00][sql] SELECT SUM(`received_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000242s ]
+[2024-11-30T22:14:27+08:00][sql] SELECT SUM(`sent_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000111s ]
+[2024-11-30T22:14:27+08:00][sql] SELECT SUM(`user_count`) AS think_sum FROM `bot_dau` [ RunTime:0.000099s ]
+[2024-11-30T22:14:27+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.000593s ]
+[2024-11-30T22:14:27+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.000206s ]
+[2024-11-30T22:14:29+08:00][sql] CONNECT:[ UseTime:0.002460s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T22:14:29+08:00][sql] SHOW FULL COLUMNS FROM `bot_dau` [ RunTime:0.001018s ]
+[2024-11-30T22:14:29+08:00][sql] SELECT SUM(`received_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000226s ]
+[2024-11-30T22:14:29+08:00][sql] SELECT SUM(`sent_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000204s ]
+[2024-11-30T22:14:29+08:00][sql] SELECT SUM(`user_count`) AS think_sum FROM `bot_dau` [ RunTime:0.000133s ]
+[2024-11-30T22:14:29+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.000633s ]
+[2024-11-30T22:14:29+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.000208s ]
+[2024-11-30T22:14:42+08:00][error] [0]模板文件不存在:D:\Desktop\x\php\ThinkPHP\app\index\view\.html[D:\Desktop\x\php\ThinkPHP\vendor\topthink\think-view\src\Think.php:128]
+[2024-11-30T22:15:32+08:00][error] [2]Undefined variable $receivedMessages[D:\Desktop\x\php\ThinkPHP\runtime\index\temp\8ce6997bccd78750436b984b65a262d3.php:347]
+[2024-11-30T22:15:46+08:00][error] [0]模板文件不存在:D:\Desktop\x\php\ThinkPHP\app\index\view\.html[D:\Desktop\x\php\ThinkPHP\vendor\topthink\think-view\src\Think.php:128]
+[2024-11-30T22:16:54+08:00][sql] CONNECT:[ UseTime:0.021764s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T22:16:54+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001191s ]
+[2024-11-30T22:16:54+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000447s ]
+[2024-11-30T22:16:56+08:00][sql] CONNECT:[ UseTime:0.005891s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-30T22:16:56+08:00][sql] SHOW FULL COLUMNS FROM `bot_dau` [ RunTime:0.001096s ]
+[2024-11-30T22:16:56+08:00][sql] SELECT SUM(`received_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000265s ]
+[2024-11-30T22:16:56+08:00][sql] SELECT SUM(`sent_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000115s ]
+[2024-11-30T22:16:56+08:00][sql] SELECT SUM(`user_count`) AS think_sum FROM `bot_dau` [ RunTime:0.000104s ]
+[2024-11-30T22:16:56+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.000643s ]
+[2024-11-30T22:16:56+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.000200s ]

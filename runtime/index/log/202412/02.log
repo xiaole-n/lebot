@@ -1,0 +1,398 @@
+[2024-12-02T12:20:59+08:00][error] [10501]SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。[D:\Desktop\x\php\ThinkPHP\vendor\topthink\think-orm\src\db\PDOConnection.php:836]
+[2024-12-02T18:55:47+08:00][sql] CONNECT:[ UseTime:0.002238s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T18:55:47+08:00][error] SQL file not found: D:\Desktop\x\php\ThinkPHP\app\index\controller/install.sql
+[2024-12-02T18:55:51+08:00][sql] CONNECT:[ UseTime:0.001488s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T18:55:51+08:00][error] SQL file not found: D:\Desktop\x\php\ThinkPHP\app\index\controller/install.sql
+[2024-12-02T18:59:04+08:00][sql] CONNECT:[ UseTime:0.014823s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T18:59:04+08:00][error] SQL file not found: D:\Desktop\x\php\ThinkPHP\app\index\controller/install.sql
+[2024-12-02T18:59:10+08:00][sql] CONNECT:[ UseTime:0.002322s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T18:59:10+08:00][error] SQL file not found: D:\Desktop\x\php\ThinkPHP\app\index\controller/install.sql
+[2024-12-02T19:01:27+08:00][sql] CONNECT:[ UseTime:0.001437s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:01:27+08:00][error] SQL file not found: D:\Desktop\x\php\ThinkPHP\app\index\controller/install.sql
+[2024-12-02T19:01:29+08:00][sql] CONNECT:[ UseTime:0.002031s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:01:29+08:00][error] SQL file not found: D:\Desktop\x\php\ThinkPHP\app\index\controller/install.sql
+[2024-12-02T19:01:56+08:00][sql] CONNECT:[ UseTime:0.001411s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:01:56+08:00][error] SQL file not found: D:\Desktop\x\php\ThinkPHP\app\index\controller/install.sql
+[2024-12-02T19:02:01+08:00][sql] CONNECT:[ UseTime:0.001572s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:02:01+08:00][error] SQL file not found: D:\Desktop\x\php\ThinkPHP\app\index\controller/install.sql
+[2024-12-02T19:04:49+08:00][sql] CONNECT:[ UseTime:0.001625s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:04:49+08:00][error] Undefined variable $sql
+[2024-12-02T19:04:57+08:00][sql] CONNECT:[ UseTime:0.001321s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:04:57+08:00][error] Undefined variable $sql
+[2024-12-02T19:18:48+08:00][sql] CONNECT:[ UseTime:0.002308s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:18:48+08:00][sql] -- 创建用户机器人表
+CREATE TABLE IF NOT EXISTS users_bot (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    QQ VARCHAR(255) NOT NULL,
+    AppID VARCHAR(255) NOT NULL,
+    Token VARCHAR(255) NOT NULL,
+    AppSecret VARCHAR(255) NOT NULL,
+    AccessToken VARCHAR(255) DEFAULT NULL,
+    AccessToken_time BIGINT DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8; [ RunTime:0.039232s ]
+[2024-12-02T19:18:48+08:00][sql] -- 创建用户表
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    qq VARCHAR(20) DEFAULT NULL,
+    email VARCHAR(100) DEFAULT NULL,
+    name VARCHAR(100) DEFAULT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8; [ RunTime:0.038215s ]
+[2024-12-02T19:18:48+08:00][sql] -- 创建日志表
+CREATE TABLE IF NOT EXISTS log (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    time DATETIME NOT NULL,
+    type VARCHAR(50) NOT NULL,
+    union_openid VARCHAR(255) NOT NULL,
+    group_openid VARCHAR(255) DEFAULT NULL,
+    content TEXT NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8; [ RunTime:0.024697s ]
+[2024-12-02T19:18:48+08:00][sql] -- 创建机器人每日活跃数据表
+CREATE TABLE IF NOT EXISTS bot_dau (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    date DATE NOT NULL,
+    received_messages INT DEFAULT 0,
+    sent_messages INT DEFAULT 0,
+    user_count INT DEFAULT 0,
+    group_count INT DEFAULT 0,
+    usage_frequency INT DEFAULT 0,
+    channel_private_chat INT DEFAULT 0,
+    group_private_chat INT DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8; [ RunTime:0.025888s ]
+[2024-12-02T19:18:48+08:00][sql] -- 创建机器人用户信息表
+CREATE TABLE IF NOT EXISTS bot_userinfo (
+    id INT NOT NULL AUTO_INCREMENT,
+    union_openid VARCHAR(255) NOT NULL,
+    permission INT DEFAULT NULL,  -- 权限字段改为 INT 类型
+    points INT DEFAULT 0,
+    balance DECIMAL(10, 2) DEFAULT 0.00,
+    sign_in_date DATE DEFAULT NULL,
+    post_date DATE NOT NULL,
+    post_count INT DEFAULT 0,
+    PRIMARY KEY (id),
+    UNIQUE KEY unique_union_openid (union_openid)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8; [ RunTime:0.035521s ]
+[2024-12-02T19:18:48+08:00][sql] -- 创建机器人菜单表
+CREATE TABLE IF NOT EXISTS bot_menu (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    menu VARCHAR(255) NOT NULL,        -- 菜单名称或标题
+    content TEXT NOT NULL,             -- 菜单内容或描述
+    permission INT DEFAULT 0,          -- 权限级别，默认为0（普通用户）
+    status TINYINT(1) DEFAULT 1        -- 状态，1表示启用，0表示禁用，默认启用
+) ENGINE=InnoDB DEFAULT CHARSET=utf8; [ RunTime:0.020684s ]
+[2024-12-02T19:18:48+08:00][sql] TRUNCATE TABLE users_bot [ RunTime:0.032115s ]
+[2024-12-02T19:18:48+08:00][sql] ALTER TABLE users_bot AUTO_INCREMENT = 1 [ RunTime:0.017798s ]
+[2024-12-02T19:18:48+08:00][sql] TRUNCATE TABLE users [ RunTime:0.040237s ]
+[2024-12-02T19:18:48+08:00][sql] ALTER TABLE users AUTO_INCREMENT = 1 [ RunTime:0.009233s ]
+[2024-12-02T19:18:48+08:00][sql] TRUNCATE TABLE log [ RunTime:0.027824s ]
+[2024-12-02T19:18:48+08:00][sql] ALTER TABLE log AUTO_INCREMENT = 1 [ RunTime:0.010110s ]
+[2024-12-02T19:18:48+08:00][sql] TRUNCATE TABLE bot_dau [ RunTime:0.031706s ]
+[2024-12-02T19:18:48+08:00][sql] ALTER TABLE bot_dau AUTO_INCREMENT = 1 [ RunTime:0.008621s ]
+[2024-12-02T19:18:48+08:00][sql] TRUNCATE TABLE bot_userinfo [ RunTime:0.043018s ]
+[2024-12-02T19:18:48+08:00][sql] ALTER TABLE bot_userinfo AUTO_INCREMENT = 1 [ RunTime:0.009650s ]
+[2024-12-02T19:18:48+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.003389s ]
+[2024-12-02T19:18:48+08:00][sql] INSERT INTO `users` SET `username` = 'xiaole' , `password` = '37EAD208EB59F2CEA05B7618AD62C52F' , `qq` = '3057054240' , `email` = '3057054240@qq.com' , `name` = '小乐' [ RunTime:0.006687s ]
+[2024-12-02T19:18:52+08:00][sql] CONNECT:[ UseTime:0.009706s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:18:52+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.002854s ]
+[2024-12-02T19:18:52+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.001086s ]
+[2024-12-02T19:18:54+08:00][sql] CONNECT:[ UseTime:0.004961s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:18:54+08:00][sql] SHOW FULL COLUMNS FROM `bot_dau` [ RunTime:0.002494s ]
+[2024-12-02T19:18:54+08:00][sql] SELECT SUM(`received_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.006684s ]
+[2024-12-02T19:18:54+08:00][sql] SELECT SUM(`sent_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000620s ]
+[2024-12-02T19:18:54+08:00][sql] SELECT SUM(`user_count`) AS think_sum FROM `bot_dau` [ RunTime:0.000664s ]
+[2024-12-02T19:18:54+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002136s ]
+[2024-12-02T19:18:54+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.001559s ]
+[2024-12-02T19:22:09+08:00][sql] CONNECT:[ UseTime:0.002496s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:22:09+08:00][error] SQL file not found at: 1
+[2024-12-02T19:22:12+08:00][sql] CONNECT:[ UseTime:0.001541s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:22:12+08:00][error] SQL file not found at: 1
+[2024-12-02T19:22:15+08:00][sql] CONNECT:[ UseTime:0.001525s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:22:15+08:00][error] SQL file not found at: 1
+[2024-12-02T19:22:36+08:00][sql] CONNECT:[ UseTime:0.001765s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:22:36+08:00][error] SQL file not found at: 1
+[2024-12-02T19:22:46+08:00][sql] CONNECT:[ UseTime:0.002259s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:22:46+08:00][error] SQL file not found at: 1
+[2024-12-02T19:23:21+08:00][sql] CONNECT:[ UseTime:0.017680s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:23:21+08:00][error] SQL file not found at: 1
+[2024-12-02T19:23:24+08:00][sql] CONNECT:[ UseTime:0.018044s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:23:24+08:00][error] SQL file not found at: 1
+[2024-12-02T19:25:04+08:00][sql] CONNECT:[ UseTime:0.001778s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:25:04+08:00][error] SQL file not found at: D:\Desktop\x\php\ThinkPHP\helper/tool/install.sql
+[2024-12-02T19:25:06+08:00][sql] CONNECT:[ UseTime:0.015108s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:25:06+08:00][error] SQL file not found at: D:\Desktop\x\php\ThinkPHP\helper/tool/install.sql
+[2024-12-02T19:25:10+08:00][sql] CONNECT:[ UseTime:0.002255s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:25:10+08:00][error] SQL file not found at: D:\Desktop\x\php\ThinkPHP\helper/tool/install.sql
+[2024-12-02T19:25:15+08:00][sql] CONNECT:[ UseTime:0.001797s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:25:15+08:00][error] SQL file not found at: D:\Desktop\x\php\ThinkPHP\helper/tool/install.sql
+[2024-12-02T19:26:42+08:00][sql] CONNECT:[ UseTime:0.014952s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:26:42+08:00][error] [0]file_get_contents() expects at least 1 argument, 0 given[D:\Desktop\x\php\ThinkPHP\app\index\controller\Index.php:417]
+[2024-12-02T19:26:45+08:00][sql] CONNECT:[ UseTime:0.001785s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:26:45+08:00][error] [0]file_get_contents() expects at least 1 argument, 0 given[D:\Desktop\x\php\ThinkPHP\app\index\controller\Index.php:417]
+[2024-12-02T19:27:52+08:00][sql] CONNECT:[ UseTime:0.000921s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:27:52+08:00][error] SQL file not found at: helper/tool/install.sql
+[2024-12-02T19:28:09+08:00][sql] CONNECT:[ UseTime:0.017071s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:28:09+08:00][error] SQL file not found at: helper/tool/install.sql
+[2024-12-02T19:28:13+08:00][sql] CONNECT:[ UseTime:0.022854s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:28:13+08:00][error] SQL file not found at: helper/tool/install.sql
+[2024-12-02T19:28:18+08:00][sql] CONNECT:[ UseTime:0.021960s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:28:18+08:00][error] SQL file not found at: helper/tool/install.sql
+[2024-12-02T19:28:39+08:00][sql] CONNECT:[ UseTime:0.001099s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:28:39+08:00][error] SQL file not found at: ../helper/tool/install.sql
+[2024-12-02T19:28:42+08:00][sql] CONNECT:[ UseTime:0.023026s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:28:42+08:00][error] SQL file not found at: ../helper/tool/install.sql
+[2024-12-02T19:29:44+08:00][sql] CONNECT:[ UseTime:0.023198s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:29:44+08:00][error] SQL file not found at: ../helper/tool/install.sql
+[2024-12-02T19:29:52+08:00][sql] CONNECT:[ UseTime:0.025495s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:29:52+08:00][error] SQL file not found at: ../helper/tool/install.sql
+[2024-12-02T19:30:16+08:00][sql] CONNECT:[ UseTime:0.001281s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:30:16+08:00][error] SQL file not found at: ../../helper/tool/install.sql
+[2024-12-02T19:30:19+08:00][sql] CONNECT:[ UseTime:0.001628s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:30:19+08:00][error] SQL file not found at: ../../helper/tool/install.sql
+[2024-12-02T19:31:05+08:00][sql] CONNECT:[ UseTime:0.001526s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:31:05+08:00][sql] -- 创建用户机器人表
+CREATE TABLE IF NOT EXISTS users_bot (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    QQ VARCHAR(255) NOT NULL,
+    AppID VARCHAR(255) NOT NULL,
+    Token VARCHAR(255) NOT NULL,
+    AppSecret VARCHAR(255) NOT NULL,
+    AccessToken VARCHAR(255) DEFAULT NULL,
+    AccessToken_time BIGINT DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8; [ RunTime:0.034551s ]
+[2024-12-02T19:31:05+08:00][sql] -- 创建用户表
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    qq VARCHAR(20) DEFAULT NULL,
+    email VARCHAR(100) DEFAULT NULL,
+    name VARCHAR(100) DEFAULT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8; [ RunTime:0.060530s ]
+[2024-12-02T19:31:05+08:00][sql] -- 创建日志表
+CREATE TABLE IF NOT EXISTS log (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    time DATETIME NOT NULL,
+    type VARCHAR(50) NOT NULL,
+    union_openid VARCHAR(255) NOT NULL,
+    group_openid VARCHAR(255) DEFAULT NULL,
+    content TEXT NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8; [ RunTime:0.026735s ]
+[2024-12-02T19:31:05+08:00][sql] -- 创建机器人每日活跃数据表
+CREATE TABLE IF NOT EXISTS bot_dau (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    date DATE NOT NULL,
+    received_messages INT DEFAULT 0,
+    sent_messages INT DEFAULT 0,
+    user_count INT DEFAULT 0,
+    group_count INT DEFAULT 0,
+    usage_frequency INT DEFAULT 0,
+    channel_private_chat INT DEFAULT 0,
+    group_private_chat INT DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8; [ RunTime:0.023994s ]
+[2024-12-02T19:31:05+08:00][sql] -- 创建机器人用户信息表
+CREATE TABLE IF NOT EXISTS bot_userinfo (
+    id INT NOT NULL AUTO_INCREMENT,
+    union_openid VARCHAR(255) NOT NULL,
+    permission INT DEFAULT NULL,  -- 权限字段改为 INT 类型
+    points INT DEFAULT 0,
+    balance DECIMAL(10, 2) DEFAULT 0.00,
+    sign_in_date DATE DEFAULT NULL,
+    post_date DATE NOT NULL,
+    post_count INT DEFAULT 0,
+    PRIMARY KEY (id),
+    UNIQUE KEY unique_union_openid (union_openid)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8; [ RunTime:0.039469s ]
+[2024-12-02T19:31:05+08:00][sql] -- 创建机器人菜单表
+CREATE TABLE IF NOT EXISTS bot_menu (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    menu VARCHAR(255) NOT NULL,        -- 菜单名称或标题
+    content TEXT NOT NULL,             -- 菜单内容或描述
+    permission INT DEFAULT 0,          -- 权限级别，默认为0（普通用户）
+    status TINYINT(1) DEFAULT 1        -- 状态，1表示启用，0表示禁用，默认启用
+) ENGINE=InnoDB DEFAULT CHARSET=utf8; [ RunTime:0.021297s ]
+[2024-12-02T19:31:05+08:00][sql] TRUNCATE TABLE users_bot [ RunTime:0.028623s ]
+[2024-12-02T19:31:05+08:00][sql] ALTER TABLE users_bot AUTO_INCREMENT = 1 [ RunTime:0.007343s ]
+[2024-12-02T19:31:05+08:00][sql] TRUNCATE TABLE users [ RunTime:0.059870s ]
+[2024-12-02T19:31:05+08:00][sql] ALTER TABLE users AUTO_INCREMENT = 1 [ RunTime:0.012479s ]
+[2024-12-02T19:31:05+08:00][sql] TRUNCATE TABLE log [ RunTime:0.048846s ]
+[2024-12-02T19:31:05+08:00][sql] ALTER TABLE log AUTO_INCREMENT = 1 [ RunTime:0.011663s ]
+[2024-12-02T19:31:05+08:00][sql] TRUNCATE TABLE bot_dau [ RunTime:0.029828s ]
+[2024-12-02T19:31:05+08:00][sql] ALTER TABLE bot_dau AUTO_INCREMENT = 1 [ RunTime:0.007770s ]
+[2024-12-02T19:31:05+08:00][sql] TRUNCATE TABLE bot_userinfo [ RunTime:0.044298s ]
+[2024-12-02T19:31:05+08:00][sql] ALTER TABLE bot_userinfo AUTO_INCREMENT = 1 [ RunTime:0.008493s ]
+[2024-12-02T19:31:05+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001438s ]
+[2024-12-02T19:31:05+08:00][sql] INSERT INTO `users` SET `username` = 'xiaole' , `password` = '37EAD208EB59F2CEA05B7618AD62C52F' , `qq` = '3057054240' , `email` = '3057054240@qq.com' , `name` = '小乐' [ RunTime:0.003334s ]
+[2024-12-02T19:40:31+08:00][sql] CONNECT:[ UseTime:0.001638s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:40:31+08:00][error] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'lebot.users' doesn't exist[D:\Desktop\x\php\ThinkPHP\vendor\topthink\think-orm\src\db\PDOConnection.php:836]
+[2024-12-02T19:40:36+08:00][sql] CONNECT:[ UseTime:0.001624s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:40:36+08:00][error] [10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'lebot.users' doesn't exist[D:\Desktop\x\php\ThinkPHP\vendor\topthink\think-orm\src\db\PDOConnection.php:836]
+[2024-12-02T19:41:34+08:00][sql] CONNECT:[ UseTime:0.001185s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:41:34+08:00][sql] -- 创建用户机器人表
+CREATE TABLE IF NOT EXISTS users_bot (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    QQ VARCHAR(255) NOT NULL,
+    AppID VARCHAR(255) NOT NULL,
+    Token VARCHAR(255) NOT NULL,
+    AppSecret VARCHAR(255) NOT NULL,
+    AccessToken VARCHAR(255) DEFAULT NULL,
+    AccessToken_time BIGINT DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8; [ RunTime:0.028879s ]
+[2024-12-02T19:41:34+08:00][sql] -- 创建用户表
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    qq VARCHAR(20) DEFAULT NULL,
+    email VARCHAR(100) DEFAULT NULL,
+    name VARCHAR(100) DEFAULT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8; [ RunTime:0.052837s ]
+[2024-12-02T19:41:34+08:00][sql] -- 创建日志表
+CREATE TABLE IF NOT EXISTS log (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    time DATETIME NOT NULL,
+    type VARCHAR(50) NOT NULL,
+    union_openid VARCHAR(255) NOT NULL,
+    group_openid VARCHAR(255) DEFAULT NULL,
+    content TEXT NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8; [ RunTime:0.033629s ]
+[2024-12-02T19:41:34+08:00][sql] -- 创建机器人每日活跃数据表
+CREATE TABLE IF NOT EXISTS bot_dau (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    date DATE NOT NULL,
+    received_messages INT DEFAULT 0,
+    sent_messages INT DEFAULT 0,
+    user_count INT DEFAULT 0,
+    group_count INT DEFAULT 0,
+    usage_frequency INT DEFAULT 0,
+    channel_private_chat INT DEFAULT 0,
+    group_private_chat INT DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8; [ RunTime:0.029664s ]
+[2024-12-02T19:41:34+08:00][sql] -- 创建机器人用户信息表
+CREATE TABLE IF NOT EXISTS bot_userinfo (
+    id INT NOT NULL AUTO_INCREMENT,
+    union_openid VARCHAR(255) NOT NULL,
+    permission INT DEFAULT NULL,  -- 权限字段改为 INT 类型
+    points INT DEFAULT 0,
+    balance DECIMAL(10, 2) DEFAULT 0.00,
+    sign_in_date DATE DEFAULT NULL,
+    post_date DATE NOT NULL,
+    post_count INT DEFAULT 0,
+    PRIMARY KEY (id),
+    UNIQUE KEY unique_union_openid (union_openid)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8; [ RunTime:0.059969s ]
+[2024-12-02T19:41:34+08:00][sql] -- 创建机器人菜单表
+CREATE TABLE IF NOT EXISTS bot_menu (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    menu VARCHAR(255) NOT NULL,        -- 菜单名称或标题
+    content TEXT NOT NULL,             -- 菜单内容或描述
+    permission INT DEFAULT 0,          -- 权限级别，默认为0（普通用户）
+    status TINYINT(1) DEFAULT 1        -- 状态，1表示启用，0表示禁用，默认启用
+) ENGINE=InnoDB DEFAULT CHARSET=utf8; [ RunTime:0.038578s ]
+[2024-12-02T19:41:34+08:00][sql] TRUNCATE TABLE users_bot [ RunTime:0.040286s ]
+[2024-12-02T19:41:34+08:00][sql] ALTER TABLE users_bot AUTO_INCREMENT = 1 [ RunTime:0.009659s ]
+[2024-12-02T19:41:34+08:00][sql] TRUNCATE TABLE users [ RunTime:0.040611s ]
+[2024-12-02T19:41:34+08:00][sql] ALTER TABLE users AUTO_INCREMENT = 1 [ RunTime:0.012359s ]
+[2024-12-02T19:41:34+08:00][sql] TRUNCATE TABLE log [ RunTime:0.036987s ]
+[2024-12-02T19:41:34+08:00][sql] ALTER TABLE log AUTO_INCREMENT = 1 [ RunTime:0.009913s ]
+[2024-12-02T19:41:34+08:00][sql] TRUNCATE TABLE bot_dau [ RunTime:0.026904s ]
+[2024-12-02T19:41:34+08:00][sql] ALTER TABLE bot_dau AUTO_INCREMENT = 1 [ RunTime:0.008314s ]
+[2024-12-02T19:41:34+08:00][sql] TRUNCATE TABLE bot_userinfo [ RunTime:0.035522s ]
+[2024-12-02T19:41:34+08:00][sql] ALTER TABLE bot_userinfo AUTO_INCREMENT = 1 [ RunTime:0.009394s ]
+[2024-12-02T19:41:34+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001636s ]
+[2024-12-02T19:41:34+08:00][sql] INSERT INTO `users` SET `username` = 'xiaole' , `password` = '37EAD208EB59F2CEA05B7618AD62C52F' , `qq` = '3057054240' , `email` = '3057054240@qq.com' , `name` = '小乐' [ RunTime:0.003413s ]
+[2024-12-02T19:41:35+08:00][sql] CONNECT:[ UseTime:0.001147s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:41:35+08:00][sql] -- 创建用户机器人表
+CREATE TABLE IF NOT EXISTS users_bot (
+    ID INT AUTO_INCREMENT PRIMARY KEY,
+    QQ VARCHAR(255) NOT NULL,
+    AppID VARCHAR(255) NOT NULL,
+    Token VARCHAR(255) NOT NULL,
+    AppSecret VARCHAR(255) NOT NULL,
+    AccessToken VARCHAR(255) DEFAULT NULL,
+    AccessToken_time BIGINT DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8; [ RunTime:0.004241s ]
+[2024-12-02T19:41:35+08:00][sql] -- 创建用户表
+CREATE TABLE IF NOT EXISTS users (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    username VARCHAR(255) NOT NULL UNIQUE,
+    password VARCHAR(255) NOT NULL,
+    qq VARCHAR(20) DEFAULT NULL,
+    email VARCHAR(100) DEFAULT NULL,
+    name VARCHAR(100) DEFAULT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+) ENGINE=InnoDB DEFAULT CHARSET=utf8; [ RunTime:0.002685s ]
+[2024-12-02T19:41:35+08:00][sql] -- 创建日志表
+CREATE TABLE IF NOT EXISTS log (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    time DATETIME NOT NULL,
+    type VARCHAR(50) NOT NULL,
+    union_openid VARCHAR(255) NOT NULL,
+    group_openid VARCHAR(255) DEFAULT NULL,
+    content TEXT NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8; [ RunTime:0.002582s ]
+[2024-12-02T19:41:35+08:00][sql] -- 创建机器人每日活跃数据表
+CREATE TABLE IF NOT EXISTS bot_dau (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    date DATE NOT NULL,
+    received_messages INT DEFAULT 0,
+    sent_messages INT DEFAULT 0,
+    user_count INT DEFAULT 0,
+    group_count INT DEFAULT 0,
+    usage_frequency INT DEFAULT 0,
+    channel_private_chat INT DEFAULT 0,
+    group_private_chat INT DEFAULT 0
+) ENGINE=InnoDB DEFAULT CHARSET=utf8; [ RunTime:0.002956s ]
+[2024-12-02T19:41:35+08:00][sql] -- 创建机器人用户信息表
+CREATE TABLE IF NOT EXISTS bot_userinfo (
+    id INT NOT NULL AUTO_INCREMENT,
+    union_openid VARCHAR(255) NOT NULL,
+    permission INT DEFAULT NULL,  -- 权限字段改为 INT 类型
+    points INT DEFAULT 0,
+    balance DECIMAL(10, 2) DEFAULT 0.00,
+    sign_in_date DATE DEFAULT NULL,
+    post_date DATE NOT NULL,
+    post_count INT DEFAULT 0,
+    PRIMARY KEY (id),
+    UNIQUE KEY unique_union_openid (union_openid)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8; [ RunTime:0.002636s ]
+[2024-12-02T19:41:35+08:00][sql] -- 创建机器人菜单表
+CREATE TABLE IF NOT EXISTS bot_menu (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    menu VARCHAR(255) NOT NULL,        -- 菜单名称或标题
+    content TEXT NOT NULL,             -- 菜单内容或描述
+    permission INT DEFAULT 0,          -- 权限级别，默认为0（普通用户）
+    status TINYINT(1) DEFAULT 1        -- 状态，1表示启用，0表示禁用，默认启用
+) ENGINE=InnoDB DEFAULT CHARSET=utf8; [ RunTime:0.003298s ]
+[2024-12-02T19:41:35+08:00][sql] TRUNCATE TABLE users_bot [ RunTime:0.036516s ]
+[2024-12-02T19:41:35+08:00][sql] ALTER TABLE users_bot AUTO_INCREMENT = 1 [ RunTime:0.011817s ]
+[2024-12-02T19:41:35+08:00][sql] TRUNCATE TABLE users [ RunTime:0.043053s ]
+[2024-12-02T19:41:35+08:00][sql] ALTER TABLE users AUTO_INCREMENT = 1 [ RunTime:0.008794s ]
+[2024-12-02T19:41:35+08:00][sql] TRUNCATE TABLE log [ RunTime:0.037073s ]
+[2024-12-02T19:41:35+08:00][sql] ALTER TABLE log AUTO_INCREMENT = 1 [ RunTime:0.010088s ]
+[2024-12-02T19:41:35+08:00][sql] TRUNCATE TABLE bot_dau [ RunTime:0.040812s ]
+[2024-12-02T19:41:35+08:00][sql] ALTER TABLE bot_dau AUTO_INCREMENT = 1 [ RunTime:0.010082s ]
+[2024-12-02T19:41:35+08:00][sql] TRUNCATE TABLE bot_userinfo [ RunTime:0.031901s ]
+[2024-12-02T19:41:35+08:00][sql] ALTER TABLE bot_userinfo AUTO_INCREMENT = 1 [ RunTime:0.007521s ]
+[2024-12-02T19:41:35+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001522s ]
+[2024-12-02T19:41:35+08:00][sql] INSERT INTO `users` SET `username` = 'xiaole' , `password` = '37EAD208EB59F2CEA05B7618AD62C52F' , `qq` = '3057054240' , `email` = '3057054240@qq.com' , `name` = '小乐' [ RunTime:0.003438s ]
+[2024-12-02T19:41:39+08:00][sql] CONNECT:[ UseTime:0.001989s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:41:39+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.002473s ]
+[2024-12-02T19:41:39+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.001090s ]
+[2024-12-02T19:41:42+08:00][sql] CONNECT:[ UseTime:0.002022s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T19:41:42+08:00][sql] SHOW FULL COLUMNS FROM `bot_dau` [ RunTime:0.002606s ]
+[2024-12-02T19:41:42+08:00][sql] SELECT SUM(`received_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000660s ]
+[2024-12-02T19:41:42+08:00][sql] SELECT SUM(`sent_messages`) AS think_sum FROM `bot_dau` [ RunTime:0.000507s ]
+[2024-12-02T19:41:42+08:00][sql] SELECT SUM(`user_count`) AS think_sum FROM `bot_dau` [ RunTime:0.000395s ]
+[2024-12-02T19:41:42+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001317s ]
+[2024-12-02T19:41:42+08:00][sql] SELECT COUNT(*) AS think_count FROM `users_bot` [ RunTime:0.000677s ]
+[2024-12-02T22:51:15+08:00][sql] CONNECT:[ UseTime:0.023905s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-12-02T22:51:15+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.054474s ]
+[2024-12-02T22:51:15+08:00][sql] INSERT INTO `log` SET `time` = '2024-12-02 22:50:45' , `type` = '群聊消息' , `union_openid` = '51690C10640588D7830D58026BA236AC' , `group_openid` = 'B44BF9FFCCF2DB81C04FAE0B668B255B' , `content` = ' 你好鸭' [ RunTime:0.021109s ]
+[2024-12-02T22:51:15+08:00][sql] SELECT COUNT(*) AS think_count FROM `log` [ RunTime:0.005692s ]
+[2024-12-02T22:51:15+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002095s ]
+[2024-12-02T22:51:15+08:00][sql] SELECT `AppSecret` FROM `users_bot` WHERE  `AppID` IS NULL LIMIT 1 [ RunTime:0.001413s ]
+[2024-12-02T22:51:15+08:00][error] [1]Maximum execution time of 30 seconds exceeded[D:\Desktop\x\php\ThinkPHP\app\index\helper\tool\signature.php:13]

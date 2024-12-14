@@ -1,0 +1,852 @@
+[2024-11-28T12:53:36+08:00][sql] CONNECT:[ UseTime:0.005625s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T12:53:36+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.007601s ]
+[2024-11-28T12:53:36+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.012282s ]
+[2024-11-28T12:53:45+08:00][sql] CONNECT:[ UseTime:0.001744s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T12:53:45+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.003676s ]
+[2024-11-28T12:53:45+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.007623s ]
+[2024-11-28T12:59:48+08:00][sql] CONNECT:[ UseTime:0.001752s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T12:59:48+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001620s ]
+[2024-11-28T12:59:48+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000278s ]
+[2024-11-28T13:00:04+08:00][sql] CONNECT:[ UseTime:0.001571s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:00:04+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002579s ]
+[2024-11-28T13:00:04+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000850s ]
+[2024-11-28T13:01:31+08:00][sql] CONNECT:[ UseTime:0.016575s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:01:31+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001308s ]
+[2024-11-28T13:01:31+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000288s ]
+[2024-11-28T13:01:41+08:00][sql] CONNECT:[ UseTime:0.023804s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:01:41+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001848s ]
+[2024-11-28T13:01:41+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000491s ]
+[2024-11-28T13:01:46+08:00][sql] CONNECT:[ UseTime:0.000860s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:01:46+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001085s ]
+[2024-11-28T13:01:46+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000218s ]
+[2024-11-28T13:05:02+08:00][sql] CONNECT:[ UseTime:0.009821s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:05:02+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002186s ]
+[2024-11-28T13:05:02+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000604s ]
+[2024-11-28T13:07:36+08:00][sql] CONNECT:[ UseTime:0.001188s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:07:36+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001286s ]
+[2024-11-28T13:07:36+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000484s ]
+[2024-11-28T13:08:07+08:00][sql] CONNECT:[ UseTime:0.007021s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:08:07+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001662s ]
+[2024-11-28T13:08:07+08:00][error] [10500]数据表字段不存在:[name][D:\Desktop\x\php\ThinkPHP\vendor\topthink\think-orm\src\db\Builder.php:85]
+[2024-11-28T13:17:18+08:00][sql] CONNECT:[ UseTime:0.001738s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:17:18+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001851s ]
+[2024-11-28T13:17:18+08:00][sql] UPDATE `users_bot`  SET `QQ` = '189' , `AppID` = 'ap123' , `Token` = 'tok123' , `AppSecret` = 'secr123' , `AccessToken` = 'access23' , `AccessToken_time` = '16531200'  WHERE  `id` = '18' [ RunTime:0.007149s ]
+[2024-11-28T13:17:25+08:00][sql] CONNECT:[ UseTime:0.000940s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:17:25+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001361s ]
+[2024-11-28T13:17:25+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000415s ]
+[2024-11-28T13:17:36+08:00][sql] CONNECT:[ UseTime:0.001129s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:17:36+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001549s ]
+[2024-11-28T13:17:36+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000280s ]
+[2024-11-28T13:17:37+08:00][sql] CONNECT:[ UseTime:0.009665s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:17:37+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.003161s ]
+[2024-11-28T13:17:37+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000936s ]
+[2024-11-28T13:17:39+08:00][sql] CONNECT:[ UseTime:0.001473s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:17:39+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002101s ]
+[2024-11-28T13:17:39+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000551s ]
+[2024-11-28T13:17:43+08:00][sql] CONNECT:[ UseTime:0.000961s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:17:43+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001000s ]
+[2024-11-28T13:17:43+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000338s ]
+[2024-11-28T13:17:49+08:00][sql] CONNECT:[ UseTime:0.014653s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:17:49+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001253s ]
+[2024-11-28T13:17:49+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.001371s ]
+[2024-11-28T13:17:54+08:00][sql] CONNECT:[ UseTime:0.015519s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:17:54+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001986s ]
+[2024-11-28T13:17:54+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000488s ]
+[2024-11-28T13:17:56+08:00][sql] CONNECT:[ UseTime:0.001486s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:17:56+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.000983s ]
+[2024-11-28T13:17:56+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000246s ]
+[2024-11-28T13:18:10+08:00][sql] CONNECT:[ UseTime:0.001400s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:18:10+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001237s ]
+[2024-11-28T13:18:10+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000451s ]
+[2024-11-28T13:18:12+08:00][sql] CONNECT:[ UseTime:0.002006s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:18:12+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002829s ]
+[2024-11-28T13:18:12+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000983s ]
+[2024-11-28T13:18:19+08:00][sql] CONNECT:[ UseTime:0.001261s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:18:19+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001853s ]
+[2024-11-28T13:18:19+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000615s ]
+[2024-11-28T13:21:42+08:00][sql] CONNECT:[ UseTime:0.020294s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:21:42+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001214s ]
+[2024-11-28T13:21:42+08:00][sql] UPDATE `users_bot`  SET `QQ` = '18592' , `AppID` = 'ap13423' , `Token` = 'tok45123' , `AppSecret` = 'sec64r123' , `AccessToken` = 'a46ccess23' , `AccessToken_time` = '1653461200'  WHERE  `id` = '18' [ RunTime:0.006665s ]
+[2024-11-28T13:22:57+08:00][sql] CONNECT:[ UseTime:0.002213s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:22:57+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001531s ]
+[2024-11-28T13:22:57+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000699s ]
+[2024-11-28T13:23:12+08:00][sql] CONNECT:[ UseTime:0.001625s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:23:12+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001332s ]
+[2024-11-28T13:23:12+08:00][sql] UPDATE `users_bot`  SET `AppID` = 'ap13423' , `Token` = 'tok45123' , `AppSecret` = 'sec64r123' , `AccessToken` = 'a46ccess23' , `AccessToken_time` = '1653461200'  WHERE  `id` = '18' [ RunTime:0.000485s ]
+[2024-11-28T13:23:46+08:00][sql] CONNECT:[ UseTime:0.001264s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:23:46+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001195s ]
+[2024-11-28T13:23:46+08:00][sql] UPDATE `users_bot`  SET `AppID` = 'ap13423' , `Token` = 'tok45123' , `AppSecret` = 'sec64r123' , `AccessToken` = 'a46ccess23' , `AccessToken_time` = '1653461200'  WHERE  `id` = '18' [ RunTime:0.000367s ]
+[2024-11-28T13:23:56+08:00][sql] CONNECT:[ UseTime:0.001022s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:23:56+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001077s ]
+[2024-11-28T13:23:56+08:00][sql] UPDATE `users_bot`  SET `QQ` = '1859sdf2' , `AppID` = 'ap13423' , `Token` = 'tok45123' , `AppSecret` = 'sec64r123' , `AccessToken` = 'a46ccess23' , `AccessToken_time` = '1653461200'  WHERE  `id` = '18' [ RunTime:0.004366s ]
+[2024-11-28T13:24:11+08:00][sql] CONNECT:[ UseTime:0.000837s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:24:11+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001068s ]
+[2024-11-28T13:24:11+08:00][sql] UPDATE `users_bot`  SET `QQ` = '1859sdf2' , `AppID` = 'ap13423' , `Token` = 'tok45123'  WHERE  `id` = '18' [ RunTime:0.000224s ]
+[2024-11-28T13:24:37+08:00][sql] CONNECT:[ UseTime:0.001677s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:24:37+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.003938s ]
+[2024-11-28T13:24:37+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000794s ]
+[2024-11-28T13:24:59+08:00][sql] CONNECT:[ UseTime:0.015455s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:24:59+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001331s ]
+[2024-11-28T13:24:59+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000230s ]
+[2024-11-28T13:29:00+08:00][sql] CONNECT:[ UseTime:0.011226s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:29:00+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001390s ]
+[2024-11-28T13:29:00+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000372s ]
+[2024-11-28T13:29:02+08:00][sql] CONNECT:[ UseTime:0.008893s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:29:02+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001047s ]
+[2024-11-28T13:29:02+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000221s ]
+[2024-11-28T13:34:32+08:00][sql] CONNECT:[ UseTime:0.002127s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:34:32+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002027s ]
+[2024-11-28T13:34:32+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000593s ]
+[2024-11-28T13:34:49+08:00][sql] CONNECT:[ UseTime:0.001915s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:34:49+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002032s ]
+[2024-11-28T13:34:49+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000870s ]
+[2024-11-28T13:34:58+08:00][sql] CONNECT:[ UseTime:0.021003s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:34:58+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002630s ]
+[2024-11-28T13:34:58+08:00][sql] UPDATE `users_bot`  SET `QQ` = '1859sdf2' , `AppID` = 'ap13423' , `Token` = 'tok45123'  WHERE  `id` = '18' [ RunTime:0.001117s ]
+[2024-11-28T13:35:01+08:00][sql] CONNECT:[ UseTime:0.001822s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:35:01+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002327s ]
+[2024-11-28T13:35:01+08:00][sql] UPDATE `users_bot`  SET `QQ` = '1859sdf2' , `AppID` = 'ap13423' , `Token` = 'tok45123'  WHERE  `id` = '18' [ RunTime:0.000871s ]
+[2024-11-28T13:35:05+08:00][sql] CONNECT:[ UseTime:0.001941s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:35:05+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001956s ]
+[2024-11-28T13:35:05+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000833s ]
+[2024-11-28T13:35:20+08:00][sql] CONNECT:[ UseTime:0.001772s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:35:20+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002064s ]
+[2024-11-28T13:35:20+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000684s ]
+[2024-11-28T13:45:48+08:00][sql] CONNECT:[ UseTime:0.002588s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:45:48+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002034s ]
+[2024-11-28T13:45:48+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000556s ]
+[2024-11-28T13:45:58+08:00][sql] CONNECT:[ UseTime:0.001857s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:45:58+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.007960s ]
+[2024-11-28T13:45:58+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.016547s ]
+[2024-11-28T13:45:59+08:00][sql] CONNECT:[ UseTime:0.002000s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:45:59+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002382s ]
+[2024-11-28T13:45:59+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000704s ]
+[2024-11-28T13:47:23+08:00][sql] CONNECT:[ UseTime:0.001603s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:47:23+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001915s ]
+[2024-11-28T13:47:23+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000617s ]
+[2024-11-28T13:47:25+08:00][sql] CONNECT:[ UseTime:0.008971s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:47:25+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001770s ]
+[2024-11-28T13:47:25+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000449s ]
+[2024-11-28T13:47:25+08:00][sql] CONNECT:[ UseTime:0.001482s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:47:25+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001848s ]
+[2024-11-28T13:47:25+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000600s ]
+[2024-11-28T13:48:14+08:00][sql] CONNECT:[ UseTime:0.005549s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:48:14+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001374s ]
+[2024-11-28T13:48:14+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000466s ]
+[2024-11-28T13:48:18+08:00][sql] CONNECT:[ UseTime:0.017255s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:48:18+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002537s ]
+[2024-11-28T13:48:18+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000945s ]
+[2024-11-28T13:48:18+08:00][sql] CONNECT:[ UseTime:0.001821s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:48:18+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002006s ]
+[2024-11-28T13:48:18+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000800s ]
+[2024-11-28T13:48:20+08:00][sql] CONNECT:[ UseTime:0.002151s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:48:20+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002316s ]
+[2024-11-28T13:48:20+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000781s ]
+[2024-11-28T13:48:23+08:00][sql] CONNECT:[ UseTime:0.001576s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:48:23+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001706s ]
+[2024-11-28T13:48:23+08:00][sql] UPDATE `users_bot`  SET `QQ` = '1859sdf2' , `AppID` = 'ap13423' , `Token` = 'tok45123'  WHERE  `id` = '18' [ RunTime:0.000897s ]
+[2024-11-28T13:48:29+08:00][sql] CONNECT:[ UseTime:0.001448s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:48:29+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001590s ]
+[2024-11-28T13:48:29+08:00][sql] UPDATE `users_bot`  SET `QQ` = '1859sdf2' , `AppID` = 'ap13423' , `Token` = 'tok45123'  WHERE  `id` = '18' [ RunTime:0.000518s ]
+[2024-11-28T13:52:51+08:00][sql] CONNECT:[ UseTime:0.001843s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:52:51+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001785s ]
+[2024-11-28T13:52:51+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000669s ]
+[2024-11-28T13:52:59+08:00][sql] CONNECT:[ UseTime:0.001837s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:52:59+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001459s ]
+[2024-11-28T13:52:59+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000823s ]
+[2024-11-28T13:53:16+08:00][sql] CONNECT:[ UseTime:0.001369s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:53:16+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001340s ]
+[2024-11-28T13:53:16+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000547s ]
+[2024-11-28T13:55:57+08:00][sql] CONNECT:[ UseTime:0.002281s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T13:55:57+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001963s ]
+[2024-11-28T13:55:57+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000849s ]
+[2024-11-28T14:00:06+08:00][sql] CONNECT:[ UseTime:0.011179s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:00:06+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001682s ]
+[2024-11-28T14:00:06+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000448s ]
+[2024-11-28T14:00:14+08:00][sql] CONNECT:[ UseTime:0.001882s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:00:14+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001946s ]
+[2024-11-28T14:00:14+08:00][sql] UPDATE `users_bot`  SET `QQ` = '1859sdf2' , `AppID` = 'ap13423' , `Token` = 'tok45123' , `AppSecret` = 'sec64r123'  WHERE  `id` = '18' [ RunTime:0.001015s ]
+[2024-11-28T14:00:14+08:00][sql] CONNECT:[ UseTime:0.001706s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:00:14+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002064s ]
+[2024-11-28T14:00:14+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000801s ]
+[2024-11-28T14:00:31+08:00][sql] CONNECT:[ UseTime:0.001102s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:00:31+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001638s ]
+[2024-11-28T14:00:31+08:00][sql] UPDATE `users_bot`  SET `QQ` = '1859sdf2qqq' , `AppID` = 'ap13423eqwedd' , `Token` = 'tok451211111awsd' , `AppSecret` = 'sec64r123234eadw'  WHERE  `id` = '18' [ RunTime:0.008080s ]
+[2024-11-28T14:00:31+08:00][sql] CONNECT:[ UseTime:0.001246s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:00:31+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001445s ]
+[2024-11-28T14:00:31+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000703s ]
+[2024-11-28T14:00:38+08:00][sql] CONNECT:[ UseTime:0.001978s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:00:38+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002124s ]
+[2024-11-28T14:00:38+08:00][sql] UPDATE `users_bot`  SET `QQ` = '1859sdf2qqqasd' , `AppID` = 'ap13423eqweddasd' , `Token` = 'tok451211111awsdasd' , `AppSecret` = 'sec64r123234eadwasd'  WHERE  `id` = '18' [ RunTime:0.007043s ]
+[2024-11-28T14:00:38+08:00][sql] CONNECT:[ UseTime:0.001701s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:00:38+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001839s ]
+[2024-11-28T14:00:38+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000596s ]
+[2024-11-28T14:00:44+08:00][sql] CONNECT:[ UseTime:0.001927s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:00:44+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002237s ]
+[2024-11-28T14:00:44+08:00][sql] UPDATE `users_bot`  SET `QQ` = '1859sdf2qqqasd1' , `AppID` = 'ap13423eqweddasd1' , `Token` = 'tok451211111awsdasd1' , `AppSecret` = 'sec64r123234eadwasd1'  WHERE  `id` = '18' [ RunTime:0.008204s ]
+[2024-11-28T14:00:44+08:00][sql] CONNECT:[ UseTime:0.001506s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:00:44+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.003546s ]
+[2024-11-28T14:00:44+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000418s ]
+[2024-11-28T14:00:51+08:00][sql] CONNECT:[ UseTime:0.002129s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:00:51+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002165s ]
+[2024-11-28T14:00:51+08:00][sql] UPDATE `users_bot`  SET `QQ` = '1859sdf2qqqasd1' , `AppID` = 'ap13423eqweddasd1' , `Token` = 'tok451211111awsdasd1' , `AppSecret` = 'sec64r123234eadwasd1'  WHERE  `id` = '17' [ RunTime:0.000793s ]
+[2024-11-28T14:00:51+08:00][sql] CONNECT:[ UseTime:0.001341s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:00:51+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001397s ]
+[2024-11-28T14:00:51+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000503s ]
+[2024-11-28T14:00:53+08:00][sql] CONNECT:[ UseTime:0.002097s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:00:53+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002160s ]
+[2024-11-28T14:00:53+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000937s ]
+[2024-11-28T14:08:52+08:00][sql] CONNECT:[ UseTime:0.002388s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:08:52+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001987s ]
+[2024-11-28T14:08:52+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000733s ]
+[2024-11-28T14:13:48+08:00][sql] CONNECT:[ UseTime:0.002400s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:13:48+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.003356s ]
+[2024-11-28T14:13:48+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000794s ]
+[2024-11-28T14:13:57+08:00][sql] CONNECT:[ UseTime:0.001822s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:13:57+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001924s ]
+[2024-11-28T14:13:57+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000725s ]
+[2024-11-28T14:19:43+08:00][sql] CONNECT:[ UseTime:0.002228s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:19:43+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001845s ]
+[2024-11-28T14:19:43+08:00][sql] UPDATE `users_bot`  SET `QQ` = '1859sdf2' , `AppID` = 'ap13423' , `Token` = 'tok45123'  WHERE  `id` = '18' [ RunTime:0.007233s ]
+[2024-11-28T14:20:15+08:00][sql] CONNECT:[ UseTime:0.008655s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:20:15+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001624s ]
+[2024-11-28T14:20:15+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000478s ]
+[2024-11-28T14:20:19+08:00][sql] CONNECT:[ UseTime:0.009542s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:20:19+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001747s ]
+[2024-11-28T14:20:19+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000599s ]
+[2024-11-28T14:20:27+08:00][sql] CONNECT:[ UseTime:0.001444s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:20:27+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001675s ]
+[2024-11-28T14:20:27+08:00][sql] UPDATE `users_bot`  SET `QQ` = '1859sdf2' , `AppID` = 'ap13423' , `Token` = 'tok45123' , `AppSecret` = '1'  WHERE  `id` = '18' [ RunTime:0.006992s ]
+[2024-11-28T14:20:27+08:00][sql] CONNECT:[ UseTime:0.001131s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:20:27+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001494s ]
+[2024-11-28T14:20:27+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000634s ]
+[2024-11-28T14:20:33+08:00][sql] CONNECT:[ UseTime:0.003223s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:20:33+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001951s ]
+[2024-11-28T14:20:33+08:00][sql] UPDATE `users_bot`  SET `QQ` = '1859sdf2' , `AppID` = 'ap13423' , `Token` = '1' , `AppSecret` = '1'  WHERE  `id` = '18' [ RunTime:0.008498s ]
+[2024-11-28T14:20:33+08:00][sql] CONNECT:[ UseTime:0.011946s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:20:33+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002027s ]
+[2024-11-28T14:20:33+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000559s ]
+[2024-11-28T14:20:37+08:00][sql] CONNECT:[ UseTime:0.005902s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:20:37+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002033s ]
+[2024-11-28T14:20:37+08:00][sql] UPDATE `users_bot`  SET `QQ` = '1859sdf2' , `AppID` = '1' , `Token` = '1' , `AppSecret` = '1'  WHERE  `id` = '18' [ RunTime:0.007160s ]
+[2024-11-28T14:20:37+08:00][sql] CONNECT:[ UseTime:0.015804s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:20:37+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001694s ]
+[2024-11-28T14:20:37+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000459s ]
+[2024-11-28T14:20:42+08:00][sql] CONNECT:[ UseTime:0.004502s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:20:42+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001673s ]
+[2024-11-28T14:20:42+08:00][sql] UPDATE `users_bot`  SET `QQ` = '11' , `AppID` = '1' , `Token` = '1' , `AppSecret` = '1'  WHERE  `id` = '18' [ RunTime:0.007131s ]
+[2024-11-28T14:20:42+08:00][sql] CONNECT:[ UseTime:0.001338s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:20:42+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001781s ]
+[2024-11-28T14:20:42+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000591s ]
+[2024-11-28T14:20:45+08:00][sql] CONNECT:[ UseTime:0.012173s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:20:45+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001831s ]
+[2024-11-28T14:20:45+08:00][sql] UPDATE `users_bot`  SET `QQ` = '11' , `AppID` = '1' , `Token` = '1' , `AppSecret` = '1'  WHERE  `id` = '1' [ RunTime:0.007801s ]
+[2024-11-28T14:20:46+08:00][sql] CONNECT:[ UseTime:0.022710s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:20:46+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001741s ]
+[2024-11-28T14:20:46+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000402s ]
+[2024-11-28T14:22:28+08:00][sql] CONNECT:[ UseTime:0.002214s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:22:28+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002851s ]
+[2024-11-28T14:22:28+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000580s ]
+[2024-11-28T14:23:23+08:00][sql] CONNECT:[ UseTime:0.002162s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:23:23+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002166s ]
+[2024-11-28T14:23:23+08:00][sql] UPDATE `users_bot`  SET `QQ` = '3889363006' , `AppID` = '102450011' , `Token` = 'awXVgSf8hzKehxLZZ8jAz0jOzimzpvd6' , `AppSecret` = 'nrv05AFKPUagmsy4AHOVcjqx4CKSaiqy'  WHERE  `id` = '3889363006' [ RunTime:0.000915s ]
+[2024-11-28T14:23:23+08:00][sql] CONNECT:[ UseTime:0.001247s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:23:23+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001450s ]
+[2024-11-28T14:23:23+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000500s ]
+[2024-11-28T14:23:26+08:00][sql] CONNECT:[ UseTime:0.001950s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:23:26+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002000s ]
+[2024-11-28T14:23:26+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000810s ]
+[2024-11-28T14:23:33+08:00][sql] CONNECT:[ UseTime:0.001782s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:23:33+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002177s ]
+[2024-11-28T14:23:33+08:00][sql] UPDATE `users_bot`  SET `QQ` = '11' , `AppID` = '1' , `Token` = '1' , `AppSecret` = '1'  WHERE  `id` = '11' [ RunTime:0.000901s ]
+[2024-11-28T14:23:33+08:00][sql] CONNECT:[ UseTime:0.001308s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:23:33+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001913s ]
+[2024-11-28T14:23:33+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000486s ]
+[2024-11-28T14:23:36+08:00][sql] CONNECT:[ UseTime:0.002228s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:23:36+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002165s ]
+[2024-11-28T14:23:36+08:00][sql] UPDATE `users_bot`  SET `QQ` = '111' , `AppID` = '1' , `Token` = '1' , `AppSecret` = '1'  WHERE  `id` = '1' [ RunTime:0.036583s ]
+[2024-11-28T14:23:37+08:00][sql] CONNECT:[ UseTime:0.001378s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:23:37+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002074s ]
+[2024-11-28T14:23:37+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000497s ]
+[2024-11-28T14:23:42+08:00][sql] CONNECT:[ UseTime:0.001820s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:23:42+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002108s ]
+[2024-11-28T14:23:42+08:00][sql] UPDATE `users_bot`  SET `QQ` = '111awd' , `AppID` = '1' , `Token` = '1' , `AppSecret` = '1'  WHERE  `id` = '1' [ RunTime:0.007248s ]
+[2024-11-28T14:23:42+08:00][sql] CONNECT:[ UseTime:0.001398s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:23:42+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001812s ]
+[2024-11-28T14:23:42+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000411s ]
+[2024-11-28T14:23:58+08:00][sql] CONNECT:[ UseTime:0.001399s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:23:58+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001551s ]
+[2024-11-28T14:23:58+08:00][sql] UPDATE `users_bot`  SET `QQ` = '3889363006' , `AppID` = '1' , `Token` = '1' , `AppSecret` = '1'  WHERE  `id` = '1' [ RunTime:0.006066s ]
+[2024-11-28T14:23:59+08:00][sql] CONNECT:[ UseTime:0.002105s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:23:59+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002339s ]
+[2024-11-28T14:23:59+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000833s ]
+[2024-11-28T14:24:05+08:00][sql] CONNECT:[ UseTime:0.001862s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:24:05+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002208s ]
+[2024-11-28T14:24:05+08:00][sql] UPDATE `users_bot`  SET `QQ` = '3889363006' , `AppID` = '102450011' , `Token` = '1' , `AppSecret` = '1'  WHERE  `id` = '1' [ RunTime:0.009210s ]
+[2024-11-28T14:24:05+08:00][sql] CONNECT:[ UseTime:0.001426s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:24:05+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001308s ]
+[2024-11-28T14:24:05+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000599s ]
+[2024-11-28T14:24:11+08:00][sql] CONNECT:[ UseTime:0.001374s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:24:11+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001565s ]
+[2024-11-28T14:24:11+08:00][sql] UPDATE `users_bot`  SET `QQ` = '3889363006' , `AppID` = '102450011' , `Token` = 'awXVgSf8hzKehxLZZ8jAz0jOzimzpvd6' , `AppSecret` = '1'  WHERE  `id` = '1' [ RunTime:0.007347s ]
+[2024-11-28T14:24:11+08:00][sql] CONNECT:[ UseTime:0.001373s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:24:11+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001245s ]
+[2024-11-28T14:24:11+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000352s ]
+[2024-11-28T14:24:16+08:00][sql] CONNECT:[ UseTime:0.001898s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:24:16+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001975s ]
+[2024-11-28T14:24:16+08:00][sql] UPDATE `users_bot`  SET `QQ` = '3889363006' , `AppID` = '102450011' , `Token` = 'awXVgSf8hzKehxLZZ8jAz0jOzimzpvd6' , `AppSecret` = 'nrv05AFKPUagmsy4AHOVcjqx4CKSaiqy'  WHERE  `id` = '1' [ RunTime:0.009428s ]
+[2024-11-28T14:24:16+08:00][sql] CONNECT:[ UseTime:0.001142s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:24:16+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001495s ]
+[2024-11-28T14:24:16+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000593s ]
+[2024-11-28T14:24:22+08:00][sql] CONNECT:[ UseTime:0.001405s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:24:22+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001484s ]
+[2024-11-28T14:24:22+08:00][sql] UPDATE `users_bot`  SET `QQ` = '3889363006' , `AppID` = '102450011' , `Token` = 'awXVgSf8hzKehxLZZ8jAz0jOzimzpvd6' , `AppSecret` = 'nrv05AFKPUagmsy4AHOVcjqx4CKSaiqy'  WHERE  `id` = '15' [ RunTime:0.000758s ]
+[2024-11-28T14:24:22+08:00][sql] CONNECT:[ UseTime:0.001407s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:24:22+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002128s ]
+[2024-11-28T14:24:22+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000906s ]
+[2024-11-28T14:24:24+08:00][sql] CONNECT:[ UseTime:0.001593s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:24:24+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001904s ]
+[2024-11-28T14:24:24+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000830s ]
+[2024-11-28T14:24:30+08:00][sql] CONNECT:[ UseTime:0.001631s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:24:30+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001859s ]
+[2024-11-28T14:24:30+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000856s ]
+[2024-11-28T14:24:36+08:00][sql] CONNECT:[ UseTime:0.002011s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:24:36+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002083s ]
+[2024-11-28T14:24:36+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000895s ]
+[2024-11-28T14:24:40+08:00][sql] CONNECT:[ UseTime:0.001766s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:24:40+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001993s ]
+[2024-11-28T14:24:40+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000650s ]
+[2024-11-28T14:25:02+08:00][sql] CONNECT:[ UseTime:0.001531s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:25:02+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001668s ]
+[2024-11-28T14:25:02+08:00][sql] UPDATE `users_bot`  SET `QQ` = '11' , `AppID` = '1' , `Token` = '1' , `AppSecret` = '1'  WHERE  `id` = '18' [ RunTime:0.000845s ]
+[2024-11-28T14:25:02+08:00][sql] CONNECT:[ UseTime:0.001492s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:25:02+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001518s ]
+[2024-11-28T14:25:02+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000710s ]
+[2024-11-28T14:31:02+08:00][sql] CONNECT:[ UseTime:0.001638s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:31:02+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001768s ]
+[2024-11-28T14:31:02+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000531s ]
+[2024-11-28T14:31:05+08:00][sql] CONNECT:[ UseTime:0.003577s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:31:05+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002194s ]
+[2024-11-28T14:31:05+08:00][sql] DELETE FROM `users_bot` WHERE  `ID` = 18 [ RunTime:0.007654s ]
+[2024-11-28T14:31:08+08:00][sql] CONNECT:[ UseTime:0.001902s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:31:08+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002672s ]
+[2024-11-28T14:31:08+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000903s ]
+[2024-11-28T14:31:13+08:00][sql] CONNECT:[ UseTime:0.002286s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:31:13+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002515s ]
+[2024-11-28T14:31:13+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.001153s ]
+[2024-11-28T14:32:00+08:00][sql] CONNECT:[ UseTime:0.001531s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:32:00+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001541s ]
+[2024-11-28T14:32:00+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000523s ]
+[2024-11-28T14:32:03+08:00][sql] CONNECT:[ UseTime:0.005167s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:32:03+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001638s ]
+[2024-11-28T14:32:03+08:00][sql] DELETE FROM `users_bot` WHERE  `ID` = 19 [ RunTime:0.010653s ]
+[2024-11-28T14:32:03+08:00][sql] CONNECT:[ UseTime:0.001237s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:32:03+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001701s ]
+[2024-11-28T14:32:03+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000704s ]
+[2024-11-28T14:32:06+08:00][sql] CONNECT:[ UseTime:0.002821s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:32:06+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002500s ]
+[2024-11-28T14:32:06+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000833s ]
+[2024-11-28T14:32:37+08:00][sql] CONNECT:[ UseTime:0.012303s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:32:37+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001606s ]
+[2024-11-28T14:32:37+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000553s ]
+[2024-11-28T14:32:43+08:00][sql] CONNECT:[ UseTime:0.001155s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:32:43+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001452s ]
+[2024-11-28T14:32:43+08:00][sql] UPDATE `users_bot`  SET `QQ` = '3889363' , `AppID` = '102450011' , `Token` = 'awXVgSf8hzKehxLZZ8jAz0jOzimzpvd6' , `AppSecret` = 'nrv05AFKPUagmsy4AHOVcjqx4CKSaiqy'  WHERE  `id` = '20' [ RunTime:0.006613s ]
+[2024-11-28T14:32:43+08:00][sql] CONNECT:[ UseTime:0.001906s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:32:43+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001715s ]
+[2024-11-28T14:32:43+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000538s ]
+[2024-11-28T14:32:47+08:00][sql] CONNECT:[ UseTime:0.015070s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:32:47+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001583s ]
+[2024-11-28T14:32:47+08:00][sql] DELETE FROM `users_bot` WHERE  `ID` = 20 [ RunTime:0.008220s ]
+[2024-11-28T14:32:47+08:00][sql] CONNECT:[ UseTime:0.001545s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:32:47+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001923s ]
+[2024-11-28T14:32:47+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000620s ]
+[2024-11-28T14:32:52+08:00][sql] CONNECT:[ UseTime:0.011850s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:32:52+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001944s ]
+[2024-11-28T14:32:52+08:00][sql] DELETE FROM `users_bot` WHERE  `ID` = 21 [ RunTime:0.007835s ]
+[2024-11-28T14:32:52+08:00][sql] CONNECT:[ UseTime:0.001521s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:32:52+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001454s ]
+[2024-11-28T14:32:52+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000552s ]
+[2024-11-28T14:33:27+08:00][sql] CONNECT:[ UseTime:0.001670s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:33:27+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001756s ]
+[2024-11-28T14:33:27+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000553s ]
+[2024-11-28T14:34:10+08:00][sql] CONNECT:[ UseTime:0.001672s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:34:10+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001612s ]
+[2024-11-28T14:34:10+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000949s ]
+[2024-11-28T14:34:36+08:00][sql] CONNECT:[ UseTime:0.001929s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:34:36+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001642s ]
+[2024-11-28T14:34:36+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000519s ]
+[2024-11-28T14:34:45+08:00][sql] CONNECT:[ UseTime:0.002036s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:34:45+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002105s ]
+[2024-11-28T14:34:45+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000574s ]
+[2024-11-28T14:35:28+08:00][sql] CONNECT:[ UseTime:0.019808s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:35:28+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002498s ]
+[2024-11-28T14:35:28+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000949s ]
+[2024-11-28T14:36:54+08:00][sql] CONNECT:[ UseTime:0.001431s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:36:54+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002282s ]
+[2024-11-28T14:36:54+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000830s ]
+[2024-11-28T14:37:16+08:00][sql] CONNECT:[ UseTime:0.001343s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:37:16+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002026s ]
+[2024-11-28T14:37:16+08:00][sql] DELETE FROM `users_bot` WHERE  `ID` = 22 [ RunTime:0.005806s ]
+[2024-11-28T14:37:16+08:00][sql] CONNECT:[ UseTime:0.001202s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:37:16+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001310s ]
+[2024-11-28T14:37:16+08:00][sql] DELETE FROM `users_bot` WHERE  `ID` = 22 [ RunTime:0.000254s ]
+[2024-11-28T14:37:16+08:00][sql] CONNECT:[ UseTime:0.001152s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:37:16+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001237s ]
+[2024-11-28T14:37:16+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000229s ]
+[2024-11-28T14:37:16+08:00][sql] CONNECT:[ UseTime:0.001360s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T14:37:16+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001803s ]
+[2024-11-28T14:37:16+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000673s ]
+[2024-11-28T17:59:46+08:00][sql] CONNECT:[ UseTime:0.006234s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T17:59:46+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.006356s ]
+[2024-11-28T17:59:46+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.012923s ]
+[2024-11-28T18:00:24+08:00][sql] CONNECT:[ UseTime:0.015497s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T18:00:24+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002002s ]
+[2024-11-28T18:00:24+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.007952s ]
+[2024-11-28T18:00:59+08:00][sql] CONNECT:[ UseTime:0.009175s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T18:00:59+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001237s ]
+[2024-11-28T18:00:59+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000223s ]
+[2024-11-28T18:01:03+08:00][sql] CONNECT:[ UseTime:0.006845s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T18:01:03+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001436s ]
+[2024-11-28T18:01:03+08:00][sql] UPDATE `users_bot`  SET `QQ` = '388936sa\'dsad' , `AppID` = '102450011' , `Token` = 'awXVgSf8hzKehxLZZ8jAz0jOzimzpvd6' , `AppSecret` = 'nrv05AFKPUagmsy4AHOVcjqx4CKSaiqy'  WHERE  `id` = '23' [ RunTime:0.004728s ]
+[2024-11-28T18:01:03+08:00][sql] CONNECT:[ UseTime:0.009104s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T18:01:03+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001319s ]
+[2024-11-28T18:01:03+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000225s ]
+[2024-11-28T18:01:07+08:00][sql] CONNECT:[ UseTime:0.007701s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T18:01:07+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001513s ]
+[2024-11-28T18:01:07+08:00][sql] DELETE FROM `users_bot` WHERE  `ID` = 23 [ RunTime:0.006669s ]
+[2024-11-28T18:01:07+08:00][sql] CONNECT:[ UseTime:0.006302s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T18:01:07+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001296s ]
+[2024-11-28T18:01:07+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000226s ]
+[2024-11-28T18:34:43+08:00][sql] CONNECT:[ UseTime:0.001984s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T18:34:43+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.002078s ]
+[2024-11-28T18:34:43+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000607s ]
+[2024-11-28T19:09:34+08:00][sql] CONNECT:[ UseTime:0.002554s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T19:09:34+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.005097s ]
+[2024-11-28T19:09:34+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000740s ]
+[2024-11-28T19:16:16+08:00][sql] CONNECT:[ UseTime:0.002100s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T19:16:16+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001742s ]
+[2024-11-28T19:16:16+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000424s ]
+[2024-11-28T20:07:43+08:00][sql] CONNECT:[ UseTime:0.004771s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:07:43+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.003516s ]
+[2024-11-28T20:07:43+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000404s ]
+[2024-11-28T20:07:47+08:00][sql] CONNECT:[ UseTime:0.001892s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:07:47+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002235s ]
+[2024-11-28T20:07:47+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000581s ]
+[2024-11-28T20:07:51+08:00][sql] CONNECT:[ UseTime:0.002016s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:07:51+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002667s ]
+[2024-11-28T20:07:51+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000713s ]
+[2024-11-28T20:08:05+08:00][sql] CONNECT:[ UseTime:0.001579s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:08:05+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.004549s ]
+[2024-11-28T20:08:05+08:00][sql] INSERT INTO `users_bot` SET `QQ` = '3889363' , `AppID` = 'ap13423eqwedd' , `Token` = 'awXVgSf8hzKehxLZZ8jAz0jOzimzpvd6' , `AppSecret` = 'sec64r123234eadw' [ RunTime:0.009254s ]
+[2024-11-28T20:08:07+08:00][sql] CONNECT:[ UseTime:0.001113s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:08:07+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001563s ]
+[2024-11-28T20:08:07+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000545s ]
+[2024-11-28T20:08:16+08:00][sql] CONNECT:[ UseTime:0.001666s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:08:16+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001696s ]
+[2024-11-28T20:08:16+08:00][sql] INSERT INTO `users_bot` SET `QQ` = '38' , `AppID` = 'ap134' , `Token` = 'aw8jAz0jOzimzpvd6' , `AppSecret` = 'sec64r123234e' [ RunTime:0.005073s ]
+[2024-11-28T20:08:18+08:00][sql] CONNECT:[ UseTime:0.001920s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:08:18+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.003505s ]
+[2024-11-28T20:08:18+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000629s ]
+[2024-11-28T20:08:24+08:00][sql] CONNECT:[ UseTime:0.001367s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:08:24+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002800s ]
+[2024-11-28T20:08:24+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000671s ]
+[2024-11-28T20:08:29+08:00][sql] CONNECT:[ UseTime:0.001481s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:08:29+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002465s ]
+[2024-11-28T20:08:29+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000414s ]
+[2024-11-28T20:08:59+08:00][sql] CONNECT:[ UseTime:0.001963s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:08:59+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002164s ]
+[2024-11-28T20:08:59+08:00][sql] UPDATE `users_bot`  SET `QQ` = '388936tyjun3' , `AppID` = 'ap13423eqwedd' , `Token` = 'awXVgSf8hzKehxLZZ8jAz0jOzimzpvd6' , `AppSecret` = 'sec64r123234eadw'  WHERE  `id` = '24' [ RunTime:0.004680s ]
+[2024-11-28T20:08:59+08:00][sql] CONNECT:[ UseTime:0.001703s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:08:59+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001845s ]
+[2024-11-28T20:08:59+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000782s ]
+[2024-11-28T20:09:36+08:00][sql] CONNECT:[ UseTime:0.011554s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:09:36+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001243s ]
+[2024-11-28T20:09:36+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000215s ]
+[2024-11-28T20:09:40+08:00][sql] CONNECT:[ UseTime:0.000765s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:09:40+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001268s ]
+[2024-11-28T20:09:40+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000322s ]
+[2024-11-28T20:09:43+08:00][sql] CONNECT:[ UseTime:0.001690s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:09:43+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001493s ]
+[2024-11-28T20:09:43+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000373s ]
+[2024-11-28T20:10:03+08:00][sql] CONNECT:[ UseTime:0.000924s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:10:03+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001244s ]
+[2024-11-28T20:10:03+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000232s ]
+[2024-11-28T20:27:55+08:00][sql] CONNECT:[ UseTime:0.001758s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:27:55+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001536s ]
+[2024-11-28T20:27:55+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000325s ]
+[2024-11-28T20:27:56+08:00][sql] CONNECT:[ UseTime:0.011535s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:27:56+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.000977s ]
+[2024-11-28T20:27:56+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000301s ]
+[2024-11-28T20:27:59+08:00][sql] CONNECT:[ UseTime:0.001587s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:27:59+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002249s ]
+[2024-11-28T20:27:59+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000641s ]
+[2024-11-28T20:28:03+08:00][sql] CONNECT:[ UseTime:0.001122s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:28:03+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001055s ]
+[2024-11-28T20:28:03+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000169s ]
+[2024-11-28T20:28:05+08:00][sql] CONNECT:[ UseTime:0.001574s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:28:05+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002046s ]
+[2024-11-28T20:28:05+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000592s ]
+[2024-11-28T20:29:20+08:00][sql] CONNECT:[ UseTime:0.000989s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:29:20+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001238s ]
+[2024-11-28T20:29:20+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000222s ]
+[2024-11-28T20:29:28+08:00][sql] CONNECT:[ UseTime:0.002021s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:29:28+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002451s ]
+[2024-11-28T20:29:28+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000771s ]
+[2024-11-28T20:29:30+08:00][sql] CONNECT:[ UseTime:0.003130s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:29:30+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001089s ]
+[2024-11-28T20:29:30+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000373s ]
+[2024-11-28T20:29:34+08:00][sql] CONNECT:[ UseTime:0.001631s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:29:34+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001205s ]
+[2024-11-28T20:29:34+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000407s ]
+[2024-11-28T20:30:05+08:00][sql] CONNECT:[ UseTime:0.001014s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:30:05+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001142s ]
+[2024-11-28T20:30:05+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000284s ]
+[2024-11-28T20:30:07+08:00][sql] CONNECT:[ UseTime:0.001128s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:30:07+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001109s ]
+[2024-11-28T20:30:07+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000190s ]
+[2024-11-28T20:30:10+08:00][sql] CONNECT:[ UseTime:0.006529s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:30:10+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001637s ]
+[2024-11-28T20:30:10+08:00][sql] DELETE FROM `users_bot` WHERE  `ID` = 25 [ RunTime:0.004771s ]
+[2024-11-28T20:30:10+08:00][sql] CONNECT:[ UseTime:0.001773s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:30:10+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002213s ]
+[2024-11-28T20:30:10+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000665s ]
+[2024-11-28T20:30:12+08:00][sql] CONNECT:[ UseTime:0.001199s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:30:12+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002179s ]
+[2024-11-28T20:30:12+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000563s ]
+[2024-11-28T20:30:19+08:00][sql] CONNECT:[ UseTime:0.001766s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:30:19+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001144s ]
+[2024-11-28T20:30:19+08:00][sql] DELETE FROM `users_bot` WHERE  `ID` = 24 [ RunTime:0.006571s ]
+[2024-11-28T20:30:19+08:00][sql] CONNECT:[ UseTime:0.001445s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:30:19+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001522s ]
+[2024-11-28T20:30:19+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000517s ]
+[2024-11-28T20:31:45+08:00][sql] CONNECT:[ UseTime:0.005178s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:31:45+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001197s ]
+[2024-11-28T20:31:45+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000217s ]
+[2024-11-28T20:31:47+08:00][sql] CONNECT:[ UseTime:0.001077s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:31:47+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001017s ]
+[2024-11-28T20:31:47+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000155s ]
+[2024-11-28T20:31:47+08:00][sql] CONNECT:[ UseTime:0.001228s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:31:47+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001242s ]
+[2024-11-28T20:31:47+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000157s ]
+[2024-11-28T20:32:02+08:00][sql] CONNECT:[ UseTime:0.047516s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:32:02+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002497s ]
+[2024-11-28T20:32:02+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000812s ]
+[2024-11-28T20:32:44+08:00][sql] CONNECT:[ UseTime:0.000827s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:32:44+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001209s ]
+[2024-11-28T20:32:44+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000208s ]
+[2024-11-28T20:32:48+08:00][sql] CONNECT:[ UseTime:0.001649s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:32:48+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001876s ]
+[2024-11-28T20:32:48+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000380s ]
+[2024-11-28T20:32:50+08:00][sql] CONNECT:[ UseTime:0.001811s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:32:50+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002049s ]
+[2024-11-28T20:32:50+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000696s ]
+[2024-11-28T20:33:27+08:00][sql] CONNECT:[ UseTime:0.001074s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:33:27+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001972s ]
+[2024-11-28T20:33:27+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000426s ]
+[2024-11-28T20:33:30+08:00][sql] CONNECT:[ UseTime:0.001674s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:33:30+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001121s ]
+[2024-11-28T20:33:30+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000172s ]
+[2024-11-28T20:33:33+08:00][sql] CONNECT:[ UseTime:0.001722s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:33:33+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001831s ]
+[2024-11-28T20:33:33+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000435s ]
+[2024-11-28T20:40:24+08:00][sql] CONNECT:[ UseTime:0.001314s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:40:24+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001334s ]
+[2024-11-28T20:40:24+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000226s ]
+[2024-11-28T20:40:32+08:00][sql] CONNECT:[ UseTime:0.001284s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:40:32+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.003059s ]
+[2024-11-28T20:40:32+08:00][sql] UPDATE `users_bot`  SET `QQ` = '3889363006' , `AppID` = '102450011' , `Token` = 'awXVgSf8hzKehxLZZ8jAz0jOzimzpvd6' , `AppSecret` = 'nrv05AFKPUagmsy4AHOVcjqx4CKSaiqy'  WHERE  `id` = '26' [ RunTime:0.000941s ]
+[2024-11-28T20:40:32+08:00][sql] CONNECT:[ UseTime:0.001481s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:40:32+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002438s ]
+[2024-11-28T20:40:32+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000542s ]
+[2024-11-28T20:40:37+08:00][sql] CONNECT:[ UseTime:0.015095s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:40:37+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001229s ]
+[2024-11-28T20:40:37+08:00][sql] DELETE FROM `users_bot` WHERE  `ID` = 26 [ RunTime:0.005287s ]
+[2024-11-28T20:40:37+08:00][sql] CONNECT:[ UseTime:0.002054s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:40:37+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001161s ]
+[2024-11-28T20:40:37+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000309s ]
+[2024-11-28T20:40:41+08:00][sql] CONNECT:[ UseTime:0.001717s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:40:41+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001195s ]
+[2024-11-28T20:40:41+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000225s ]
+[2024-11-28T20:41:55+08:00][sql] CONNECT:[ UseTime:0.001722s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:41:55+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001900s ]
+[2024-11-28T20:41:55+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000510s ]
+[2024-11-28T20:41:57+08:00][sql] CONNECT:[ UseTime:0.001942s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:41:57+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001287s ]
+[2024-11-28T20:41:57+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000499s ]
+[2024-11-28T20:41:58+08:00][sql] CONNECT:[ UseTime:0.009659s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:41:58+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001243s ]
+[2024-11-28T20:41:58+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000586s ]
+[2024-11-28T20:42:27+08:00][sql] CONNECT:[ UseTime:0.009313s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:42:27+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001199s ]
+[2024-11-28T20:42:27+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000265s ]
+[2024-11-28T20:42:31+08:00][sql] CONNECT:[ UseTime:0.000894s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:42:31+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001128s ]
+[2024-11-28T20:42:31+08:00][sql] UPDATE `users_bot`  SET `QQ` = '3889' , `AppID` = '102450011' , `Token` = 'awXVgSf8hzKehxLZZ8jAz0jOzimzpvd6' , `AppSecret` = 'nrv05AFKPUagmsy4AHOVcjqx4CKSaiqy'  WHERE  `id` = '3' [ RunTime:0.004830s ]
+[2024-11-28T20:42:31+08:00][sql] CONNECT:[ UseTime:0.010105s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:42:31+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001270s ]
+[2024-11-28T20:42:31+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000181s ]
+[2024-11-28T20:42:35+08:00][sql] CONNECT:[ UseTime:0.006832s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:42:35+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001491s ]
+[2024-11-28T20:42:35+08:00][sql] DELETE FROM `users_bot` WHERE  `ID` = 3 [ RunTime:0.003653s ]
+[2024-11-28T20:42:35+08:00][sql] CONNECT:[ UseTime:0.001182s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:42:35+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001105s ]
+[2024-11-28T20:42:35+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000194s ]
+[2024-11-28T20:42:41+08:00][sql] CONNECT:[ UseTime:0.008646s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:42:41+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001090s ]
+[2024-11-28T20:42:41+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000185s ]
+[2024-11-28T20:44:11+08:00][sql] CONNECT:[ UseTime:0.001397s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:44:11+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001075s ]
+[2024-11-28T20:44:11+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000161s ]
+[2024-11-28T20:46:53+08:00][sql] CONNECT:[ UseTime:0.018253s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:46:53+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001049s ]
+[2024-11-28T20:46:53+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000210s ]
+[2024-11-28T20:49:20+08:00][sql] CONNECT:[ UseTime:0.001007s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:49:20+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001242s ]
+[2024-11-28T20:49:20+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000198s ]
+[2024-11-28T20:53:25+08:00][sql] CONNECT:[ UseTime:0.001300s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:53:25+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001217s ]
+[2024-11-28T20:53:25+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000229s ]
+[2024-11-28T20:53:31+08:00][sql] CONNECT:[ UseTime:0.022555s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:53:31+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001118s ]
+[2024-11-28T20:53:31+08:00][sql] INSERT INTO `users_bot` SET `QQ` = '234' , `AppID` = '324' , `Token` = '324' , `AppSecret` = '2143' [ RunTime:0.009304s ]
+[2024-11-28T20:53:32+08:00][sql] CONNECT:[ UseTime:0.001508s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:53:32+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001692s ]
+[2024-11-28T20:53:32+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000285s ]
+[2024-11-28T20:53:35+08:00][sql] CONNECT:[ UseTime:0.002020s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:53:35+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001225s ]
+[2024-11-28T20:53:35+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000534s ]
+[2024-11-28T20:53:38+08:00][sql] CONNECT:[ UseTime:0.001086s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:53:38+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001016s ]
+[2024-11-28T20:53:38+08:00][sql] DELETE FROM `users_bot` WHERE  `ID` = 27 [ RunTime:0.014936s ]
+[2024-11-28T20:53:38+08:00][sql] CONNECT:[ UseTime:0.001841s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:53:38+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001777s ]
+[2024-11-28T20:53:38+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000461s ]
+[2024-11-28T20:53:41+08:00][sql] CONNECT:[ UseTime:0.015733s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:53:41+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001288s ]
+[2024-11-28T20:53:41+08:00][sql] DELETE FROM `users_bot` WHERE  `ID` = 3 [ RunTime:0.004319s ]
+[2024-11-28T20:53:41+08:00][sql] CONNECT:[ UseTime:0.001286s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T20:53:41+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002038s ]
+[2024-11-28T20:53:41+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000488s ]
+[2024-11-28T21:05:17+08:00][sql] CONNECT:[ UseTime:0.003827s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:05:17+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001428s ]
+[2024-11-28T21:05:17+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000171s ]
+[2024-11-28T21:05:23+08:00][sql] CONNECT:[ UseTime:0.001243s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:05:23+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001086s ]
+[2024-11-28T21:05:23+08:00][sql] INSERT INTO `users_bot` SET `QQ` = '234' , `AppID` = '324' , `Token` = '324' , `AppSecret` = '2143' [ RunTime:0.002957s ]
+[2024-11-28T21:05:23+08:00][sql] CONNECT:[ UseTime:0.001565s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:05:23+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001908s ]
+[2024-11-28T21:05:23+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000436s ]
+[2024-11-28T21:05:28+08:00][sql] CONNECT:[ UseTime:0.001701s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:05:28+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001809s ]
+[2024-11-28T21:05:28+08:00][sql] INSERT INTO `users_bot` SET `QQ` = '234' , `AppID` = '324' , `Token` = '324' , `AppSecret` = '2143' [ RunTime:0.005287s ]
+[2024-11-28T21:05:28+08:00][sql] CONNECT:[ UseTime:0.001726s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:05:28+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001981s ]
+[2024-11-28T21:05:28+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000372s ]
+[2024-11-28T21:05:50+08:00][sql] CONNECT:[ UseTime:0.000992s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:05:50+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001042s ]
+[2024-11-28T21:05:50+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000360s ]
+[2024-11-28T21:05:57+08:00][sql] CONNECT:[ UseTime:0.016119s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:05:57+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.003213s ]
+[2024-11-28T21:05:57+08:00][sql] INSERT INTO `users_bot` SET `QQ` = '121234' , `AppID` = '23432445' , `Token` = '23435' , `AppSecret` = '1234' [ RunTime:0.004883s ]
+[2024-11-28T21:05:59+08:00][sql] CONNECT:[ UseTime:0.002207s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:05:59+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001856s ]
+[2024-11-28T21:05:59+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000352s ]
+[2024-11-28T21:06:25+08:00][sql] CONNECT:[ UseTime:0.001827s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:06:25+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001121s ]
+[2024-11-28T21:06:25+08:00][sql] INSERT INTO `users_bot` SET `QQ` = '9808' , `AppID` = '87907' , `Token` = '77980' , `AppSecret` = '789087' [ RunTime:0.004224s ]
+[2024-11-28T21:06:27+08:00][sql] CONNECT:[ UseTime:0.001718s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:06:27+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001210s ]
+[2024-11-28T21:06:27+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000391s ]
+[2024-11-28T21:09:45+08:00][sql] CONNECT:[ UseTime:0.006729s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:09:45+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001349s ]
+[2024-11-28T21:09:45+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000282s ]
+[2024-11-28T21:09:53+08:00][sql] CONNECT:[ UseTime:0.001935s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:09:53+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001205s ]
+[2024-11-28T21:09:53+08:00][sql] INSERT INTO `users_bot` SET `QQ` = '2143' , `AppID` = '324' , `Token` = '3324' , `AppSecret` = '3245' [ RunTime:0.005453s ]
+[2024-11-28T21:09:55+08:00][sql] CONNECT:[ UseTime:0.016686s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:09:55+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001734s ]
+[2024-11-28T21:09:55+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000346s ]
+[2024-11-28T21:09:58+08:00][sql] CONNECT:[ UseTime:0.001414s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:09:58+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002332s ]
+[2024-11-28T21:09:58+08:00][sql] DELETE FROM `users_bot` WHERE  `ID` = 28 [ RunTime:0.004857s ]
+[2024-11-28T21:09:58+08:00][sql] CONNECT:[ UseTime:0.001369s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:09:58+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002776s ]
+[2024-11-28T21:09:58+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000472s ]
+[2024-11-28T21:10:01+08:00][sql] CONNECT:[ UseTime:0.017141s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:10:01+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002266s ]
+[2024-11-28T21:10:01+08:00][sql] DELETE FROM `users_bot` WHERE  `ID` = 29 [ RunTime:0.006450s ]
+[2024-11-28T21:10:01+08:00][sql] CONNECT:[ UseTime:0.001864s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:10:01+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002215s ]
+[2024-11-28T21:10:01+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000640s ]
+[2024-11-28T21:10:03+08:00][sql] CONNECT:[ UseTime:0.001085s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:10:03+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001015s ]
+[2024-11-28T21:10:03+08:00][sql] DELETE FROM `users_bot` WHERE  `ID` = 30 [ RunTime:0.004235s ]
+[2024-11-28T21:10:03+08:00][sql] CONNECT:[ UseTime:0.001144s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:10:03+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001018s ]
+[2024-11-28T21:10:03+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000304s ]
+[2024-11-28T21:15:22+08:00][sql] CONNECT:[ UseTime:0.001371s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:15:22+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001101s ]
+[2024-11-28T21:15:22+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000160s ]
+[2024-11-28T21:15:36+08:00][sql] CONNECT:[ UseTime:0.011334s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:15:36+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001185s ]
+[2024-11-28T21:15:36+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000308s ]
+[2024-11-28T21:15:46+08:00][sql] CONNECT:[ UseTime:0.006444s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:15:46+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001101s ]
+[2024-11-28T21:15:46+08:00][sql] INSERT INTO `users_bot` SET `QQ` = '11' , `AppID` = '11' , `Token` = '11' , `AppSecret` = '11' [ RunTime:0.004614s ]
+[2024-11-28T21:15:47+08:00][sql] CONNECT:[ UseTime:0.009697s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:15:47+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001143s ]
+[2024-11-28T21:15:47+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000193s ]
+[2024-11-28T21:16:03+08:00][sql] CONNECT:[ UseTime:0.001145s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:16:03+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001214s ]
+[2024-11-28T21:16:03+08:00][sql] DELETE FROM `users_bot` WHERE  `ID` = 33 [ RunTime:0.007403s ]
+[2024-11-28T21:16:03+08:00][sql] CONNECT:[ UseTime:0.001245s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:16:03+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001190s ]
+[2024-11-28T21:16:03+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000165s ]
+[2024-11-28T21:16:16+08:00][sql] CONNECT:[ UseTime:0.001131s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:16:16+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001074s ]
+[2024-11-28T21:16:16+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000177s ]
+[2024-11-28T21:16:19+08:00][sql] CONNECT:[ UseTime:0.000820s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:16:19+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001077s ]
+[2024-11-28T21:16:19+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000166s ]
+[2024-11-28T21:16:22+08:00][sql] CONNECT:[ UseTime:0.010334s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:16:22+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001053s ]
+[2024-11-28T21:16:22+08:00][sql] DELETE FROM `users_bot` WHERE  `ID` = 31 [ RunTime:0.007152s ]
+[2024-11-28T21:16:22+08:00][sql] CONNECT:[ UseTime:0.008835s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:16:22+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001320s ]
+[2024-11-28T21:16:22+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000177s ]
+[2024-11-28T21:20:58+08:00][sql] CONNECT:[ UseTime:0.015555s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:20:58+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001325s ]
+[2024-11-28T21:20:58+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000309s ]
+[2024-11-28T21:21:03+08:00][sql] CONNECT:[ UseTime:0.001617s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:21:03+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001884s ]
+[2024-11-28T21:21:03+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000701s ]
+[2024-11-28T21:21:20+08:00][sql] CONNECT:[ UseTime:0.012567s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:21:20+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001083s ]
+[2024-11-28T21:21:20+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000213s ]
+[2024-11-28T21:21:27+08:00][sql] CONNECT:[ UseTime:0.002250s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:21:27+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001075s ]
+[2024-11-28T21:21:27+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000365s ]
+[2024-11-28T21:22:43+08:00][sql] CONNECT:[ UseTime:0.009803s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:22:43+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001162s ]
+[2024-11-28T21:22:43+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000179s ]
+[2024-11-28T21:22:46+08:00][sql] CONNECT:[ UseTime:0.001747s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:22:46+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001755s ]
+[2024-11-28T21:22:46+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000368s ]
+[2024-11-28T21:23:35+08:00][sql] CONNECT:[ UseTime:0.001134s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:23:35+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001236s ]
+[2024-11-28T21:23:35+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000269s ]
+[2024-11-28T21:23:38+08:00][sql] CONNECT:[ UseTime:0.001249s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:23:38+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001298s ]
+[2024-11-28T21:23:38+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000266s ]
+[2024-11-28T21:24:40+08:00][sql] CONNECT:[ UseTime:0.008812s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:24:40+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001042s ]
+[2024-11-28T21:24:40+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000165s ]
+[2024-11-28T21:24:55+08:00][sql] CONNECT:[ UseTime:0.001365s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:24:55+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001749s ]
+[2024-11-28T21:24:55+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000434s ]
+[2024-11-28T21:25:08+08:00][sql] CONNECT:[ UseTime:0.010491s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:25:08+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001044s ]
+[2024-11-28T21:25:08+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000161s ]
+[2024-11-28T21:29:25+08:00][sql] CONNECT:[ UseTime:0.001777s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:29:25+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002030s ]
+[2024-11-28T21:29:25+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000638s ]
+[2024-11-28T21:29:30+08:00][sql] CONNECT:[ UseTime:0.001498s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:29:30+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002050s ]
+[2024-11-28T21:29:30+08:00][sql] UPDATE `users_bot`  SET `QQ` = '2143' , `AppID` = '324' , `Token` = '3324' , `AppSecret` = '3245'  WHERE  `id` = '32' [ RunTime:0.000572s ]
+[2024-11-28T21:29:30+08:00][sql] CONNECT:[ UseTime:0.001207s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:29:30+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001933s ]
+[2024-11-28T21:29:30+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000580s ]
+[2024-11-28T21:29:39+08:00][sql] CONNECT:[ UseTime:0.001791s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:29:39+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001945s ]
+[2024-11-28T21:29:39+08:00][sql] UPDATE `users_bot`  SET `QQ` = '2143222' , `AppID` = '324' , `Token` = '3324' , `AppSecret` = '3245'  WHERE  `id` = '32' [ RunTime:0.005470s ]
+[2024-11-28T21:29:40+08:00][sql] CONNECT:[ UseTime:0.023977s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:29:40+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002222s ]
+[2024-11-28T21:29:40+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000775s ]
+[2024-11-28T21:29:43+08:00][sql] CONNECT:[ UseTime:0.001901s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:29:43+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001215s ]
+[2024-11-28T21:29:43+08:00][sql] UPDATE `users_bot`  SET `QQ` = '214322211' , `AppID` = '324' , `Token` = '3324' , `AppSecret` = '3245'  WHERE  `id` = '32' [ RunTime:0.003951s ]
+[2024-11-28T21:29:43+08:00][sql] CONNECT:[ UseTime:0.001778s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:29:43+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001658s ]
+[2024-11-28T21:29:43+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000293s ]
+[2024-11-28T21:29:47+08:00][sql] CONNECT:[ UseTime:0.000833s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:29:47+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001248s ]
+[2024-11-28T21:29:47+08:00][sql] UPDATE `users_bot`  SET `QQ` = '214322211' , `AppID` = '324213' , `Token` = '33242143' , `AppSecret` = '32452143'  WHERE  `id` = '32' [ RunTime:0.004107s ]
+[2024-11-28T21:29:47+08:00][sql] CONNECT:[ UseTime:0.001545s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:29:47+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001772s ]
+[2024-11-28T21:29:47+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000637s ]
+[2024-11-28T21:29:50+08:00][sql] CONNECT:[ UseTime:0.000919s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:29:50+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001139s ]
+[2024-11-28T21:29:50+08:00][sql] DELETE FROM `users_bot` WHERE  `ID` = 32 [ RunTime:0.004102s ]
+[2024-11-28T21:29:50+08:00][sql] CONNECT:[ UseTime:0.001909s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:29:50+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001170s ]
+[2024-11-28T21:29:50+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000235s ]
+[2024-11-28T21:29:54+08:00][sql] CONNECT:[ UseTime:0.000889s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:29:54+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001030s ]
+[2024-11-28T21:29:54+08:00][sql] INSERT INTO `users_bot` SET `QQ` = '213' , `AppID` = '21344' , `Token` = '214' , `AppSecret` = '124' [ RunTime:0.002785s ]
+[2024-11-28T21:29:55+08:00][sql] CONNECT:[ UseTime:0.001708s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:29:55+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001298s ]
+[2024-11-28T21:29:55+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000453s ]
+[2024-11-28T21:30:01+08:00][sql] CONNECT:[ UseTime:0.001593s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:30:01+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001893s ]
+[2024-11-28T21:30:01+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000378s ]
+[2024-11-28T21:30:03+08:00][sql] CONNECT:[ UseTime:0.002759s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:30:03+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001063s ]
+[2024-11-28T21:30:03+08:00][sql] DELETE FROM `users_bot` WHERE  `ID` = 34 [ RunTime:0.007588s ]
+[2024-11-28T21:30:03+08:00][sql] CONNECT:[ UseTime:0.001605s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:30:03+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001019s ]
+[2024-11-28T21:30:03+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000174s ]
+[2024-11-28T21:33:47+08:00][sql] CONNECT:[ UseTime:0.005474s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:33:47+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001043s ]
+[2024-11-28T21:33:47+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000196s ]
+[2024-11-28T21:35:56+08:00][sql] CONNECT:[ UseTime:0.001363s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:35:56+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002071s ]
+[2024-11-28T21:35:56+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000287s ]
+[2024-11-28T21:36:26+08:00][sql] CONNECT:[ UseTime:0.001164s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:36:26+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001410s ]
+[2024-11-28T21:36:26+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000287s ]
+[2024-11-28T21:37:10+08:00][sql] CONNECT:[ UseTime:0.001210s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:37:10+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001272s ]
+[2024-11-28T21:37:10+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000260s ]
+[2024-11-28T21:37:12+08:00][sql] CONNECT:[ UseTime:0.002318s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:37:12+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.007856s ]
+[2024-11-28T21:37:12+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.011751s ]
+[2024-11-28T21:37:15+08:00][sql] CONNECT:[ UseTime:0.001704s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:37:15+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001132s ]
+[2024-11-28T21:37:15+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000547s ]
+[2024-11-28T21:37:20+08:00][sql] CONNECT:[ UseTime:0.001792s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:37:20+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002275s ]
+[2024-11-28T21:37:20+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000615s ]
+[2024-11-28T21:37:22+08:00][sql] CONNECT:[ UseTime:0.001701s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:37:22+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001090s ]
+[2024-11-28T21:37:22+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000174s ]
+[2024-11-28T21:37:24+08:00][sql] CONNECT:[ UseTime:0.009707s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:37:24+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002333s ]
+[2024-11-28T21:37:24+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000972s ]
+[2024-11-28T21:37:36+08:00][sql] CONNECT:[ UseTime:0.015654s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:37:36+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001713s ]
+[2024-11-28T21:37:36+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000360s ]
+[2024-11-28T21:38:40+08:00][sql] CONNECT:[ UseTime:0.002017s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:38:40+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002259s ]
+[2024-11-28T21:38:40+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000805s ]
+[2024-11-28T21:38:42+08:00][sql] CONNECT:[ UseTime:0.001994s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:38:42+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001068s ]
+[2024-11-28T21:38:42+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000187s ]
+[2024-11-28T21:39:29+08:00][sql] CONNECT:[ UseTime:0.001902s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:39:29+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001358s ]
+[2024-11-28T21:39:29+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000431s ]
+[2024-11-28T21:39:50+08:00][sql] CONNECT:[ UseTime:0.006460s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:39:50+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001087s ]
+[2024-11-28T21:39:50+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000227s ]
+[2024-11-28T21:39:53+08:00][sql] CONNECT:[ UseTime:0.005844s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T21:39:53+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001107s ]
+[2024-11-28T21:39:53+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000423s ]
+[2024-11-28T22:24:43+08:00][sql] CONNECT:[ UseTime:0.004467s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T22:24:43+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002018s ]
+[2024-11-28T22:24:43+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000262s ]
+[2024-11-28T22:52:39+08:00][sql] CONNECT:[ UseTime:0.002084s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T22:52:39+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.002199s ]
+[2024-11-28T22:52:39+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000955s ]
+[2024-11-28T22:52:52+08:00][sql] CONNECT:[ UseTime:0.002019s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-28T22:52:52+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002130s ]
+[2024-11-28T22:52:52+08:00][sql] SELECT `ID`,`QQ`,`AppID`,`Token`,`AppSecret` FROM `users_bot` [ RunTime:0.000881s ]

@@ -1,0 +1,2 @@
+[2024-11-26T13:50:43+08:00][error] [2]unlink(C:\Users\30570\AppData\Local\Temp\0b9676ae-8ff9-4558-9292-6bece8f0cf9b_TurboBot 1.0.1.zip.f9b\SDK\TurboBot_SDK.bak): Permission denied[D:\Desktop\x\php\ThinkPHP\vendor\topthink\framework\src\think\session\driver\File.php:246]
+[2024-11-26T19:26:40+08:00][error] [2]unlink(C:\Users\30570\AppData\Local\Temp\0b9676ae-8ff9-4558-9292-6bece8f0cf9b_TurboBot 1.0.1.zip.f9b\SDK\TurboBot_SDK.bak): Permission denied[D:\Desktop\x\php\ThinkPHP\vendor\topthink\framework\src\think\session\driver\File.php:246]

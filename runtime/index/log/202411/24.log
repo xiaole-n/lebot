@@ -1,0 +1,772 @@
+[2024-11-24T09:36:04+08:00][sql] CONNECT:[ UseTime:0.005564s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T09:36:04+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.010889s ]
+[2024-11-24T09:36:04+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.013318s ]
+[2024-11-24T09:43:08+08:00][sql] CONNECT:[ UseTime:0.001867s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T09:43:08+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.004177s ]
+[2024-11-24T09:43:08+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.001040s ]
+[2024-11-24T09:47:59+08:00][sql] CONNECT:[ UseTime:0.006567s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T09:47:59+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001480s ]
+[2024-11-24T09:47:59+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000244s ]
+[2024-11-24T09:49:47+08:00][sql] CONNECT:[ UseTime:0.001315s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T09:49:47+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001479s ]
+[2024-11-24T09:49:47+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000326s ]
+[2024-11-24T09:50:15+08:00][sql] CONNECT:[ UseTime:0.005337s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T09:50:15+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001466s ]
+[2024-11-24T09:50:15+08:00][sql] SELECT * FROM `users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000400s ]
+[2024-11-24T09:50:15+08:00][sql] UPDATE `users`  SET `password` = 'E10ADC3949BA59ABBE56E057F20F883E'  WHERE  `id` = 1 [ RunTime:0.004469s ]
+[2024-11-24T09:50:22+08:00][sql] CONNECT:[ UseTime:0.001391s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T09:50:22+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001310s ]
+[2024-11-24T09:50:22+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000877s ]
+[2024-11-24T09:50:28+08:00][sql] CONNECT:[ UseTime:0.001707s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T09:50:28+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001358s ]
+[2024-11-24T09:50:28+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000349s ]
+[2024-11-24T09:50:35+08:00][sql] CONNECT:[ UseTime:0.028918s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T09:50:35+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.005747s ]
+[2024-11-24T09:50:35+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.002207s ]
+[2024-11-24T09:50:39+08:00][sql] CONNECT:[ UseTime:0.000904s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T09:50:39+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001231s ]
+[2024-11-24T09:50:39+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000420s ]
+[2024-11-24T09:51:39+08:00][sql] CONNECT:[ UseTime:0.013241s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T09:51:39+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001770s ]
+[2024-11-24T09:51:39+08:00][sql] SELECT * FROM `users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000937s ]
+[2024-11-24T09:51:39+08:00][sql] UPDATE `users`  SET `password` = '37EAD208EB59F2CEA05B7618AD62C52F'  WHERE  `id` = 1 [ RunTime:0.004352s ]
+[2024-11-24T10:02:10+08:00][sql] CONNECT:[ UseTime:0.014076s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T10:02:10+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.002943s ]
+[2024-11-24T10:02:10+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaolele'  AND `id` <> 1 LIMIT 1 [ RunTime:0.000894s ]
+[2024-11-24T10:02:10+08:00][sql] UPDATE `users`  SET `username` = 'xiaolele' , `name` = '樂' , `qq` = '3057054240' , `email` = '3057054240@qq.com'  WHERE  `id` = 1 [ RunTime:0.005267s ]
+[2024-11-24T10:02:10+08:00][sql] SELECT * FROM `users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000519s ]
+[2024-11-24T10:02:26+08:00][sql] CONNECT:[ UseTime:0.013511s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T10:02:26+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001399s ]
+[2024-11-24T10:02:26+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole'  AND `id` <> 1 LIMIT 1 [ RunTime:0.000284s ]
+[2024-11-24T10:02:26+08:00][sql] UPDATE `users`  SET `username` = 'xiaole' , `name` = '樂' , `qq` = '3057054240' , `email` = '3057054240@qq.com'  WHERE  `id` = 1 [ RunTime:0.004728s ]
+[2024-11-24T10:02:26+08:00][sql] SELECT * FROM `users` WHERE  `id` = 1 LIMIT 1 [ RunTime:0.000173s ]
+[2024-11-24T10:29:05+08:00][sql] CONNECT:[ UseTime:0.001452s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T10:29:05+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001616s ]
+[2024-11-24T10:29:05+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000377s ]
+[2024-11-24T10:29:05+08:00][error] [0]模板文件不存在:D:\Desktop\x\php\ThinkPHP\app\index\view\index\latest_logs.html[D:\Desktop\x\php\ThinkPHP\vendor\topthink\think-view\src\Think.php:128]
+[2024-11-24T10:29:26+08:00][sql] CONNECT:[ UseTime:0.001838s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T10:29:26+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001316s ]
+[2024-11-24T10:29:26+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000243s ]
+[2024-11-24T10:29:26+08:00][error] [0]语法错误: unexpected token ";", expecting ")"[D:\Desktop\x\php\ThinkPHP\runtime\index\temp\ba8445fbd19da8345c2523ab112934fc.php:24]
+[2024-11-24T10:31:14+08:00][sql] CONNECT:[ UseTime:0.015049s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T10:31:14+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001721s ]
+[2024-11-24T10:31:14+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000399s ]
+[2024-11-24T10:32:19+08:00][sql] CONNECT:[ UseTime:0.001460s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T10:32:19+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001399s ]
+[2024-11-24T10:32:19+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000500s ]
+[2024-11-24T10:34:03+08:00][sql] CONNECT:[ UseTime:0.001011s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T10:34:03+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001433s ]
+[2024-11-24T10:34:03+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000354s ]
+[2024-11-24T10:39:03+08:00][sql] CONNECT:[ UseTime:0.014774s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T10:39:03+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001477s ]
+[2024-11-24T10:39:03+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000253s ]
+[2024-11-24T10:39:35+08:00][sql] CONNECT:[ UseTime:0.015487s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T10:39:35+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001405s ]
+[2024-11-24T10:39:35+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000404s ]
+[2024-11-24T10:42:18+08:00][sql] CONNECT:[ UseTime:0.001383s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T10:42:18+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002648s ]
+[2024-11-24T10:42:18+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000732s ]
+[2024-11-24T10:43:55+08:00][sql] CONNECT:[ UseTime:0.001465s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T10:43:55+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002305s ]
+[2024-11-24T10:43:55+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000531s ]
+[2024-11-24T10:45:51+08:00][sql] CONNECT:[ UseTime:0.001695s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T10:45:51+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001580s ]
+[2024-11-24T10:45:51+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000526s ]
+[2024-11-24T10:48:02+08:00][sql] CONNECT:[ UseTime:0.009569s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T10:48:02+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001569s ]
+[2024-11-24T10:48:02+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000355s ]
+[2024-11-24T10:48:13+08:00][sql] CONNECT:[ UseTime:0.003146s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T10:48:13+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001327s ]
+[2024-11-24T10:48:13+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000297s ]
+[2024-11-24T10:48:22+08:00][sql] CONNECT:[ UseTime:0.014242s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T10:48:22+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001750s ]
+[2024-11-24T10:48:22+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000276s ]
+[2024-11-24T10:48:25+08:00][sql] CONNECT:[ UseTime:0.001116s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T10:48:25+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001085s ]
+[2024-11-24T10:48:25+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000263s ]
+[2024-11-24T10:49:11+08:00][sql] CONNECT:[ UseTime:0.000875s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T10:49:11+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001070s ]
+[2024-11-24T10:49:11+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000253s ]
+[2024-11-24T10:49:54+08:00][sql] CONNECT:[ UseTime:0.000891s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T10:49:54+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001036s ]
+[2024-11-24T10:49:54+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000249s ]
+[2024-11-24T10:50:05+08:00][sql] CONNECT:[ UseTime:0.001404s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T10:50:05+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.003109s ]
+[2024-11-24T10:50:05+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000748s ]
+[2024-11-24T10:52:27+08:00][sql] CONNECT:[ UseTime:0.004707s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T10:52:27+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001346s ]
+[2024-11-24T10:52:27+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000253s ]
+[2024-11-24T10:54:28+08:00][sql] CONNECT:[ UseTime:0.001118s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T10:54:28+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001515s ]
+[2024-11-24T10:54:28+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000466s ]
+[2024-11-24T10:56:00+08:00][sql] CONNECT:[ UseTime:0.001979s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T10:56:00+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001081s ]
+[2024-11-24T10:56:00+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000278s ]
+[2024-11-24T11:03:29+08:00][sql] CONNECT:[ UseTime:0.001031s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:03:29+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001371s ]
+[2024-11-24T11:03:29+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000313s ]
+[2024-11-24T11:03:40+08:00][sql] CONNECT:[ UseTime:0.001268s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:03:40+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001025s ]
+[2024-11-24T11:03:40+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000209s ]
+[2024-11-24T11:04:21+08:00][sql] CONNECT:[ UseTime:0.008645s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:04:21+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001152s ]
+[2024-11-24T11:04:21+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000206s ]
+[2024-11-24T11:04:33+08:00][sql] CONNECT:[ UseTime:0.009460s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:04:33+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001399s ]
+[2024-11-24T11:04:33+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000403s ]
+[2024-11-24T11:04:46+08:00][sql] CONNECT:[ UseTime:0.001611s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:04:46+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001933s ]
+[2024-11-24T11:04:46+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000561s ]
+[2024-11-24T11:11:01+08:00][sql] CONNECT:[ UseTime:0.001361s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:11:01+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001245s ]
+[2024-11-24T11:11:01+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000316s ]
+[2024-11-24T11:11:24+08:00][sql] CONNECT:[ UseTime:0.021339s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:11:24+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001018s ]
+[2024-11-24T11:11:24+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000212s ]
+[2024-11-24T11:12:49+08:00][sql] CONNECT:[ UseTime:0.001138s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:12:49+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002585s ]
+[2024-11-24T11:12:49+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000615s ]
+[2024-11-24T11:13:04+08:00][sql] CONNECT:[ UseTime:0.000983s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:13:04+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001159s ]
+[2024-11-24T11:13:04+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000232s ]
+[2024-11-24T11:13:15+08:00][sql] CONNECT:[ UseTime:0.002033s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:13:15+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001015s ]
+[2024-11-24T11:13:15+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000212s ]
+[2024-11-24T11:13:30+08:00][sql] CONNECT:[ UseTime:0.001471s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:13:30+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001883s ]
+[2024-11-24T11:13:30+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000387s ]
+[2024-11-24T11:13:47+08:00][sql] CONNECT:[ UseTime:0.002552s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:13:47+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001001s ]
+[2024-11-24T11:13:47+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000248s ]
+[2024-11-24T11:14:50+08:00][sql] CONNECT:[ UseTime:0.001630s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:14:50+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002251s ]
+[2024-11-24T11:14:50+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000595s ]
+[2024-11-24T11:16:20+08:00][sql] CONNECT:[ UseTime:0.009872s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:16:20+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001194s ]
+[2024-11-24T11:16:20+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000375s ]
+[2024-11-24T11:16:50+08:00][sql] CONNECT:[ UseTime:0.001617s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:16:50+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001723s ]
+[2024-11-24T11:16:50+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000399s ]
+[2024-11-24T11:17:03+08:00][sql] CONNECT:[ UseTime:0.009169s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:17:03+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001100s ]
+[2024-11-24T11:17:03+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000216s ]
+[2024-11-24T11:17:05+08:00][sql] CONNECT:[ UseTime:0.001368s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:17:05+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001120s ]
+[2024-11-24T11:17:05+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000330s ]
+[2024-11-24T11:20:53+08:00][sql] CONNECT:[ UseTime:0.001890s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:20:53+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002316s ]
+[2024-11-24T11:20:53+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000564s ]
+[2024-11-24T11:20:53+08:00][error] [2]Undefined variable $data[D:\Desktop\x\php\ThinkPHP\runtime\index\temp\ba8445fbd19da8345c2523ab112934fc.php:356]
+[2024-11-24T11:24:41+08:00][sql] CONNECT:[ UseTime:0.000906s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:24:41+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001011s ]
+[2024-11-24T11:24:41+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000209s ]
+[2024-11-24T11:24:41+08:00][error] [0]模板文件不存在:D:\Desktop\x\php\ThinkPHP\app\index\view\index\latest_logs.html[D:\Desktop\x\php\ThinkPHP\vendor\topthink\think-view\src\Think.php:128]
+[2024-11-24T11:25:37+08:00][sql] CONNECT:[ UseTime:0.001163s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:25:37+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001101s ]
+[2024-11-24T11:25:37+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000208s ]
+[2024-11-24T11:25:37+08:00][error] [0]模板文件不存在:D:\Desktop\x\php\ThinkPHP\app\index\view\index\latest_logs.html[D:\Desktop\x\php\ThinkPHP\vendor\topthink\think-view\src\Think.php:128]
+[2024-11-24T11:26:43+08:00][sql] CONNECT:[ UseTime:0.001296s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:26:43+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001121s ]
+[2024-11-24T11:26:43+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000211s ]
+[2024-11-24T11:26:43+08:00][error] [0]模板文件不存在:D:\Desktop\x\php\ThinkPHP\app\index\view\index\latest_logs.html[D:\Desktop\x\php\ThinkPHP\vendor\topthink\think-view\src\Think.php:128]
+[2024-11-24T11:26:43+08:00][sql] CONNECT:[ UseTime:0.016271s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:26:43+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001240s ]
+[2024-11-24T11:26:43+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000514s ]
+[2024-11-24T11:26:43+08:00][error] [0]模板文件不存在:D:\Desktop\x\php\ThinkPHP\app\index\view\index\latest_logs.html[D:\Desktop\x\php\ThinkPHP\vendor\topthink\think-view\src\Think.php:128]
+[2024-11-24T11:26:45+08:00][sql] CONNECT:[ UseTime:0.001377s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:26:45+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001332s ]
+[2024-11-24T11:26:45+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000468s ]
+[2024-11-24T11:26:45+08:00][error] [0]模板文件不存在:D:\Desktop\x\php\ThinkPHP\app\index\view\index\latest_logs.html[D:\Desktop\x\php\ThinkPHP\vendor\topthink\think-view\src\Think.php:128]
+[2024-11-24T11:27:14+08:00][sql] CONNECT:[ UseTime:0.000858s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:27:14+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001205s ]
+[2024-11-24T11:27:14+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000216s ]
+[2024-11-24T11:27:19+08:00][sql] CONNECT:[ UseTime:0.001980s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:27:19+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001180s ]
+[2024-11-24T11:27:19+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000415s ]
+[2024-11-24T11:32:33+08:00][sql] CONNECT:[ UseTime:0.001556s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:32:33+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001286s ]
+[2024-11-24T11:32:33+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000338s ]
+[2024-11-24T11:32:33+08:00][error] [0]语法错误: unexpected token ";", expecting ")"[D:\Desktop\x\php\ThinkPHP\runtime\index\temp\ba8445fbd19da8345c2523ab112934fc.php:274]
+[2024-11-24T11:32:56+08:00][sql] CONNECT:[ UseTime:0.015930s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:32:56+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001455s ]
+[2024-11-24T11:32:56+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000331s ]
+[2024-11-24T11:34:41+08:00][sql] CONNECT:[ UseTime:0.004926s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:34:41+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001147s ]
+[2024-11-24T11:34:41+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000210s ]
+[2024-11-24T11:34:41+08:00][error] [2]Undefined array key "operator"[D:\Desktop\x\php\ThinkPHP\runtime\index\temp\ba8445fbd19da8345c2523ab112934fc.php:275]
+[2024-11-24T11:38:04+08:00][sql] CONNECT:[ UseTime:0.010099s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:38:04+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001132s ]
+[2024-11-24T11:38:04+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000211s ]
+[2024-11-24T11:38:04+08:00][error] [0]语法错误: unexpected token ";", expecting ")"[D:\Desktop\x\php\ThinkPHP\runtime\index\temp\ba8445fbd19da8345c2523ab112934fc.php:276]
+[2024-11-24T11:38:33+08:00][sql] CONNECT:[ UseTime:0.001151s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:38:33+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001402s ]
+[2024-11-24T11:38:33+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000234s ]
+[2024-11-24T11:41:24+08:00][sql] CONNECT:[ UseTime:0.008726s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:41:24+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001417s ]
+[2024-11-24T11:41:24+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000333s ]
+[2024-11-24T11:41:24+08:00][error] [0]语法错误: unexpected token ";", expecting ")"[D:\Desktop\x\php\ThinkPHP\runtime\index\temp\ba8445fbd19da8345c2523ab112934fc.php:276]
+[2024-11-24T11:41:38+08:00][sql] CONNECT:[ UseTime:0.002137s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:41:38+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001211s ]
+[2024-11-24T11:41:38+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000312s ]
+[2024-11-24T11:43:57+08:00][sql] CONNECT:[ UseTime:0.009795s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:43:57+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001105s ]
+[2024-11-24T11:43:57+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000206s ]
+[2024-11-24T11:44:10+08:00][sql] CONNECT:[ UseTime:0.007272s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:44:10+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001051s ]
+[2024-11-24T11:44:10+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000206s ]
+[2024-11-24T11:44:22+08:00][sql] CONNECT:[ UseTime:0.000868s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:44:22+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001098s ]
+[2024-11-24T11:44:22+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000215s ]
+[2024-11-24T11:44:35+08:00][sql] CONNECT:[ UseTime:0.002002s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:44:35+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.000976s ]
+[2024-11-24T11:44:35+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000300s ]
+[2024-11-24T11:44:50+08:00][sql] CONNECT:[ UseTime:0.014521s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:44:50+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001298s ]
+[2024-11-24T11:44:50+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000388s ]
+[2024-11-24T11:49:48+08:00][sql] CONNECT:[ UseTime:0.002270s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:49:48+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002309s ]
+[2024-11-24T11:49:48+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000433s ]
+[2024-11-24T11:50:09+08:00][sql] CONNECT:[ UseTime:0.009755s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:50:09+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001126s ]
+[2024-11-24T11:50:09+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000212s ]
+[2024-11-24T11:50:21+08:00][sql] CONNECT:[ UseTime:0.001132s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:50:21+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.000960s ]
+[2024-11-24T11:50:21+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000205s ]
+[2024-11-24T11:50:33+08:00][sql] CONNECT:[ UseTime:0.039794s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:50:33+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001186s ]
+[2024-11-24T11:50:33+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000216s ]
+[2024-11-24T11:51:03+08:00][sql] CONNECT:[ UseTime:0.012742s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:51:03+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.000981s ]
+[2024-11-24T11:51:03+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000206s ]
+[2024-11-24T11:52:48+08:00][sql] CONNECT:[ UseTime:0.006858s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:52:48+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001093s ]
+[2024-11-24T11:52:48+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000210s ]
+[2024-11-24T11:53:33+08:00][sql] CONNECT:[ UseTime:0.008715s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:53:33+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001057s ]
+[2024-11-24T11:53:33+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000300s ]
+[2024-11-24T11:53:47+08:00][sql] CONNECT:[ UseTime:0.001197s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:53:47+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.000965s ]
+[2024-11-24T11:53:47+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000204s ]
+[2024-11-24T11:54:13+08:00][sql] CONNECT:[ UseTime:0.042045s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:54:13+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002563s ]
+[2024-11-24T11:54:13+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000331s ]
+[2024-11-24T11:54:34+08:00][sql] CONNECT:[ UseTime:0.000886s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:54:34+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001017s ]
+[2024-11-24T11:54:34+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000204s ]
+[2024-11-24T11:56:10+08:00][sql] CONNECT:[ UseTime:0.001467s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:56:10+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001798s ]
+[2024-11-24T11:56:10+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000382s ]
+[2024-11-24T11:56:51+08:00][sql] CONNECT:[ UseTime:0.001179s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:56:51+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001067s ]
+[2024-11-24T11:56:51+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000223s ]
+[2024-11-24T11:57:36+08:00][sql] CONNECT:[ UseTime:0.001207s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T11:57:36+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001071s ]
+[2024-11-24T11:57:36+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000394s ]
+[2024-11-24T12:03:43+08:00][sql] CONNECT:[ UseTime:0.002027s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:03:43+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002744s ]
+[2024-11-24T12:03:43+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000518s ]
+[2024-11-24T12:06:55+08:00][sql] CONNECT:[ UseTime:0.007485s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:06:55+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001322s ]
+[2024-11-24T12:06:55+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000283s ]
+[2024-11-24T12:09:48+08:00][sql] CONNECT:[ UseTime:0.001253s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:09:48+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001468s ]
+[2024-11-24T12:09:48+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000372s ]
+[2024-11-24T12:09:54+08:00][sql] CONNECT:[ UseTime:0.013174s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:09:54+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001391s ]
+[2024-11-24T12:09:54+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000232s ]
+[2024-11-24T12:09:58+08:00][sql] CONNECT:[ UseTime:0.000908s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:09:58+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001011s ]
+[2024-11-24T12:09:58+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000206s ]
+[2024-11-24T12:10:08+08:00][sql] CONNECT:[ UseTime:0.009238s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:10:08+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001043s ]
+[2024-11-24T12:10:08+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000282s ]
+[2024-11-24T12:10:24+08:00][sql] CONNECT:[ UseTime:0.001076s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:10:24+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001193s ]
+[2024-11-24T12:10:24+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000285s ]
+[2024-11-24T12:13:02+08:00][sql] CONNECT:[ UseTime:0.002699s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:13:02+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001685s ]
+[2024-11-24T12:13:02+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000351s ]
+[2024-11-24T12:13:08+08:00][sql] CONNECT:[ UseTime:0.001088s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:13:08+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001215s ]
+[2024-11-24T12:13:08+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000414s ]
+[2024-11-24T12:13:28+08:00][sql] CONNECT:[ UseTime:0.001076s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:13:28+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001004s ]
+[2024-11-24T12:13:28+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000222s ]
+[2024-11-24T12:13:29+08:00][sql] CONNECT:[ UseTime:0.001087s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:13:29+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001051s ]
+[2024-11-24T12:13:29+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000318s ]
+[2024-11-24T12:13:31+08:00][sql] CONNECT:[ UseTime:0.000889s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:13:31+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001047s ]
+[2024-11-24T12:13:31+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000213s ]
+[2024-11-24T12:13:40+08:00][sql] CONNECT:[ UseTime:0.001778s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:13:40+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001946s ]
+[2024-11-24T12:13:40+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000641s ]
+[2024-11-24T12:13:47+08:00][sql] CONNECT:[ UseTime:0.011814s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:13:47+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001125s ]
+[2024-11-24T12:13:47+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000625s ]
+[2024-11-24T12:13:49+08:00][sql] CONNECT:[ UseTime:0.001481s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:13:49+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.003343s ]
+[2024-11-24T12:13:49+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000969s ]
+[2024-11-24T12:13:56+08:00][sql] CONNECT:[ UseTime:0.001846s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:13:56+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002380s ]
+[2024-11-24T12:13:56+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000587s ]
+[2024-11-24T12:14:07+08:00][sql] CONNECT:[ UseTime:0.009427s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:14:07+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002417s ]
+[2024-11-24T12:14:07+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000788s ]
+[2024-11-24T12:14:32+08:00][sql] CONNECT:[ UseTime:0.001538s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:14:32+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001009s ]
+[2024-11-24T12:14:32+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000280s ]
+[2024-11-24T12:14:41+08:00][sql] CONNECT:[ UseTime:0.015781s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:14:41+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001454s ]
+[2024-11-24T12:14:41+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000221s ]
+[2024-11-24T12:14:56+08:00][sql] CONNECT:[ UseTime:0.015766s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:14:56+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.000960s ]
+[2024-11-24T12:14:56+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000204s ]
+[2024-11-24T12:15:04+08:00][sql] CONNECT:[ UseTime:0.002273s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:15:04+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001113s ]
+[2024-11-24T12:15:04+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000337s ]
+[2024-11-24T12:15:11+08:00][sql] CONNECT:[ UseTime:0.001284s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:15:11+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.000969s ]
+[2024-11-24T12:15:11+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000298s ]
+[2024-11-24T12:18:23+08:00][sql] CONNECT:[ UseTime:0.009926s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:18:23+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001278s ]
+[2024-11-24T12:18:23+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000243s ]
+[2024-11-24T12:18:30+08:00][sql] CONNECT:[ UseTime:0.001840s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:18:30+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001023s ]
+[2024-11-24T12:18:30+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000291s ]
+[2024-11-24T12:19:49+08:00][sql] CONNECT:[ UseTime:0.001742s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:19:49+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.003213s ]
+[2024-11-24T12:19:49+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000969s ]
+[2024-11-24T12:19:57+08:00][sql] CONNECT:[ UseTime:0.001182s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:19:57+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001232s ]
+[2024-11-24T12:19:57+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000633s ]
+[2024-11-24T12:22:41+08:00][sql] CONNECT:[ UseTime:0.001261s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:22:41+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001793s ]
+[2024-11-24T12:22:41+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000422s ]
+[2024-11-24T12:25:26+08:00][sql] CONNECT:[ UseTime:0.001199s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:25:26+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001300s ]
+[2024-11-24T12:25:26+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000267s ]
+[2024-11-24T12:27:36+08:00][sql] CONNECT:[ UseTime:0.001386s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:27:36+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002081s ]
+[2024-11-24T12:27:36+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000691s ]
+[2024-11-24T12:27:48+08:00][sql] CONNECT:[ UseTime:0.001248s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:27:48+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.000991s ]
+[2024-11-24T12:27:48+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000219s ]
+[2024-11-24T12:27:53+08:00][sql] CONNECT:[ UseTime:0.001702s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:27:53+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001559s ]
+[2024-11-24T12:27:53+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000502s ]
+[2024-11-24T12:29:17+08:00][sql] CONNECT:[ UseTime:0.001615s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:29:17+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002805s ]
+[2024-11-24T12:29:17+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000554s ]
+[2024-11-24T12:29:22+08:00][sql] CONNECT:[ UseTime:0.001108s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:29:22+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.000975s ]
+[2024-11-24T12:29:22+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000214s ]
+[2024-11-24T12:29:30+08:00][sql] CONNECT:[ UseTime:0.001184s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:29:30+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.000956s ]
+[2024-11-24T12:29:30+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000210s ]
+[2024-11-24T12:29:36+08:00][sql] CONNECT:[ UseTime:0.001244s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:29:36+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001136s ]
+[2024-11-24T12:29:36+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000336s ]
+[2024-11-24T12:30:16+08:00][sql] CONNECT:[ UseTime:0.001352s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:30:16+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001092s ]
+[2024-11-24T12:30:16+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000210s ]
+[2024-11-24T12:30:29+08:00][sql] CONNECT:[ UseTime:0.001014s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:30:29+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001199s ]
+[2024-11-24T12:30:29+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000434s ]
+[2024-11-24T12:31:15+08:00][sql] CONNECT:[ UseTime:0.001043s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:31:15+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001773s ]
+[2024-11-24T12:31:15+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000396s ]
+[2024-11-24T12:36:38+08:00][sql] CONNECT:[ UseTime:0.013847s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:36:38+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001939s ]
+[2024-11-24T12:36:38+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000380s ]
+[2024-11-24T12:36:45+08:00][sql] CONNECT:[ UseTime:0.000890s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:36:45+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001070s ]
+[2024-11-24T12:36:45+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000282s ]
+[2024-11-24T12:36:49+08:00][sql] CONNECT:[ UseTime:0.001071s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:36:49+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001001s ]
+[2024-11-24T12:36:49+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000213s ]
+[2024-11-24T12:36:54+08:00][sql] CONNECT:[ UseTime:0.004551s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:36:54+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001133s ]
+[2024-11-24T12:36:54+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000211s ]
+[2024-11-24T12:39:28+08:00][sql] CONNECT:[ UseTime:0.002077s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:39:28+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.003852s ]
+[2024-11-24T12:39:28+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000880s ]
+[2024-11-24T12:39:49+08:00][sql] CONNECT:[ UseTime:0.001061s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:39:49+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.000990s ]
+[2024-11-24T12:39:49+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000206s ]
+[2024-11-24T12:40:00+08:00][sql] CONNECT:[ UseTime:0.001123s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:40:00+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.000984s ]
+[2024-11-24T12:40:00+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000204s ]
+[2024-11-24T12:40:47+08:00][sql] CONNECT:[ UseTime:0.001147s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:40:47+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001167s ]
+[2024-11-24T12:40:47+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000406s ]
+[2024-11-24T12:42:33+08:00][sql] CONNECT:[ UseTime:0.002410s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:42:33+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001255s ]
+[2024-11-24T12:42:33+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000279s ]
+[2024-11-24T12:42:52+08:00][sql] CONNECT:[ UseTime:0.001197s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:42:52+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001079s ]
+[2024-11-24T12:42:52+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000206s ]
+[2024-11-24T12:43:24+08:00][sql] CONNECT:[ UseTime:0.022783s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:43:24+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001012s ]
+[2024-11-24T12:43:24+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000387s ]
+[2024-11-24T12:44:37+08:00][sql] CONNECT:[ UseTime:0.010674s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:44:37+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002241s ]
+[2024-11-24T12:44:37+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000844s ]
+[2024-11-24T12:44:50+08:00][sql] CONNECT:[ UseTime:0.002053s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:44:50+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002281s ]
+[2024-11-24T12:44:50+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000753s ]
+[2024-11-24T12:45:11+08:00][sql] CONNECT:[ UseTime:0.001649s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:45:11+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001834s ]
+[2024-11-24T12:45:11+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000749s ]
+[2024-11-24T12:45:22+08:00][sql] CONNECT:[ UseTime:0.001467s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:45:22+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001861s ]
+[2024-11-24T12:45:22+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000426s ]
+[2024-11-24T12:48:05+08:00][sql] CONNECT:[ UseTime:0.002185s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:48:05+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.003060s ]
+[2024-11-24T12:48:05+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000858s ]
+[2024-11-24T12:48:26+08:00][sql] CONNECT:[ UseTime:0.001106s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:48:26+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001047s ]
+[2024-11-24T12:48:26+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000480s ]
+[2024-11-24T12:49:07+08:00][sql] CONNECT:[ UseTime:0.001351s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:49:07+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001222s ]
+[2024-11-24T12:49:07+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000331s ]
+[2024-11-24T12:51:43+08:00][sql] CONNECT:[ UseTime:0.009230s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:51:43+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001182s ]
+[2024-11-24T12:51:43+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000271s ]
+[2024-11-24T12:52:52+08:00][sql] CONNECT:[ UseTime:0.019125s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:52:52+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001060s ]
+[2024-11-24T12:52:52+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000211s ]
+[2024-11-24T12:55:02+08:00][sql] CONNECT:[ UseTime:0.009524s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:55:02+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001174s ]
+[2024-11-24T12:55:02+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000214s ]
+[2024-11-24T12:55:15+08:00][sql] CONNECT:[ UseTime:0.004890s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:55:15+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001117s ]
+[2024-11-24T12:55:15+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000245s ]
+[2024-11-24T12:59:09+08:00][sql] CONNECT:[ UseTime:0.001639s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T12:59:09+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001327s ]
+[2024-11-24T12:59:09+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000419s ]
+[2024-11-24T13:00:35+08:00][sql] CONNECT:[ UseTime:0.001171s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T13:00:35+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001212s ]
+[2024-11-24T13:00:35+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000283s ]
+[2024-11-24T13:50:17+08:00][sql] CONNECT:[ UseTime:0.002092s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T13:50:17+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001966s ]
+[2024-11-24T13:50:17+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000331s ]
+[2024-11-24T13:50:21+08:00][sql] CONNECT:[ UseTime:0.001630s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T13:50:21+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001276s ]
+[2024-11-24T13:50:21+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000381s ]
+[2024-11-24T13:50:23+08:00][sql] CONNECT:[ UseTime:0.009209s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T13:50:23+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001063s ]
+[2024-11-24T13:50:23+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000210s ]
+[2024-11-24T13:50:25+08:00][sql] CONNECT:[ UseTime:0.001630s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T13:50:25+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001083s ]
+[2024-11-24T13:50:25+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000594s ]
+[2024-11-24T13:50:27+08:00][sql] CONNECT:[ UseTime:0.001858s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T13:50:27+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001224s ]
+[2024-11-24T13:50:27+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000712s ]
+[2024-11-24T13:50:32+08:00][sql] CONNECT:[ UseTime:0.001739s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T13:50:32+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001163s ]
+[2024-11-24T13:50:32+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000363s ]
+[2024-11-24T13:50:34+08:00][sql] CONNECT:[ UseTime:0.001207s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T13:50:34+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001056s ]
+[2024-11-24T13:50:34+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000442s ]
+[2024-11-24T13:50:38+08:00][sql] CONNECT:[ UseTime:0.001540s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T13:50:38+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001219s ]
+[2024-11-24T13:50:38+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000416s ]
+[2024-11-24T13:50:42+08:00][sql] CONNECT:[ UseTime:0.002133s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T13:50:42+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002005s ]
+[2024-11-24T13:50:42+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000599s ]
+[2024-11-24T13:50:49+08:00][sql] CONNECT:[ UseTime:0.036275s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T13:50:49+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002324s ]
+[2024-11-24T13:50:49+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000938s ]
+[2024-11-24T13:50:51+08:00][sql] CONNECT:[ UseTime:0.001666s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T13:50:51+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001756s ]
+[2024-11-24T13:50:51+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000627s ]
+[2024-11-24T13:51:03+08:00][sql] CONNECT:[ UseTime:0.001666s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T13:51:03+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002345s ]
+[2024-11-24T13:51:03+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000509s ]
+[2024-11-24T13:51:11+08:00][sql] CONNECT:[ UseTime:0.011477s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T13:51:11+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001527s ]
+[2024-11-24T13:51:11+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.001092s ]
+[2024-11-24T13:51:25+08:00][sql] CONNECT:[ UseTime:0.001957s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T13:51:25+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002028s ]
+[2024-11-24T13:51:25+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000794s ]
+[2024-11-24T13:51:31+08:00][sql] CONNECT:[ UseTime:0.001385s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T13:51:31+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001982s ]
+[2024-11-24T13:51:31+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000530s ]
+[2024-11-24T13:54:36+08:00][sql] CONNECT:[ UseTime:0.001235s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T13:54:36+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001210s ]
+[2024-11-24T13:54:36+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000273s ]
+[2024-11-24T13:54:38+08:00][sql] CONNECT:[ UseTime:0.021813s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T13:54:38+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001144s ]
+[2024-11-24T13:54:38+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000219s ]
+[2024-11-24T13:54:39+08:00][sql] CONNECT:[ UseTime:0.000865s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T13:54:39+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001105s ]
+[2024-11-24T13:54:39+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000224s ]
+[2024-11-24T13:54:43+08:00][sql] CONNECT:[ UseTime:0.010340s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T13:54:43+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001155s ]
+[2024-11-24T13:54:43+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000736s ]
+[2024-11-24T13:54:45+08:00][sql] CONNECT:[ UseTime:0.013652s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T13:54:45+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001084s ]
+[2024-11-24T13:54:45+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000256s ]
+[2024-11-24T13:54:47+08:00][sql] CONNECT:[ UseTime:0.001838s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T13:54:47+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001867s ]
+[2024-11-24T13:54:47+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000671s ]
+[2024-11-24T13:54:49+08:00][sql] CONNECT:[ UseTime:0.001536s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T13:54:49+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001304s ]
+[2024-11-24T13:54:49+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000342s ]
+[2024-11-24T13:56:15+08:00][sql] CONNECT:[ UseTime:0.001416s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T13:56:15+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001258s ]
+[2024-11-24T13:56:15+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000338s ]
+[2024-11-24T13:56:19+08:00][sql] CONNECT:[ UseTime:0.001885s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T13:56:19+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001022s ]
+[2024-11-24T13:56:19+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000285s ]
+[2024-11-24T13:58:54+08:00][sql] CONNECT:[ UseTime:0.001655s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T13:58:54+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001470s ]
+[2024-11-24T13:58:54+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000305s ]
+[2024-11-24T13:59:11+08:00][sql] CONNECT:[ UseTime:0.024035s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T13:59:11+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001863s ]
+[2024-11-24T13:59:11+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000484s ]
+[2024-11-24T14:01:01+08:00][sql] CONNECT:[ UseTime:0.019617s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:01:01+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001344s ]
+[2024-11-24T14:01:01+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000320s ]
+[2024-11-24T14:01:02+08:00][sql] CONNECT:[ UseTime:0.001396s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:01:02+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001294s ]
+[2024-11-24T14:01:02+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000331s ]
+[2024-11-24T14:01:03+08:00][sql] CONNECT:[ UseTime:0.006715s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:01:03+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001209s ]
+[2024-11-24T14:01:03+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000591s ]
+[2024-11-24T14:01:04+08:00][sql] CONNECT:[ UseTime:0.017526s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:01:04+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001001s ]
+[2024-11-24T14:01:04+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000525s ]
+[2024-11-24T14:01:07+08:00][sql] CONNECT:[ UseTime:0.001269s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:01:07+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001369s ]
+[2024-11-24T14:01:07+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000572s ]
+[2024-11-24T14:01:28+08:00][sql] CONNECT:[ UseTime:0.001494s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:01:28+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002191s ]
+[2024-11-24T14:01:28+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000728s ]
+[2024-11-24T14:01:37+08:00][sql] CONNECT:[ UseTime:0.009507s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:01:37+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001882s ]
+[2024-11-24T14:01:37+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000732s ]
+[2024-11-24T14:04:46+08:00][sql] CONNECT:[ UseTime:0.015243s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:04:46+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001276s ]
+[2024-11-24T14:04:46+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000271s ]
+[2024-11-24T14:15:05+08:00][sql] CONNECT:[ UseTime:0.004300s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:15:05+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002810s ]
+[2024-11-24T14:15:05+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000681s ]
+[2024-11-24T14:18:18+08:00][sql] CONNECT:[ UseTime:0.001676s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:18:18+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002126s ]
+[2024-11-24T14:18:18+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000672s ]
+[2024-11-24T14:18:26+08:00][sql] CONNECT:[ UseTime:0.001760s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:18:26+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001153s ]
+[2024-11-24T14:18:26+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000531s ]
+[2024-11-24T14:18:28+08:00][sql] CONNECT:[ UseTime:0.001833s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:18:28+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001091s ]
+[2024-11-24T14:18:28+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000578s ]
+[2024-11-24T14:18:36+08:00][sql] CONNECT:[ UseTime:0.001689s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:18:36+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001749s ]
+[2024-11-24T14:18:36+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000434s ]
+[2024-11-24T14:18:38+08:00][sql] CONNECT:[ UseTime:0.013898s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:18:38+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002258s ]
+[2024-11-24T14:18:38+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000771s ]
+[2024-11-24T14:18:41+08:00][sql] CONNECT:[ UseTime:0.001885s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:18:41+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001966s ]
+[2024-11-24T14:18:41+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000655s ]
+[2024-11-24T14:18:42+08:00][sql] CONNECT:[ UseTime:0.000723s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:18:42+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.000946s ]
+[2024-11-24T14:18:42+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000272s ]
+[2024-11-24T14:18:53+08:00][sql] CONNECT:[ UseTime:0.017328s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:18:53+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.003073s ]
+[2024-11-24T14:18:53+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000980s ]
+[2024-11-24T14:18:57+08:00][sql] CONNECT:[ UseTime:0.001597s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:18:57+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.010668s ]
+[2024-11-24T14:18:57+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.002662s ]
+[2024-11-24T14:21:55+08:00][sql] CONNECT:[ UseTime:0.001935s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:21:55+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.003349s ]
+[2024-11-24T14:21:55+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000862s ]
+[2024-11-24T14:21:58+08:00][sql] CONNECT:[ UseTime:0.001917s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:21:58+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002211s ]
+[2024-11-24T14:21:58+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000786s ]
+[2024-11-24T14:22:05+08:00][sql] CONNECT:[ UseTime:0.001239s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:22:05+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001199s ]
+[2024-11-24T14:22:05+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000290s ]
+[2024-11-24T14:22:09+08:00][sql] CONNECT:[ UseTime:0.001815s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:22:09+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002109s ]
+[2024-11-24T14:22:09+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000587s ]
+[2024-11-24T14:23:13+08:00][sql] CONNECT:[ UseTime:0.001114s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:23:13+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001019s ]
+[2024-11-24T14:23:13+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000290s ]
+[2024-11-24T14:23:15+08:00][sql] CONNECT:[ UseTime:0.002201s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:23:15+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001108s ]
+[2024-11-24T14:23:15+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000256s ]
+[2024-11-24T14:23:17+08:00][sql] CONNECT:[ UseTime:0.001279s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:23:17+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001296s ]
+[2024-11-24T14:23:17+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000212s ]
+[2024-11-24T14:23:20+08:00][sql] CONNECT:[ UseTime:0.001270s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:23:20+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.000882s ]
+[2024-11-24T14:23:20+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000230s ]
+[2024-11-24T14:23:28+08:00][sql] CONNECT:[ UseTime:0.001798s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:23:28+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001114s ]
+[2024-11-24T14:23:28+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000380s ]
+[2024-11-24T14:23:38+08:00][sql] CONNECT:[ UseTime:0.020409s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:23:38+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001101s ]
+[2024-11-24T14:23:38+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000390s ]
+[2024-11-24T14:24:01+08:00][sql] CONNECT:[ UseTime:0.001423s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:24:01+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.000939s ]
+[2024-11-24T14:24:01+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000654s ]
+[2024-11-24T14:24:24+08:00][sql] CONNECT:[ UseTime:0.002019s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:24:24+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001682s ]
+[2024-11-24T14:24:24+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000391s ]
+[2024-11-24T14:32:00+08:00][sql] CONNECT:[ UseTime:0.001246s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:32:00+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002637s ]
+[2024-11-24T14:32:00+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000313s ]
+[2024-11-24T14:32:05+08:00][sql] CONNECT:[ UseTime:0.000937s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:32:05+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001039s ]
+[2024-11-24T14:32:05+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000295s ]
+[2024-11-24T14:32:07+08:00][sql] CONNECT:[ UseTime:0.001985s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:32:07+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001512s ]
+[2024-11-24T14:32:07+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000593s ]
+[2024-11-24T14:32:08+08:00][sql] CONNECT:[ UseTime:0.015783s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:32:08+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002332s ]
+[2024-11-24T14:32:08+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000795s ]
+[2024-11-24T14:32:09+08:00][sql] CONNECT:[ UseTime:0.001037s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:32:09+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001246s ]
+[2024-11-24T14:32:09+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000782s ]
+[2024-11-24T14:32:11+08:00][sql] CONNECT:[ UseTime:0.002102s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:32:11+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002145s ]
+[2024-11-24T14:32:11+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.001025s ]
+[2024-11-24T14:32:12+08:00][sql] CONNECT:[ UseTime:0.001938s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:32:12+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002268s ]
+[2024-11-24T14:32:12+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.001161s ]
+[2024-11-24T14:32:12+08:00][sql] CONNECT:[ UseTime:0.002421s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:32:12+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001671s ]
+[2024-11-24T14:32:12+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000289s ]
+[2024-11-24T14:32:13+08:00][sql] CONNECT:[ UseTime:0.002094s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:32:13+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001253s ]
+[2024-11-24T14:32:13+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000647s ]
+[2024-11-24T14:32:15+08:00][sql] CONNECT:[ UseTime:0.001815s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:32:15+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002708s ]
+[2024-11-24T14:32:15+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000748s ]
+[2024-11-24T14:32:20+08:00][sql] CONNECT:[ UseTime:0.001605s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:32:20+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001911s ]
+[2024-11-24T14:32:20+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000503s ]
+[2024-11-24T14:32:20+08:00][sql] CONNECT:[ UseTime:0.012268s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:32:20+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001154s ]
+[2024-11-24T14:32:20+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000354s ]
+[2024-11-24T14:32:21+08:00][sql] CONNECT:[ UseTime:0.001752s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:32:21+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002409s ]
+[2024-11-24T14:32:21+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000884s ]
+[2024-11-24T14:32:22+08:00][sql] CONNECT:[ UseTime:0.000986s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:32:22+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001434s ]
+[2024-11-24T14:32:22+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000639s ]
+[2024-11-24T14:32:23+08:00][sql] CONNECT:[ UseTime:0.001969s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:32:23+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001280s ]
+[2024-11-24T14:32:23+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000358s ]
+[2024-11-24T14:32:24+08:00][sql] CONNECT:[ UseTime:0.001674s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:32:24+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002382s ]
+[2024-11-24T14:32:24+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000717s ]
+[2024-11-24T14:32:28+08:00][sql] CONNECT:[ UseTime:0.001866s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:32:28+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002728s ]
+[2024-11-24T14:32:28+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000487s ]
+[2024-11-24T14:35:38+08:00][sql] CONNECT:[ UseTime:0.005303s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:35:38+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001099s ]
+[2024-11-24T14:35:38+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000212s ]
+[2024-11-24T14:35:39+08:00][sql] CONNECT:[ UseTime:0.003460s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:35:39+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001112s ]
+[2024-11-24T14:35:39+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000209s ]
+[2024-11-24T14:35:52+08:00][sql] CONNECT:[ UseTime:0.001952s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:35:52+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002533s ]
+[2024-11-24T14:35:52+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000964s ]
+[2024-11-24T14:35:55+08:00][sql] CONNECT:[ UseTime:0.002363s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:35:55+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001161s ]
+[2024-11-24T14:35:55+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000617s ]
+[2024-11-24T14:39:06+08:00][sql] CONNECT:[ UseTime:0.009543s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:39:06+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001307s ]
+[2024-11-24T14:39:06+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000520s ]
+[2024-11-24T14:39:10+08:00][sql] CONNECT:[ UseTime:0.001517s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:39:10+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001094s ]
+[2024-11-24T14:39:10+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000297s ]
+[2024-11-24T14:39:14+08:00][sql] CONNECT:[ UseTime:0.001536s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T14:39:14+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002704s ]
+[2024-11-24T14:39:14+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000788s ]
+[2024-11-24T15:25:06+08:00][sql] CONNECT:[ UseTime:0.002504s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T15:25:06+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.001836s ]
+[2024-11-24T15:25:06+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.000368s ]
+[2024-11-24T15:25:35+08:00][sql] CONNECT:[ UseTime:0.001356s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T15:25:35+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.001321s ]
+[2024-11-24T15:25:35+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000333s ]
+[2024-11-24T15:32:21+08:00][sql] CONNECT:[ UseTime:0.001886s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T15:32:21+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002793s ]
+[2024-11-24T15:32:21+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000566s ]
+[2024-11-24T15:32:24+08:00][sql] CONNECT:[ UseTime:0.001984s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T15:32:24+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002198s ]
+[2024-11-24T15:32:24+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000958s ]
+[2024-11-24T15:32:28+08:00][sql] CONNECT:[ UseTime:0.001961s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T15:32:28+08:00][sql] SHOW FULL COLUMNS FROM `log` [ RunTime:0.002631s ]
+[2024-11-24T15:32:28+08:00][sql] SELECT * FROM `log` ORDER BY `time` DESC LIMIT 50 [ RunTime:0.000867s ]
+[2024-11-24T20:15:31+08:00][sql] CONNECT:[ UseTime:0.011681s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T20:15:31+08:00][sql] SHOW FULL COLUMNS FROM `users` [ RunTime:0.009774s ]
+[2024-11-24T20:15:31+08:00][sql] SELECT * FROM `users` WHERE  `username` = 'xiaole' LIMIT 1 [ RunTime:0.001548s ]
+[2024-11-24T20:24:50+08:00][error] [0]Unmatched '}'[D:\Desktop\x\php\ThinkPHP\app\index\controller\Index.php:152]
+[2024-11-24T20:25:01+08:00][error] [0]Call to undefined function AccessToken()[D:\Desktop\x\php\ThinkPHP\app\index\helper\text.php:2]
+[2024-11-24T20:27:04+08:00][error] [0]Call to undefined function AccessToken()[D:\Desktop\x\php\ThinkPHP\app\index\helper\text.php:4]
+[2024-11-24T20:28:26+08:00][sql] CONNECT:[ UseTime:0.002549s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T20:28:26+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002935s ]
+[2024-11-24T20:28:26+08:00][sql] SELECT * FROM `users_bot` WHERE  `AppID` = '102450011' LIMIT 1 [ RunTime:0.001075s ]
+[2024-11-24T20:28:26+08:00][error] [0]think\Response::header(): Argument #1 ($header) must be of type array, string given, called in D:\Desktop\x\php\ThinkPHP\app\index\controller\Index.php on line 149[D:\Desktop\x\php\ThinkPHP\vendor\topthink\framework\src\think\Response.php:248]
+[2024-11-24T20:33:47+08:00][sql] CONNECT:[ UseTime:0.001591s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T20:33:47+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002217s ]
+[2024-11-24T20:33:47+08:00][sql] SELECT * FROM `users_bot` WHERE  `AppID` = '102450011' LIMIT 1 [ RunTime:0.000273s ]
+[2024-11-24T20:33:47+08:00][error] [0]think\Response::header(): Argument #1 ($header) must be of type array, string given, called in D:\Desktop\x\php\ThinkPHP\app\index\controller\Index.php on line 149[D:\Desktop\x\php\ThinkPHP\vendor\topthink\framework\src\think\Response.php:248]
+[2024-11-24T20:34:14+08:00][sql] CONNECT:[ UseTime:0.010811s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T20:34:14+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.005710s ]
+[2024-11-24T20:34:14+08:00][sql] SELECT * FROM `users_bot` WHERE  `AppID` = '102450011' LIMIT 1 [ RunTime:0.001029s ]
+[2024-11-24T20:34:14+08:00][error] [0]think\Response::header(): Argument #1 ($header) must be of type array, string given, called in D:\Desktop\x\php\ThinkPHP\app\index\controller\Index.php on line 149[D:\Desktop\x\php\ThinkPHP\vendor\topthink\framework\src\think\Response.php:248]
+[2024-11-24T20:34:19+08:00][sql] CONNECT:[ UseTime:0.000963s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T20:34:19+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001762s ]
+[2024-11-24T20:34:19+08:00][sql] SELECT * FROM `users_bot` WHERE  `AppID` = '102450011' LIMIT 1 [ RunTime:0.000716s ]
+[2024-11-24T20:34:19+08:00][error] [0]think\Response::header(): Argument #1 ($header) must be of type array, string given, called in D:\Desktop\x\php\ThinkPHP\app\index\controller\Index.php on line 149[D:\Desktop\x\php\ThinkPHP\vendor\topthink\framework\src\think\Response.php:248]
+[2024-11-24T20:34:34+08:00][sql] CONNECT:[ UseTime:0.019433s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T20:34:34+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002031s ]
+[2024-11-24T20:34:34+08:00][sql] SELECT * FROM `users_bot` WHERE  `AppID` = '102450011' LIMIT 1 [ RunTime:0.000413s ]
+[2024-11-24T20:34:34+08:00][error] [0]think\Response::header(): Argument #1 ($header) must be of type array, string given, called in D:\Desktop\x\php\ThinkPHP\app\index\controller\Index.php on line 149[D:\Desktop\x\php\ThinkPHP\vendor\topthink\framework\src\think\Response.php:248]
+[2024-11-24T20:34:51+08:00][sql] CONNECT:[ UseTime:0.001816s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T20:34:51+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.003448s ]
+[2024-11-24T20:34:51+08:00][sql] SELECT * FROM `users_bot` WHERE  `AppID` = '102450011' LIMIT 1 [ RunTime:0.001021s ]
+[2024-11-24T20:34:51+08:00][error] [0]think\Response::header(): Argument #1 ($header) must be of type array, string given, called in D:\Desktop\x\php\ThinkPHP\app\index\controller\Index.php on line 149[D:\Desktop\x\php\ThinkPHP\vendor\topthink\framework\src\think\Response.php:248]
+[2024-11-24T20:34:58+08:00][sql] CONNECT:[ UseTime:0.002003s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T20:34:58+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.003233s ]
+[2024-11-24T20:34:58+08:00][sql] SELECT * FROM `users_bot` WHERE  `AppID` = '102450011' LIMIT 1 [ RunTime:0.000892s ]
+[2024-11-24T20:34:58+08:00][error] [0]think\Response::header(): Argument #1 ($header) must be of type array, string given, called in D:\Desktop\x\php\ThinkPHP\app\index\controller\Index.php on line 149[D:\Desktop\x\php\ThinkPHP\vendor\topthink\framework\src\think\Response.php:248]
+[2024-11-24T20:34:59+08:00][sql] CONNECT:[ UseTime:0.016328s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T20:34:59+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.001326s ]
+[2024-11-24T20:34:59+08:00][sql] SELECT * FROM `users_bot` WHERE  `AppID` = '102450011' LIMIT 1 [ RunTime:0.000792s ]
+[2024-11-24T20:34:59+08:00][error] [0]think\Response::header(): Argument #1 ($header) must be of type array, string given, called in D:\Desktop\x\php\ThinkPHP\app\index\controller\Index.php on line 149[D:\Desktop\x\php\ThinkPHP\vendor\topthink\framework\src\think\Response.php:248]
+[2024-11-24T20:35:02+08:00][sql] CONNECT:[ UseTime:0.005825s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T20:35:02+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002618s ]
+[2024-11-24T20:35:02+08:00][sql] SELECT * FROM `users_bot` WHERE  `AppID` = '102450011' LIMIT 1 [ RunTime:0.000888s ]
+[2024-11-24T20:35:02+08:00][error] [0]think\Response::header(): Argument #1 ($header) must be of type array, string given, called in D:\Desktop\x\php\ThinkPHP\app\index\controller\Index.php on line 149[D:\Desktop\x\php\ThinkPHP\vendor\topthink\framework\src\think\Response.php:248]
+[2024-11-24T20:46:38+08:00][sql] CONNECT:[ UseTime:0.001843s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T20:46:38+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.003267s ]
+[2024-11-24T20:46:38+08:00][sql] SELECT * FROM `users_bot` WHERE  `AppID` = 'your_app_id' LIMIT 1 [ RunTime:0.001195s ]
+[2024-11-24T20:46:38+08:00][error] [0]Call to undefined function AccessToken()[D:\Desktop\x\php\ThinkPHP\app\index\helper\text.php:6]
+[2024-11-24T20:47:15+08:00][sql] CONNECT:[ UseTime:0.006345s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T20:47:15+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002255s ]
+[2024-11-24T20:47:15+08:00][sql] SELECT * FROM `users_bot` WHERE  `AppID` = 'your_app_id' LIMIT 1 [ RunTime:0.000395s ]
+[2024-11-24T20:47:15+08:00][sql] SELECT * FROM `users_bot` WHERE  `AppID` = '102450011' LIMIT 1 [ RunTime:0.000188s ]
+[2024-11-24T20:47:15+08:00][error] [0]think\Response::header(): Argument #1 ($header) must be of type array, string given, called in D:\Desktop\x\php\ThinkPHP\app\index\controller\Index.php on line 149[D:\Desktop\x\php\ThinkPHP\vendor\topthink\framework\src\think\Response.php:248]
+[2024-11-24T20:54:09+08:00][error] [0]Call to undefined function app\index\controller\getAccessToken()[D:\Desktop\x\php\ThinkPHP\app\index\controller\Index.php:134]
+[2024-11-24T21:11:10+08:00][error] [0]Call to undefined function app\index\controller\getAccessToken()[D:\Desktop\x\php\ThinkPHP\app\index\controller\text.php:8]
+[2024-11-24T21:16:02+08:00][error] [0]Call to undefined function app\index\controller\getAccessToken()[D:\Desktop\x\php\ThinkPHP\app\index\controller\text.php:10]
+[2024-11-24T21:17:58+08:00][error] [2]include(app\index\helper\API\openapi.php): Failed to open stream: No such file or directory[D:\Desktop\x\php\ThinkPHP\app\index\controller\text.php:4]
+[2024-11-24T21:26:47+08:00][error] [2]include(D:\Desktop\x\php\ThinkPHP\app\index\controller/../../helper/API/openapi.php): Failed to open stream: No such file or directory[D:\Desktop\x\php\ThinkPHP\app\index\controller\text.php:5]
+[2024-11-24T21:27:07+08:00][sql] CONNECT:[ UseTime:0.007360s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T21:27:07+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.004185s ]
+[2024-11-24T21:27:07+08:00][sql] SELECT * FROM `users_bot` WHERE  `AppID` = '102450011' LIMIT 1 [ RunTime:0.000515s ]
+[2024-11-24T21:27:07+08:00][error] [2]Array to string conversion[D:\Desktop\x\php\ThinkPHP\app\index\controller\text.php:12]
+[2024-11-24T21:30:06+08:00][sql] CONNECT:[ UseTime:0.003417s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T21:30:06+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002374s ]
+[2024-11-24T21:30:06+08:00][sql] SELECT * FROM `users_bot` WHERE  `AppID` = '102450011' LIMIT 1 [ RunTime:0.000582s ]
+[2024-11-24T21:31:23+08:00][sql] CONNECT:[ UseTime:0.002059s ] mysql:host=127.0.0.1;port=3306;dbname=lebot;charset=utf8
+[2024-11-24T21:31:23+08:00][sql] SHOW FULL COLUMNS FROM `users_bot` [ RunTime:0.002902s ]
+[2024-11-24T21:31:23+08:00][sql] SELECT * FROM `users_bot` WHERE  `AppID` = '102450011' LIMIT 1 [ RunTime:0.001056s ]
+[2024-11-24T21:31:23+08:00][sql] UPDATE `users_bot`  SET `AccessToken` = 'G5mpN5JsPjxB2uXZ8uYEc3tlHsr_ySRvPgwaD1Snz9JWjNXCK_iuJYa6Xyx0mkfF_6rpq-afwMpW' , `AccessToken_time` = '1732456627'  WHERE  `AppID` = '102450011' [ RunTime:0.009161s ]
