@@ -1,0 +1,117 @@
+{extend name="index/layout"}
+{block name="head"}
+{include file="index/head" /}
+<style>
+    .log-table-container {
+        margin-top: 70px; /* 上方外边距，使表格区域向下移动 */
+        padding: 20px; /* 内边距，使内容与边缘之间有一些空间 */
+        background-color: rgba(255, 255, 255, 0); /* 白色背景，透明度为0.8 */
+        border-radius: 5px; /* 边框圆角效果 */
+        /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 添加阴影效果 */
+    }
+
+    .log-table-container .table {
+        width: auto; /* 或者指定具体的宽度 */
+        max-width: 100%; /* 确保不会超出容器宽度 */
+        height: auto; /* 或者指定具体的高度 */
+    }
+
+    /* 为每个列单独设置宽度 */
+    .log-table-container .table th:nth-child(1),
+    .log-table-container .table td:nth-child(1) {
+        width: 195px; /* 时间列的宽度 */
+    }
+
+    .log-table-container .table th:nth-child(2),
+    .log-table-container .table td:nth-child(2) {
+        width: 90px; /* 类型列的宽度 */
+    }
+
+    .log-table-container .table th:nth-child(3),
+    .log-table-container .table td:nth-child(3) {
+        width: 200px; /* Union OpenID 列的宽度 */
+    }
+
+    .log-table-container .table th:nth-child(4),
+    .log-table-container .table td:nth-child(4) {
+        width: 200px; /* Group OpenID 列的宽度 */
+    }
+
+    .log-table-container .table th:nth-child(5),
+    .log-table-container .table td:nth-child(5) {
+        width: 300px; /* 内容列的宽度 */
+    }
+
+    /* 控制内容过长时的行为 */
+    .log-table-container .table td {
+        white-space: nowrap; /* 防止自动换行 */
+        overflow: hidden; /* 隐藏多余内容 */
+        text-overflow: ellipsis; /* 显示省略号 */
+        cursor: pointer; /* 指针变为手形，提示可点击 */
+    }
+
+    /* 展开时的样式 */
+    .log-table-container .table td.expanded {
+        white-space: normal; /* 允许换行 */
+        word-wrap: break-word; /* 过长单词换行 */
+        overflow: visible; /* 显示所有内容 */
+    }
+</style>
+<div class="log-table-container">
+    <div class="block block-rounded">
+        <div class="block-header">
+            <h3 class="block-title">任务运行日志 <small>仅展示最新的50条数据</small></h3>
+        </div>
+        <div class="block-content block-content-full">
+            <table class="table table-bordered table-striped table-vcenter js-dataTable-responsive">
+                <thead>
+                <tr>
+                    <th>时间</th>
+                    <th>类型</th>
+                    <th>Union OpenID</th>
+                    <th>Group OpenID</th>
+                    <th>内容</th>
+                </tr>
+                </thead>
+                <tbody>
+                {volist name="logs" id="log"}
+                <tr>
+                    <td>{$log.time}</td> <!-- 直接显示时间 -->
+                    <td>{$log.type}</td>
+                    <td>{$log.union_openid}</td>
+                    <td>{$log.group_openid}</td>
+                    <td class="clickable" data-content="{$log.content}">
+                        {if strlen($log.content) > 21}
+                        {php}echo mb_substr($log['content'], 0, 8, 'UTF-8');{/php}...
+                        {else}
+                        {$log.content}
+                        {/if}
+                    </td>
+                </tr>
+                {/volist}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<script>
+    document.querySelectorAll('.log-table-container .table td.clickable').forEach(function(td) {
+        td.addEventListener('click', function() {
+            // 切换展开状态
+            this.classList.toggle('expanded');
+            // 如果已经展开，则设置内容为原始内容
+            if (this.classList.contains('expanded')) {
+                this.textContent = this.dataset.content;
+            } else {
+                // 如果折叠，则恢复到省略号显示的状态
+                const content = this.dataset.content;
+                if (content.length > 21) {
+                    this.textContent = content.substring(0, 8) + '...';
+                } else {
+                    this.textContent = content.length > 10 ? content.substring(0, 8) + '...' : content;
+                }
+            }
+        });
+    });
+</script>
+{/block}
