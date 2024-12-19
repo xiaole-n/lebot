@@ -317,3 +317,318 @@ function getBalanceByUnionOpenid(string $unionOpenid)
         ->where('union_openid', $unionOpenid)
         ->value('balance'); // 只获取单个字段的值
 }
+
+/**
+ * 创建带有文本的PNG图像并保存到指定目录
+ *
+ * @param string $text 文本内容
+ * @param string $fontFile 字体文件路径
+ * @param int $fontSize 字体大小
+ * @param int $maxCharsPerLine 每行的最大字符数（可选，默认极大值）
+ * @return string 返回保存的图像的绝对路径
+ */
+function text_to_image($text, $fontFile, $fontSize, $maxCharsPerLine = PHP_INT_MAX)
+{
+    // 使用 wordwrap() 分割文本
+    $wrapped_text = wordwrap($text, $maxCharsPerLine, "\n", true);
+
+    // 替换文本中的 \n 为实际的换行符
+    $wrapped_text = str_replace('\n', "\n", $wrapped_text);
+
+    // 分割文本到多行
+    $lines = explode("\n", $wrapped_text);
+
+    // 初始化最大宽度和总高度
+    $max_width = 0;
+    $total_height = 0;
+
+    // 计算每行的高度和宽度
+    $line_height = $fontSize + 10; // 字体大小加上额外的空间
+    foreach ($lines as $line) {
+        $bbox = imagettfbbox($fontSize, 0, $fontFile, $line);
+        if ($bbox === false) {
+            throw new Exception("无法使用给定的字体文件计算文本框。");
+        }
+        $text_width = $bbox[2] - $bbox[0];
+        $max_width = max($max_width, $text_width);
+        $total_height += $line_height;
+    }
+
+    // 调节最大宽度和总高度
+    $max_width += 20;
+    $total_height += 10;
+
+    // 创建一个白色的画布
+    $image = imagecreatetruecolor($max_width, $total_height);
+    if ($image === false) {
+        throw new Exception("无法创建图像资源。");
+    }
+    $white = imagecolorallocate($image, 255, 255, 255); // 白色
+    imagefill($image, 0, 0, $white); // 填充白色背景
+
+    // 定义起始位置
+    $x = 10;
+    $y = 35;
+
+    // 固定颜色为黑色
+    $black = imagecolorallocate($image, 0, 0, 0);
+
+    // 遍历每一行并使用黑色绘制文本
+    foreach ($lines as $index => $line) {
+        // 使用黑色在图像上绘制文本
+        imagettftext($image, $fontSize, 0, $x, $y + ($index * $line_height), $black, $fontFile, $line);
+    }
+
+    // 定义保存的文件名和路径
+    $filename = uniqid('temp_image_', true) . '.png'; // 确保文件名唯一
+    $directory = __DIR__ . '/temp/';
+    $filePath = $directory . $filename;
+
+    // 如果目录不存在，则创建
+    if (!is_dir($directory)) {
+        mkdir($directory, 0777, true);
+    }
+
+    // 保存图像
+    if (!imagepng($image, $filePath)) {
+        imagedestroy($image);
+        throw new Exception("无法保存图像到文件。");
+    }
+
+    // 清理
+    imagedestroy($image);
+
+    // 返回绝对路径
+    return realpath($filePath);
+}
+
+/**
+ * 创建带有文本的PNG图像并保存到指定目录
+ *
+ * @param string $text 文本内容
+ * @param string $fontFile 字体文件路径
+ * @param int $fontSize 字体大小
+ * @param int $maxCharsPerLine 每行的最大字符数（可选，默认极大值）
+ * @return string 返回保存的图像的绝对路径
+ */
+function text_to_image_pro($text, $fontFile, $fontSize, $maxCharsPerLine = PHP_INT_MAX) {
+    // 使用 wordwrap() 分割文本
+    $wrapped_text = wordwrap($text, $maxCharsPerLine, "\n", true);
+
+    // 替换文本中的 \n 为实际的换行符
+    $wrapped_text = str_replace('\n', "\n", $wrapped_text);
+
+    // 分割文本到多行
+    $lines = explode("\n", $wrapped_text);
+
+    // 初始化最大宽度和总高度
+    $max_width = 0;
+    $total_height = 0;
+
+    // 计算每行的高度和宽度
+    $line_height = $fontSize + 10; // 字体大小加上额外的空间
+    foreach ($lines as $line) {
+        $bbox = imagettfbbox($fontSize, 0, $fontFile, $line);
+        if ($bbox === false) {
+            throw new Exception("无法使用给定的字体文件计算文本框。");
+        }
+        $text_width = $bbox[2] - $bbox[0];
+        $max_width = max($max_width, $text_width);
+        $total_height += $line_height;
+    }
+
+    // 调节最大宽度和总高度
+    $max_width += 20;
+    $total_height += 10;
+
+    // 创建一个白色的画布
+    $image = imagecreatetruecolor($max_width, $total_height);
+    if ($image === false) {
+        throw new Exception("无法创建图像资源。");
+    }
+    $white = imagecolorallocate($image, 255, 255, 255); // 白色
+    imagefill($image, 0, 0, $white); // 填充白色背景
+
+    // 定义起始位置
+    $x = 10;
+    $y = 35;
+
+    // 颜色数组
+    $colors = [
+        '#CCFF99',
+        '#FFCCCC',
+        '#99CCFF',
+        '#99CCCC',
+        '#CCFFCC',
+        '#66CCCC',
+        '#CCCCFF',
+        '#FFCC99',
+        '#66CCFF',
+        '#6699CC'
+    ];
+
+    // 固定颜色为黑色
+    $black = imagecolorallocate($image, 0, 0, 0);
+
+    // 遍历每一行并使用随机颜色绘制文本
+    foreach ($lines as $index => $line) {
+        // 选择随机颜色
+        $random_color = $colors[array_rand($colors)];
+        list($r, $g, $b) = sscanf($random_color, '#%02x%02x%02x');
+
+        // 使用随机颜色在图像上绘制文本
+        $color = imagecolorallocate($image, $r, $g, $b);
+        imagettftext($image, $fontSize, 0, $x, $y + ($index * $line_height), $color, $fontFile, $line);
+    }
+
+    // 定义保存的文件名和路径
+    $filename = uniqid('temp_image_', true) . '.png'; // 确保文件名唯一
+    $directory = __DIR__ . '/temp/';
+    $filePath = $directory . $filename;
+
+    // 如果目录不存在，则创建
+    if (!is_dir($directory)) {
+        mkdir($directory, 0777, true);
+    }
+
+    // 保存图像
+    if (!imagepng($image, $filePath)) {
+        imagedestroy($image);
+        throw new Exception("无法保存图像到文件。");
+    }
+
+    // 清理
+    imagedestroy($image);
+
+    // 返回绝对路径
+    return realpath($filePath);
+}
+
+function text_to_image_promax($text, $fontFile, $fontSize, $maxCharsPerLine = PHP_INT_MAX) {
+    // 使用 wordwrap() 分割文本
+    $wrapped_text = wordwrap($text, $maxCharsPerLine, "\n", true);
+
+    // 替换文本中的 \n 为实际的换行符
+    $wrapped_text = str_replace('\n', "\n", $wrapped_text);
+
+    // 分割文本到多行
+    $lines = explode("\n", $wrapped_text);
+
+    // 初始化最大宽度和总高度
+    $max_width = 0;
+    $total_height = 0;
+
+    // 计算每行的高度和宽度
+    $line_height = $fontSize + 10; // 字体大小加上额外的空间
+    foreach ($lines as $line) {
+        $bbox = imagettfbbox($fontSize, 0, $fontFile, $line);
+        if ($bbox === false) {
+            throw new Exception("无法使用给定的字体文件计算文本框。");
+        }
+        $text_width = $bbox[2] - $bbox[0];
+        $max_width = max($max_width, $text_width);
+        $total_height += $line_height;
+    }
+
+    // 调节最大宽度和总高度
+    $max_width += 20;
+    $total_height += 10;
+
+    // 创建一个白色的画布
+    $image = imagecreatetruecolor($max_width, $total_height);
+    if ($image === false) {
+        throw new Exception("无法创建图像资源。");
+    }
+    $white = imagecolorallocate($image, 255, 255, 255); // 白色
+    imagefill($image, 0, 0, $white); // 填充白色背景
+
+    // 定义起始位置
+    $x = 10;
+    $y = 35;
+
+    // 颜色数组
+    $colors = [
+        '#CCFF99',
+        '#FFCCCC',
+        '#99CCFF',
+        '#99CCCC',
+        '#CCFFCC',
+        '#66CCCC',
+        '#CCCCFF',
+        '#FFCC99',
+        '#66CCFF',
+        '#6699CC'
+    ];
+
+    // 固定颜色为黑色
+    $black = imagecolorallocate($image, 0, 0, 0);
+
+    // 遍历每一行并使用随机颜色绘制文本
+    foreach ($lines as $index => $line) {
+        // 选择随机颜色
+        $random_color = $colors[array_rand($colors)];
+        list($r, $g, $b) = sscanf($random_color, '#%02x%02x%02x');
+
+        // 使用随机颜色在图像上绘制文本
+        $color = imagecolorallocate($image, $r, $g, $b);
+        imagettftext($image, $fontSize, 0, $x, $y + ($index * $line_height), $color, $fontFile, $line);
+    }
+
+    // 加载网络图片并按比例缩小
+    $network_image_url = 'https://t.alcy.cc/moe';
+    $network_image = file_get_contents($network_image_url);
+    $network_image_info = getimagesizefromstring($network_image);
+    $network_image_width = $network_image_info[0];
+    $network_image_height = $network_image_info[1];
+
+    // 按比例缩小网络图片
+    $new_network_image_width = $max_width;
+    $new_network_image_height = intval($network_image_height * ($new_network_image_width / $network_image_width));
+
+    // 创建新的画布
+    $network_image_canvas = imagecreatetruecolor($new_network_image_width, $new_network_image_height);
+    imagecopyresampled($network_image_canvas, imagecreatefromstring($network_image), 0, 0, 0, 0, $new_network_image_width, $new_network_image_height, $network_image_width, $network_image_height);
+
+    // 创建最终的画布
+    $final_image_width = $max_width;
+    $final_image_height = $total_height + $new_network_image_height;
+    $final_image = imagecreatetruecolor($final_image_width, $final_image_height);
+
+    // 复制网络图片到最终画布
+    imagecopy($final_image, $network_image_canvas, 0, 0, 0, 0, $new_network_image_width, $new_network_image_height);
+
+    // 添加白色半透明渐变到网络图片上
+    for ($y = 0; $y < $new_network_image_height; $y++) {
+        // 透明度从完全透明 (127) 到不透明 (0)
+        $alpha = 127 - intval(127 * ($y / $new_network_image_height));
+        $white = imagecolorallocatealpha($final_image, 255, 255, 255, $alpha);
+        imageline($final_image, 0, $y, $new_network_image_width, $y, $white);
+    }
+
+    // 复制文本部分到最终画布
+    imagecopy($final_image, $image, 0, $new_network_image_height, 0, 0, $max_width, $total_height);
+
+    // 定义保存的文件名和路径
+    $filename = uniqid('temp_image_', true) . '.png'; // 确保文件名唯一
+    $directory = __DIR__ . '/temp/';
+    $filePath = $directory . $filename;
+
+    // 如果目录不存在，则创建
+    if (!is_dir($directory)) {
+        mkdir($directory, 0777, true);
+    }
+
+    // 保存图像
+    if (!imagepng($final_image, $filePath)) {
+        imagedestroy($final_image);
+        throw new Exception("无法保存图像到文件。");
+    }
+
+    // 清理
+    imagedestroy($final_image);
+    imagedestroy($network_image_canvas);
+    imagedestroy($image);
+
+    // 返回绝对路径
+    return realpath($filePath);
+}

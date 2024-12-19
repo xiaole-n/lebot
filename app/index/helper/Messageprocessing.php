@@ -139,38 +139,27 @@ function le_api($appid,$group_openid,$union_openid,$msg_id,$content){
     if(le_Enquirenew('bot_api','command',$array[0],'permission')==0){
         //这是文本，应该进行json解析
         if(le_Enquirenew('bot_api','command',$array[0],'response_type')==0){
-
             le_sendMessage($appid,$group_openid,$union_openid,$msg_id,$success_response,0);
-
         }
         //这是图片，直接把url丢给平台
         if(le_Enquirenew('bot_api','command',$array[0],'response_type')==1){
-
             le_sendMessage($appid,$group_openid,$union_openid,$msg_id,$success_response,1,$submit_url.$submit_data);
-
+            le_log('系统消息',$union_openid,$group_openid,$submit_url.$submit_data);
         }
         //这是视频，直接把url丢给平台
         if(le_Enquirenew('bot_api','command',$array[0],'response_type')==2){
-
             le_sendMessage($appid,$group_openid,$union_openid,$msg_id,$success_response,2,$submit_url.$submit_data);
-
         }
         //这是语音，直接把url丢给平台
-        if(le_Enquirenew('bot_api','command',$array[0],'response_type')==2){
-
+        if(le_Enquirenew('bot_api','command',$array[0],'response_type')==3){
             le_sendMessage($appid,$group_openid,$union_openid,$msg_id,$success_response,3,$submit_url.$submit_data);
-
         }
-
-
-
     }
 
     //post的情况，设置请求头和ck
     if(le_Enquirenew('bot_api','command',$array[0],'permission')==1){
 
     }
-
 
     le_Enquirenew('bot_api','command',$array[0],'submit_url');//url
 

@@ -120,8 +120,9 @@ class PostRequestHandler
                 }
 
                 if($content=='c'){
-                    $file = uploadGroupFile($Appid, $group_openid, '2', 'https://api.lolimi.cn/API/xjj/xjj.php');
-                    sendGroupMessage($Appid, $group_openid, $union_openid, $msg_id, '视频测试', 1,$file);
+                    le_sendMessage($Appid,$group_openid,$union_openid,$msg_id,'视频测试',2,'https://api.lolimi.cn/API/xjj/xjj.php');
+//                    $file = uploadGroupFile($Appid, $group_openid, '2', 'https://api.lolimi.cn/API/xjj/xjj.php');
+//                    sendGroupMessage($Appid, $group_openid, $union_openid, $msg_id, '视频测试', 1,$file);
                 }
 
                 if($content=='d'){
@@ -134,9 +135,11 @@ class PostRequestHandler
                     sendGroupMessage($Appid, $group_openid, $union_openid, $msg_id, '语言编码测试', 1,$file);
                 }
 
-                le_directives($Appid,$group_openid,$union_openid,$msg_id,$content);
+                le_directives($Appid,$group_openid,$union_openid,$msg_id,$content);//指令处理函数
 
                 le_menu($Appid,$group_openid,$union_openid,$msg_id,$content);//菜单处理函数
+
+                le_api($Appid,$group_openid,$union_openid,$msg_id,$content);//接口处理函数
             }
 
             echo json_encode(["code" => 200, "msg" => "大笨蛋，收到啦！", "time" => date('Y-m-d H:i:s')]);
