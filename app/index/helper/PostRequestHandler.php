@@ -110,30 +110,30 @@ class PostRequestHandler
 
             if ($t == '群聊消息' || '私聊消息') {
 
-                if($content=='a'){
-                    sendGroupMessage($Appid, $group_openid, $union_openid, $msg_id, '文本测试', 0);
-                }
+//                if($content=='a'){
+//                    sendGroupMessage($Appid, $group_openid, $union_openid, $msg_id, '文本测试', 0);
+//                }
 
-                if($content=='b'){
-                    $file = uploadGroupFile($Appid, $group_openid, '1', 'https://api.lolimi.cn/API/boy/api.php');
-                    sendGroupMessage($Appid, $group_openid, $union_openid, $msg_id, '图片测试', 1,$file);
-                }
+//                if($content=='b'){
+//                    $file = uploadGroupFile($Appid, $group_openid, '1', 'https://api.lolimi.cn/API/boy/api.php');
+//                    sendGroupMessage($Appid, $group_openid, $union_openid, $msg_id, '图片测试', 1,$file);
+//                }
 
-                if($content=='c'){
-                    le_sendMessage($Appid,$group_openid,$union_openid,$msg_id,'视频测试',2,'https://api.lolimi.cn/API/xjj/xjj.php');
-//                    $file = uploadGroupFile($Appid, $group_openid, '2', 'https://api.lolimi.cn/API/xjj/xjj.php');
-//                    sendGroupMessage($Appid, $group_openid, $union_openid, $msg_id, '视频测试', 1,$file);
-                }
+//                if($content=='c'){
+//                    le_sendMessage($Appid,$group_openid,$union_openid,$msg_id,'视频测试',2,'https://api.lolimi.cn/API/xjj/xjj.php');
+////                    $file = uploadGroupFile($Appid, $group_openid, '2', 'https://api.lolimi.cn/API/xjj/xjj.php');
+////                    sendGroupMessage($Appid, $group_openid, $union_openid, $msg_id, '视频测试', 1,$file);
+//                }
 
-                if($content=='d'){
-                    $file = uploadGroupFile($Appid, $group_openid, '3', 'https://thinkphp.xiaole.work/test/语音.mp3');
-                    sendGroupMessage($Appid, $group_openid, $union_openid, $msg_id, '语音测试', 1,$file);
-                }
+//                if($content=='d'){
+//                    $file = uploadGroupFile($Appid, $group_openid, '3', 'https://thinkphp.xiaole.work/test/语音.mp3');
+//                    sendGroupMessage($Appid, $group_openid, $union_openid, $msg_id, '语音测试', 1,$file);
+//                }
 
-                if($content=='e'){
-                    $file = uploadGroupFile($Appid, $group_openid, '3', 'https://thinkphp.xiaole.work/test/1.silk');
-                    sendGroupMessage($Appid, $group_openid, $union_openid, $msg_id, '语言编码测试', 1,$file);
-                }
+//                if($content=='e'){
+//                    $file = uploadGroupFile($Appid, $group_openid, '3', 'https://thinkphp.xiaole.work/test/1.silk');
+//                    sendGroupMessage($Appid, $group_openid, $union_openid, $msg_id, '语言编码测试', 1,$file);
+//                }
 
                 le_directives($Appid,$group_openid,$union_openid,$msg_id,$content);//指令处理函数
 

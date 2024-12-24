@@ -1,4 +1,4 @@
-<?php /*a:3:{s:53:"D:\Desktop\x\php\lebot\app\index\view\index\help.html";i:1733022812;s:55:"D:\Desktop\x\php\lebot\app\index\view\index\layout.html";i:1731324274;s:53:"D:\Desktop\x\php\lebot\app\index\view\index\head.html";i:1733290684;}*/ ?>
+<?php /*a:3:{s:53:"D:\Desktop\x\php\lebot\app\index\view\index\help.html";i:1733022812;s:55:"D:\Desktop\x\php\lebot\app\index\view\index\layout.html";i:1731324274;s:53:"D:\Desktop\x\php\lebot\app\index\view\index\head.html";i:1734618263;}*/ ?>
 <?php 
 // 检查是否存在 PJAX 请求头
 $hasPjaxHeader = isset($_SERVER['HTTP_X_PJAX']) && $_SERVER['HTTP_X_PJAX'] === 'true';
@@ -176,22 +176,22 @@ defined('PJAX') or define('PJAX', $hasPjaxHeader);
                     </a>
                 </li>
                 <li class="nav-main-heading">广告</li>
-                <li class="nav-main-item">
-                    <a id="load-users-help1" class="nav-main-link" href="<?php echo url('/index/help'); ?>">
+                <li class="nav-main-item-one">
+                    <a id="load-users-help1" class="nav-main-link" href="https://github.com/xiaole-n/lebot">
                         <i class="nav-main-link-icon si si-cup"></i>
-                        <span class="nav-main-link-name">开源地址</span>
+                        <span class="nav-main-link-one">开源地址</span>
                     </a>
                 </li>
-                <li class="nav-main-item">
+                <li class="nav-main-item-two">
                     <a id="load-users-help2" class="nav-main-link" href="<?php echo url('/index/help'); ?>">
                         <i class="nav-main-link-icon si si-doc"></i>
-                        <span class="nav-main-link-name">官方文档</span>
+                        <span class="nav-main-link-two">官方文档</span>
                     </a>
                 </li>
-                <li class="nav-main-item">
+                <li class="nav-main-item-stx">
                     <a id="load-users-help3" class="nav-main-link" href="<?php echo url('/index/help'); ?>">
                         <i class="nav-main-link-icon si si-users"></i>
-                        <span class="nav-main-link-name">交流群聊</span>
+                        <span class="nav-main-link-stx">交流群聊</span>
                     </a>
                 </li>
                 </li>

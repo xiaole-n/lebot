@@ -4,14 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f48f179-8366-47ef-a885-0d701e5be115" name="更改" comment="Initial commit">
-      <change beforePath="$PROJECT_DIR$/.idea/lebot.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/lebot.iml" afterDir="false" />
+    <list default="true" id="5f48f179-8366-47ef-a885-0d701e5be115" name="更改" comment="增加3个文本转图片的函数">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index/controller/text.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/index/controller/text.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index/helper/Messageprocessing.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/index/helper/Messageprocessing.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index/helper/PostRequestHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/index/helper/PostRequestHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index/helper/tool/tool.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/index/helper/tool/tool.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index/view/index/test.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index/view/index/test.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index/view/index/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index/view/index/head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/index/temp/32a3fea724602c89e14335e1e9536649.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/index/temp/32a3fea724602c89e14335e1e9536649.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/index/temp/aa3623d99836881ace4a1f04fd2a848d.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/index/temp/aa3623d99836881ace4a1f04fd2a848d.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/index/temp/d5e9700fbdf64c2b76e5e728982a0f1e.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/index/temp/d5e9700fbdf64c2b76e5e728982a0f1e.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -70,27 +70,27 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.webide.settings.project.settings.php",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.webide.settings.project.settings.php&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "ChangesTree.GroupingKeys": [],
-    "DatabaseDriversLRU": [
-      "mysql"
+  &quot;keyToStringList&quot;: {
+    &quot;ChangesTree.GroupingKeys&quot;: [],
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;mysql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -111,7 +111,11 @@
       <workItem from="1734146256723" duration="1156000" />
       <workItem from="1734157313152" duration="14207000" />
       <workItem from="1734248322985" duration="5315000" />
-      <workItem from="1734599822593" duration="15053000" />
+      <workItem from="1734599822593" duration="15760000" />
+      <workItem from="1734617732771" duration="606000" />
+      <workItem from="1734658333211" duration="1010000" />
+      <workItem from="1734939993372" duration="290000" />
+      <workItem from="1735032114005" duration="2950000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -121,7 +125,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734147318755</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="增加3个文本转图片的函数">
+      <option name="closed" value="true" />
+      <created>1734617311913</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1734617311913</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -152,7 +164,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="增加3个文本转图片的函数" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加3个文本转图片的函数" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

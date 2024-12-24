@@ -137,14 +137,39 @@ function le_api($appid,$group_openid,$union_openid,$msg_id,$content){
 
     //get的情况，不设置请求头和ck
     if(le_Enquirenew('bot_api','command',$array[0],'permission')==0){
-        //这是文本，应该进行json解析
+        //这是文本
         if(le_Enquirenew('bot_api','command',$array[0],'response_type')==0){
-            le_sendMessage($appid,$group_openid,$union_openid,$msg_id,$success_response,0);
+
+            // 初始化cURL会话
+            $ch = curl_init();
+
+            // 设置cURL选项
+            curl_setopt($ch, CURLOPT_URL, $submit_url.$submit_data);
+            curl_setopt($ch, CURLOPT_POST, 0);
+            curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
+
+            // 忽略SSL证书验证
+            curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
+            curl_setopt($ch, CURLOPT_SSL_VERIFYHOST, false);
+
+            // 执行cURL请求
+            $response = curl_exec($ch);
+
+            // 检查是否有错误发生
+            if (curl_errno($ch)) {
+                $errorMessage = 'Curl错误: ' . curl_error($ch);
+                curl_close($ch);
+                return $errorMessage;
+            }
+
+            // 关闭cURL资源，并释放系统资源
+            curl_close($ch);
+
+            le_sendMessage($appid,$group_openid,$union_openid,$msg_id,$response,0);
         }
         //这是图片，直接把url丢给平台
         if(le_Enquirenew('bot_api','command',$array[0],'response_type')==1){
             le_sendMessage($appid,$group_openid,$union_openid,$msg_id,$success_response,1,$submit_url.$submit_data);
-            le_log('系统消息',$union_openid,$group_openid,$submit_url.$submit_data);
         }
         //这是视频，直接把url丢给平台
         if(le_Enquirenew('bot_api','command',$array[0],'response_type')==2){
@@ -156,7 +181,7 @@ function le_api($appid,$group_openid,$union_openid,$msg_id,$content){
         }
     }
 
-    //post的情况，设置请求头和ck
+    //post的情况，设置请求头和ck（未完工）
     if(le_Enquirenew('bot_api','command',$array[0],'permission')==1){
 
     }
