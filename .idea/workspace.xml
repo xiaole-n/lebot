@@ -4,13 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f48f179-8366-47ef-a885-0d701e5be115" name="更改" comment="增加3个文本转图片的函数">
+    <list default="true" id="5f48f179-8366-47ef-a885-0d701e5be115" name="更改" comment="完善接口">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index/helper/Messageprocessing.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/index/helper/Messageprocessing.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index/helper/PostRequestHandler.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/index/helper/PostRequestHandler.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index/view/index/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index/view/index/head.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/index/controller/Index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index/controller/text.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/index/controller/text.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/index/helper/tool/install.sql" beforeDir="false" afterPath="$PROJECT_DIR$/app/index/helper/tool/install.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/index/temp/10a452b342a162ecfbe23765d8349822.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/index/temp/10a452b342a162ecfbe23765d8349822.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/index/temp/32a3fea724602c89e14335e1e9536649.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/index/temp/32a3fea724602c89e14335e1e9536649.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/runtime/index/temp/aa3623d99836881ace4a1f04fd2a848d.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/index/temp/aa3623d99836881ace4a1f04fd2a848d.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/index/temp/5c4ea3851d5739ee36c70e641f6bf906.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/index/temp/5c4ea3851d5739ee36c70e641f6bf906.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/runtime/index/temp/6bb4801fa766efe9c4797dff259f5916.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/index/temp/6bb4801fa766efe9c4797dff259f5916.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/runtime/index/temp/d5e9700fbdf64c2b76e5e728982a0f1e.php" beforeDir="false" afterPath="$PROJECT_DIR$/runtime/index/temp/d5e9700fbdf64c2b76e5e728982a0f1e.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,6 +74,8 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;JavaScript 调试.text.php.executor&quot;: &quot;Run&quot;,
+    &quot;PHP 脚本.text.php.executor&quot;: &quot;Run&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
@@ -115,7 +119,9 @@
       <workItem from="1734617732771" duration="606000" />
       <workItem from="1734658333211" duration="1010000" />
       <workItem from="1734939993372" duration="290000" />
-      <workItem from="1735032114005" duration="2950000" />
+      <workItem from="1735032114005" duration="9041000" />
+      <workItem from="1735292726144" duration="3112000" />
+      <workItem from="1735812108998" duration="6624000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -133,7 +139,15 @@
       <option name="project" value="LOCAL" />
       <updated>1734617311913</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="完善接口">
+      <option name="closed" value="true" />
+      <created>1735035405666</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1735035405666</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -165,7 +179,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="增加3个文本转图片的函数" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加3个文本转图片的函数" />
+    <MESSAGE value="完善接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="完善接口" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

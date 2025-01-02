@@ -1,3 +1,13 @@
+-- 删除表,防止错误
+DROP TABLE IF EXISTS users_bot;
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS log;
+DROP TABLE IF EXISTS bot_dau;
+DROP TABLE IF EXISTS bot_userinfo;
+DROP TABLE IF EXISTS bot_menu;
+DROP TABLE IF EXISTS bot_directives;
+DROP TABLE IF EXISTS bot_api;
+
 -- 创建用户机器人表
 CREATE TABLE IF NOT EXISTS users_bot (
     ID INT AUTO_INCREMENT PRIMARY KEY,

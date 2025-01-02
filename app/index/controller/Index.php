@@ -440,13 +440,6 @@ class Index
                     }
                 }
 
-                // 清空表并重置自增ID
-                $tables = ['users_bot', 'users', 'log', 'bot_dau', 'bot_userinfo','bot_menu','bot_directives'];
-                foreach ($tables as $table) {
-                    Db::execute("TRUNCATE TABLE {$table}");
-                    Db::execute("ALTER TABLE {$table} AUTO_INCREMENT = 1");
-                }
-
                 // 使用MD5加密密码
                 $hashedPassword = md5($data['admin_password']);
                 $hashedPassword = strtoupper($hashedPassword);
