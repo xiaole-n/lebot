@@ -14,9 +14,11 @@ function le_variable($text,$union_openid) {
         '[系统语言]' => "开发中",
         '[运行时间]' => "开发中",
         '[内存占用]' => "开发中",
-        '[磁盘大小]' => round(disk_total_space("/") / 1024 ** 3, 2) . 'G',
-        '[磁盘剩余]' => round(disk_free_space('/') / 1024 ** 3, 2) . 'G',
-        '[磁盘占用]' => round((disk_total_space('/') - disk_free_space('/')) / 1024 ** 3, 2) . 'G',
+        //这里部分机器会报错,所以注释掉啦
+        //很早就发现了,只怪俄罗斯塔塔太好玩了.一直没来得及修改
+        //'[磁盘大小]' => round(disk_total_space("/") / 1024 ** 3, 2) . 'G',
+        //'[磁盘剩余]' => round(disk_free_space('/') / 1024 ** 3, 2) . 'G',
+        //'[磁盘占用]' => round((disk_total_space('/') - disk_free_space('/')) / 1024 ** 3, 2) . 'G',
         '[CPU占用]' => "开发中",
         '[用户标识]' => $union_openid,
         '[用户积分]' => getPointsByUnionOpenid($union_openid),
