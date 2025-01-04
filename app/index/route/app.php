@@ -25,9 +25,15 @@ Route::get('handle-login', 'index/handleLogin'); // 可选，处理用户的手�
 
 //账号列表
 Route::get('usersbot', 'index/usersbot');//视图
-Route::post('usersdelete', 'index/delete');//删除用户
-Route::post('updateUser', 'index/updateUser'); // 添加编辑用户的路由
-Route::post('addRecord', 'index/addRecord'); // 新增用户的路由
+Route::post('usersdelete', 'index/delete');//删除账号
+Route::post('updateUser', 'index/updateUser'); // 编辑账号
+Route::post('addRecord', 'index/addRecord'); // 新增账号
+
+//用户管理
+Route::get('userinfo', 'index/userinfo');//视图
+Route::post('delete_users', 'index/deleteUsers');//删除用户
+Route::post('update_users', 'index/updateUsers'); // 编辑用户
+Route::post('add_users', 'index/addUsers'); // 新增用户的
 
 //菜单管理
 Route::get('menu', 'index/menu');//视图

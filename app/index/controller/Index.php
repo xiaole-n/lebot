@@ -483,12 +483,20 @@ class Index
 
     public function menu()
     {
-        $menus = Db::name('bot_menu')->select();
-        return view('index/menu', ['botMenuData' => $menus]);
+        if ($this->checkLogin()) {
+            $menus = Db::name('bot_menu')->select();
+            return view('index/menu', ['botMenuData' => $menus]);
+        } else {
+            return view('index/login/login');
+        }
     }
 
     public function addMenu(Request $request)
     {
+        if (!$this->checkLogin()) {
+            return json(['code' => 1, 'msg' => '未登录']);
+        }
+
         if ($request->isPost()) {
             $data = [
                 'menu' => $request->post('menu'),
@@ -507,6 +515,10 @@ class Index
 
     public function updateMenu(Request $request)
     {
+        if (!$this->checkLogin()) {
+            return json(['code' => 1, 'msg' => '未登录']);
+        }
+
         if ($request->isPost()) {
             $id = $request->post('id');
             $data = $request->post('data/a');
@@ -521,6 +533,10 @@ class Index
 
     public function deleteMenu(Request $request)
     {
+        if (!$this->checkLogin()) {
+            return json(['code' => 1, 'msg' => '未登录']);
+        }
+
         if ($request->isPost()) {
             $id = $request->post('id');
             $result = Db::name('bot_menu')->where('id', $id)->delete();
@@ -528,6 +544,99 @@ class Index
                 return json(['success' => true, 'message' => '删除成功']);
             } else {
                 return json(['success' => false, 'message' => '删除失败']);
+            }
+        }
+    }
+
+    public function userinfo()
+    {
+        if ($this->checkLogin()) {
+            $users = Db::name('bot_userinfo')->select();
+            return view('', ['botUserInfoData' => $users]);
+        } else {
+            return view('index/login/login');
+        }
+    }
+
+    // 新增用户
+    public function addUsers(Request $request)
+    {
+        if (!$this->checkLogin()) {
+            return json(['code' => 1, 'msg' => '未登录']);
+        }
+
+        if ($request->isPost()) {
+            $data = $request->post();
+
+            // 验证数据 (此处应加入更严格的验证规则)
+            if (empty($data['union_openid'])) {
+                return json(['success' => false, 'message' => '用户ID不能为空']);
+            }
+
+            // 插入新用户
+            $result = Db::name('bot_userinfo')->insertGetId([
+                'union_openid' => $data['union_openid'],
+                'permission' => isset($data['permission']) ? intval($data['permission']) : 0,
+                'points' => isset($data['points']) ? intval($data['points']) : 0,
+                'balance' => isset($data['balance']) ? floatval($data['balance']) : 0.00,
+                'post_date' => date('Y-m-d'),
+                'post_count' => 0,
+            ]);
+
+            if ($result) {
+                return json(['success' => true, 'message' => '用户已成功添加！']);
+            } else {
+                return json(['success' => false, 'message' => '添加用户失败，请重试。']);
+            }
+        }
+    }
+
+    // 删除用户
+    public function deleteUsers(Request $request)
+    {
+        if (!$this->checkLogin()) {
+            return json(['code' => 1, 'msg' => '未登录']);
+        }
+
+        if ($request->isPost()) {
+            $id = $request->post('id');
+            if (empty($id)) {
+                return json(['success' => false, 'message' => '无效的用户ID']);
+            }
+
+            // 删除用户
+            $result = Db::name('bot_userinfo')->where('id', $id)->delete();
+
+            if ($result !== false) {
+                return json(['success' => true, 'message' => '用户删除成功！']);
+            } else {
+                return json(['success' => false, 'message' => '删除用户失败，请重试。']);
+            }
+        }
+    }
+
+    // 编辑用户
+    public function updateUsers(Request $request)
+    {
+        if (!$this->checkLogin()) {
+            return json(['code' => 1, 'msg' => '未登录']);
+        }
+
+        if ($request->isPost()) {
+            $id = $request->post('id');
+            $data = $request->post('data/a'); // /a表示接收数组
+
+            // 验证数据 (此处应加入更严格的验证规则)
+
+            // 更新用户信息
+            $result = Db::name('bot_userinfo')
+                ->where('id', $id)
+                ->update($data);
+
+            if ($result !== false) {
+                return json(['code' => 0, 'message' => '用户信息更新成功！']);
+            } else {
+                return json(['code' => 1, 'message' => '更新用户信息失败，请重试。']);
             }
         }
     }

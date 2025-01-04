@@ -56,13 +56,13 @@ CREATE TABLE IF NOT EXISTS bot_dau (
 -- 创建机器人用户信息表
 CREATE TABLE IF NOT EXISTS bot_userinfo (
     id INT NOT NULL AUTO_INCREMENT,
-    union_openid VARCHAR(255) NOT NULL,
-    permission INT DEFAULT NULL,  -- 权限字段改为 INT 类型
-    points INT DEFAULT 0,
-    balance DECIMAL(10, 2) DEFAULT 0.00,
-    sign_in_date DATE DEFAULT NULL,
-    post_date DATE NOT NULL,
-    post_count INT DEFAULT 0,
+    union_openid VARCHAR(255) NOT NULL,   -- 用户ID
+    permission INT DEFAULT NULL,          -- 用户权限，默认为0（普通用户）
+    points INT DEFAULT 0,                 -- 用户积分
+    balance DECIMAL(10, 2) DEFAULT 0.00,  -- 用户余额
+    sign_in_date DATE DEFAULT NULL,       -- 签到日期
+    post_date DATE NOT NULL,              -- 发言日期
+    post_count INT DEFAULT 0,             -- 发言数量
     PRIMARY KEY (id),
     UNIQUE KEY unique_union_openid (union_openid)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
