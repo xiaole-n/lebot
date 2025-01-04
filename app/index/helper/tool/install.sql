@@ -105,6 +105,15 @@ CREATE TABLE bot_api(
     PRIMARY KEY (id)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
+-- 创建机器人信息表
+CREATE TABLE bot_info (
+    id int(11) NOT NULL,
+    appid varchar(255) NOT NULL,
+    status tinyint(4) DEFAULT '0',
+    send_mode int(11) DEFAULT NULL,
+    message_signature tinyint(4) DEFAULT '0'
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 -- 数据
 
 -- 菜单

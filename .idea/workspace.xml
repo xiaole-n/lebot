@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5f48f179-8366-47ef-a885-0d701e5be115" name="更改" comment="增加菜单管理">
-      <change afterPath="$PROJECT_DIR$/app/index/view/index/userinfo.html" afterDir="false" />
+    <list default="true" id="5f48f179-8366-47ef-a885-0d701e5be115" name="更改" comment="增加用户管理">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index/controller/Index.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/index/controller/Index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/index/helper/tool/install.sql" beforeDir="false" afterPath="$PROJECT_DIR$/app/index/helper/tool/install.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index/route/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/index/route/app.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/index/view/index/head.html" beforeDir="false" afterPath="$PROJECT_DIR$/app/index/view/index/head.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,7 +115,7 @@
       <workItem from="1735032114005" duration="9041000" />
       <workItem from="1735292726144" duration="3112000" />
       <workItem from="1735812108998" duration="7639000" />
-      <workItem from="1735959725882" duration="13887000" />
+      <workItem from="1735959725882" duration="17309000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <option name="closed" value="true" />
@@ -169,7 +165,15 @@
       <option name="project" value="LOCAL" />
       <updated>1735965277677</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="增加用户管理">
+      <option name="closed" value="true" />
+      <created>1735986435415</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1735986435415</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -205,7 +209,8 @@
     <MESSAGE value="优化安装" />
     <MESSAGE value="修复已知问题" />
     <MESSAGE value="增加菜单管理" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加菜单管理" />
+    <MESSAGE value="增加用户管理" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加用户管理" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
