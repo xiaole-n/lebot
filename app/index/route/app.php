@@ -29,6 +29,13 @@ Route::post('usersdelete', 'index/delete');//删除用户
 Route::post('updateUser', 'index/updateUser'); // 添加编辑用户的路由
 Route::post('addRecord', 'index/addRecord'); // 新增用户的路由
 
+//菜单管理
+Route::get('menu', 'index/menu');//视图
+Route::post('delete_menu', 'index/deleteMenu');//删除菜单
+Route::post('update_menu', 'index/updateMenu'); // 编辑菜单
+Route::post('add_menu', 'index/addMenu'); // 新增菜单
+
+
 //管理账号
 Route::get('users', 'index/users');//后台账号修改视图
 Route::post('ajax/user/profile', 'index/UserController/profile');// 用户资料和密码修改

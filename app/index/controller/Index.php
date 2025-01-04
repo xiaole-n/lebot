@@ -172,6 +172,7 @@ class Index
             return view('index/login/login');
         }
     }
+
     //登录处理
 
     public function handleLogin(Request $request)
@@ -476,6 +477,58 @@ class Index
         } catch (\Exception $e) {
             Log::error($e->getMessage());
             return json(['success' => false, 'message' => '未知错误，请检查日志！']);
+        }
+    }
+
+
+    public function menu()
+    {
+        $menus = Db::name('bot_menu')->select();
+        return view('index/menu', ['botMenuData' => $menus]);
+    }
+
+    public function addMenu(Request $request)
+    {
+        if ($request->isPost()) {
+            $data = [
+                'menu' => $request->post('menu'),
+                'content' => $request->post('content'),
+                'permission' => $request->post('permission'),
+                'status' => $request->post('status')
+            ];
+            $result = Db::name('bot_menu')->insert($data);
+            if ($result) {
+                return json(['success' => true, 'message' => '菜单已成功添加！']);
+            } else {
+                return json(['success' => false, 'message' => '添加菜单失败，请重试。']);
+            }
+        }
+    }
+
+    public function updateMenu(Request $request)
+    {
+        if ($request->isPost()) {
+            $id = $request->post('id');
+            $data = $request->post('data/a');
+            $result = Db::name('bot_menu')->where('id', $id)->update($data);
+            if ($result !== false) {
+                return json(['code' => 0, 'message' => '更新成功']);
+            } else {
+                return json(['code' => 1, 'message' => '更新失败']);
+            }
+        }
+    }
+
+    public function deleteMenu(Request $request)
+    {
+        if ($request->isPost()) {
+            $id = $request->post('id');
+            $result = Db::name('bot_menu')->where('id', $id)->delete();
+            if ($result) {
+                return json(['success' => true, 'message' => '删除成功']);
+            } else {
+                return json(['success' => false, 'message' => '删除失败']);
+            }
         }
     }
 }

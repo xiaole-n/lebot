@@ -1,0 +1,399 @@
+{extend name="index/layout"}
+{block name="head"}
+{include file="index/head" /}
+<style>
+    /* 这里是你的CSS样式 */
+    .editable-table-container {
+        margin-top: 70px;
+        padding: 20px;
+        background-color: transparent; /* 设置背景为透明 */
+        border-radius: 5px;
+    }
+
+    .editable-table-container .table {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .editable-table-container .table th,
+    .editable-table-container .table td {
+        padding: 8px;
+        text-align: left;
+    }
+
+    .editable-table-container .table td.edit-mode {
+        padding: 0;
+    }
+
+    .editable-table-container .table input[type="text"] {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+
+    .editable-table-container .actions {
+        min-width: 100px; /* 根据需要调整宽度 */
+        display: flex;
+        gap: 20px; /* 增加按钮之间的间隔 */
+    }
+
+    .editable-table-container .btn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5); /* 半透明背景色 */
+    }
+
+    .modal-content {
+        background-color: white;
+        padding: 10px; /* 减少内边距 */
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 250px; /* 减小最大宽度 */
+        width: 100%; /* 自适应宽度 */
+    }
+
+    .modal-content header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .modal-content label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+
+    .modal-content input,
+    .modal-content textarea {
+        width: 100%;
+        padding: 5px; /* 减少内边距 */
+        margin-bottom: 8px;
+        box-sizing: border-box;
+        font-size: 12px;
+    }
+
+    .modal-content button {
+        padding: 6px 12px; /* 减少按钮内边距 */
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 12px;
+    }
+
+    .modal-content button.close-modal {
+        background-color: transparent;
+        color: #007bff;
+        border: none;
+        font-size: 14px; /* 调整关闭按钮字体大小 */
+    }
+
+    #delete-confirm-modal.actions {
+        display: flex;
+        justify-content: flex-end;
+        gap: 10px;
+    }
+</style>
+
+<div class="editable-table-container">
+    <div class="block block-rounded">
+        <div class="block-header">
+            <h3 class="block-title">机器人菜单管理 <small>可编辑内容</small></h3>
+            <button class="btn btn-sm btn-success add-menu-btn">新增菜单</button>
+        </div>
+        <div class="block-content block-content-full">
+            <table class="table table-bordered table-striped table-vcenter js-dataTable-responsive">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>菜单名称</th>
+                    <th>菜单内容</th>
+                    <th>权限级别</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                {volist name="botMenuData" id="menu"}
+                <tr>
+                    <td data-field="ID" class="editable">{$menu.id}</td>
+                    <td data-field="menu" class="editable">{$menu.menu}</td>
+                    <td data-field="content" class="editable">{$menu.content}</td>
+                    <td data-field="permission" class="editable">{$menu.permission}</td>
+                    <td data-field="status" class="editable">{if $menu.status == 1}启用{else /}禁用{/if}</td>
+                    <td class="actions">
+                        <button class="btn btn-sm btn-primary edit-menu-btn" data-id="{$menu.id}">编辑</button>
+                        <button class="btn btn-sm btn-danger delete-menu-btn" data-id="{$menu.id}">删除</button>
+                    </td>
+                </tr>
+                {/volist}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+<!-- 删除确认模态框 -->
+<div id="delete-confirm-modal" class="modal" style="display:none;">
+    <div class="modal-content">
+        <header>
+            <h3>确认删除</h3>
+            <button class="close-modal">&times;</button>
+        </header>
+        <p>确定要删除此记录吗？</p>
+        <div class="actions">
+            <button class="btn btn-sm btn-danger confirm-delete">确认</button>
+            <button class="btn btn-sm btn-secondary cancel-delete">取消</button>
+        </div>
+    </div>
+</div>
+
+<!-- 新增记录模态框 -->
+<div id="add-menu-modal" class="modal" style="display:none;">
+    <div class="modal-content">
+        <header>
+            <h3>新增菜单</h3>
+            <button class="close-modal">&times;</button>
+        </header>
+        <form id="add-menu-form">
+            <label for="menu">菜单名称</label>
+            <input type="text" id="menu" name="menu" required>
+            <label for="content">菜单内容</label>
+            <textarea id="content" name="content" required></textarea>
+            <label for="permission">权限级别</label>
+            <input type="number" id="permission" name="permission" required>
+            <label for="status">状态</label>
+            <select id="status" name="status">
+                <option value="1">启用</option>
+                <option value="0">禁用</option>
+            </select>
+            <button type="submit">提交</button>
+        </form>
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        // 新增按钮点击事件
+        const addMenuBtn = document.querySelector('.add-menu-btn');
+        if (addMenuBtn) {
+            addMenuBtn.addEventListener('click', function () {
+                const addMenuModal = document.getElementById('add-menu-modal');
+                if (addMenuModal) {
+                    addMenuModal.style.display = 'flex';
+                } else {
+                    console.error('Add menu modal not found');
+                }
+            });
+        } else {
+            console.error('Add menu button not found');
+        }
+
+        // 取消按钮点击事件
+        document.querySelectorAll('.close-modal').forEach(function (button) {
+            button.addEventListener('click', function () {
+                const modal = this.closest('.modal');
+                if (modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        });
+
+        // 表单提交事件
+        const addMenuForm = document.getElementById('add-menu-form');
+        if (addMenuForm) {
+            addMenuForm.addEventListener('submit', function (event) {
+                event.preventDefault();
+                const formData = new FormData(this);
+                fetch('add_menu', {
+                    method: 'POST',
+                    body: formData
+                }).then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            alert('菜单已成功添加！');
+                            const addMenuModal = document.getElementById('add-menu-modal');
+                            if (addMenuModal) {
+                                addMenuModal.style.display = 'none';
+                            }
+                            location.reload(); // 刷新页面以显示新的记录
+                        } else {
+                            alert('添加菜单失败，请重试。');
+                        }
+                    }).catch(error => console.error('Error:', error));
+            });
+        } else {
+            console.error('Add menu form not found');
+        }
+
+        // 编辑和删除按钮点击事件
+        const rows = document.querySelectorAll('.editable-table-container .table tr');
+        rows.forEach(function (row) {
+            const editBtn = row.querySelector('.edit-menu-btn');
+            const deleteBtn = row.querySelector('.delete-menu-btn');
+            if (editBtn) {
+                editBtn.addEventListener('click', function () {
+                    showEditModal(row);
+                });
+            } else {
+                console.error('Edit button not found in row:', row);
+            }
+            if (deleteBtn) {
+                deleteBtn.addEventListener('click', function () {
+                    const id = this.getAttribute('data-id');
+                    showDeleteConfirmModal(id, row);
+                });
+            } else {
+                console.error('Delete button not found in row:', row);
+            }
+        });
+
+        function showDeleteConfirmModal(id, row) {
+            const modal = document.getElementById('delete-confirm-modal');
+            if (!modal) {
+                console.error('Delete confirm modal not found!');
+                return;
+            }
+            modal.style.display = 'flex';
+            const confirmDeleteBtn = modal.querySelector('.confirm-delete');
+            const cancelDeleteBtn = modal.querySelector('.cancel-delete');
+            const closeModalBtn = modal.querySelector('.close-modal');
+
+            confirmDeleteBtn.addEventListener('click', function () {
+                sendDeleteRequest(id, row);
+                modal.style.display = 'none';
+            });
+
+            cancelDeleteBtn.addEventListener('click', function () {
+                modal.style.display = 'none';
+            });
+
+            closeModalBtn.addEventListener('click', function () {
+                modal.style.display = 'none';
+            });
+        }
+
+        function sendDeleteRequest(id, row) {
+            fetch('delete_menu', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ id: id })
+            }).then(response => response.json())
+                .then(data => {
+                    console.log('Server response:', data);
+                    location.reload(); // 刷新页面
+                }).catch(error => {
+                console.error('Error:', error);
+            });
+        }
+
+        function showEditModal(row) {
+            const data = {};
+            const id = row.querySelector('.edit-menu-btn').getAttribute('data-id'); // 自动从表格行的编辑按钮获取id
+            Array.from(row.cells).slice(0, -1).forEach(cell => {
+                data[cell.dataset.field] = cell.textContent.trim();
+            });
+            const modal = createEditModal(data);
+            modal.querySelector('.close-modal').addEventListener('click', () => {
+                modal.remove();
+            });
+            modal.querySelector('.submit-edit').addEventListener('click', (event) => {
+                event.preventDefault();
+                console.log('Edit form submitted');
+                const formData = new FormData(modal.querySelector('form'));
+                const updatedData = {};
+                formData.forEach((value, key) => {
+                    if (key !== 'ID') {
+                        updatedData[key] = value;
+                    }
+                });
+                sendEditRequest(id, updatedData, row, modal);
+            });
+            document.body.appendChild(modal);
+        }
+
+        function createEditModal(data) {
+            const modalHtml = `
+            <div class="modal">
+                <div class="modal-content">
+                    <header>
+                        <h3>编辑信息</h3>
+                        <button class="close-modal">&times;</button>
+                    </header>
+                    <form>
+                        <label for="menu">菜单名称</label>
+                        <input type="text" id="menu" name="menu" value="${data.menu || ''}" required>
+                        <label for="content">菜单内容</label>
+                        <textarea id="content" name="content">${data.content || ''}</textarea>
+                        <label for="permission">权限级别</label>
+                        <input type="number" id="permission" name="permission" value="${data.permission || ''}" required>
+                        <label for="status">状态</label>
+                        <select id="status" name="status">
+                            <option value="1" ${data.status === '1' ? 'selected' : ''}>启用</option>
+                            <option value="0" ${data.status === '0' ? 'selected' : ''}>禁用</option>
+                        </select>
+                        <button type="submit" class="submit-edit">保存</button>
+                    </form>
+                </div>
+            </div>
+        `;
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(modalHtml, "text/html");
+            return doc.body.firstChild;
+        }
+
+        function sendEditRequest(id, updatedData, row, modal) {
+            const validData = filterValidFields(updatedData);
+            if (Object.keys(validData).length === 0) {
+                alert('没有有效的更新数据');
+                return;
+            }
+            fetch('update_menu', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify({ id: id, data: validData })
+            }).then(response => response.json())
+                .then(data => {
+                    console.log('Server response:', data);
+                    if (data.code === 0) {
+                        updateRowData(row, validData);
+                        modal.remove();
+                        location.reload(); // 刷新页面
+                    } else {
+                        alert('编辑失败');
+                    }
+                }).catch(error => {
+                console.error('Error:', error);
+            });
+        }
+
+        function filterValidFields(data) {
+            const allowedFields = ['menu', 'content', 'permission', 'status'];
+            return Object.fromEntries(Object.entries(data).filter(([key]) => allowedFields.includes(key)));
+        }
+
+        function updateRowData(row, updatedData) {
+            Object.keys(updatedData).forEach(key => {
+                row.querySelector(`[data-field="${key}"]`).textContent = updatedData[key];
+            });
+        }
+    });
+</script>
+{/block}
