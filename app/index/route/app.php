@@ -29,6 +29,7 @@ Route::post('usersdelete', 'index/delete');//删除账号
 Route::post('updateUser', 'index/updateUser'); // 编辑账号
 Route::post('addRecord', 'index/addRecord'); // 新增账号
 
+
 //用户管理
 Route::get('userinfo', 'index/userinfo');//视图
 Route::post('delete_users', 'index/deleteUsers');//删除用户
@@ -40,6 +41,10 @@ Route::get('menu', 'index/menu');//视图
 Route::post('delete_menu', 'index/deleteMenu');//删除菜单
 Route::post('update_menu', 'index/updateMenu'); // 编辑菜单
 Route::post('add_menu', 'index/addMenu'); // 新增菜单
+
+//指令管理
+Route::get('directives', 'index/directives');//视图
+Route::post('update_directives', 'index/updatedirectives');//编辑指令
 
 
 //管理账号

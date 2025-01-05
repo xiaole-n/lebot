@@ -7,50 +7,51 @@ DROP TABLE IF EXISTS bot_userinfo;
 DROP TABLE IF EXISTS bot_menu;
 DROP TABLE IF EXISTS bot_directives;
 DROP TABLE IF EXISTS bot_api;
+DROP TABLE IF EXISTS bot_info;
 
 -- 创建用户机器人表
 CREATE TABLE IF NOT EXISTS users_bot (
     ID INT AUTO_INCREMENT PRIMARY KEY,
-    QQ VARCHAR(255) NOT NULL,
-    AppID VARCHAR(255) NOT NULL,
-    Token VARCHAR(255) NOT NULL,
-    AppSecret VARCHAR(255) NOT NULL,
-    AccessToken VARCHAR(255) DEFAULT NULL,
-    AccessToken_time BIGINT DEFAULT NULL
+    QQ VARCHAR(255) NOT NULL,               --  QQ号
+    AppID VARCHAR(255) NOT NULL,            -- AppID
+    Token VARCHAR(255) NOT NULL,            -- Token（令牌）
+    AppSecret VARCHAR(255) NOT NULL,        -- AppSecret（密钥）
+    AccessToken VARCHAR(255) DEFAULT NULL,  -- 鉴权凭证
+    AccessToken_time BIGINT DEFAULT NULL    -- 鉴权凭证有效期时间戳（秒级）
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
--- 创建用户表
+-- 创建管理员表
 CREATE TABLE IF NOT EXISTS users (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    username VARCHAR(255) NOT NULL UNIQUE,
-    password VARCHAR(255) NOT NULL,
-    qq VARCHAR(20) DEFAULT NULL,
-    email VARCHAR(100) DEFAULT NULL,
-    name VARCHAR(100) DEFAULT NULL,
-    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP
+    username VARCHAR(255) NOT NULL UNIQUE,                    -- 账号
+    password VARCHAR(255) NOT NULL,                           -- 密码
+    qq VARCHAR(20) DEFAULT NULL,                              -- QQ，用于显示头像
+    email VARCHAR(100) DEFAULT NULL,                          -- 邮箱，后续估计会出邮箱找回密码的功能，也许会出
+    name VARCHAR(100) DEFAULT NULL,                           -- 昵称
+    created_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP   -- 注册时间（或许改为登录时间更好）
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- 创建日志表
 CREATE TABLE IF NOT EXISTS log (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    time DATETIME NOT NULL,
-    type VARCHAR(50) NOT NULL,
-    union_openid VARCHAR(255) NOT NULL,
-    group_openid VARCHAR(255) DEFAULT NULL,
-    content TEXT NOT NULL
+    time DATETIME NOT NULL,                  -- 时间
+    type VARCHAR(50) NOT NULL,               -- 类型
+    union_openid VARCHAR(255) NOT NULL,      -- union_openid
+    group_openid VARCHAR(255) DEFAULT NULL,  -- group_openid
+    content TEXT NOT NULL                    -- 内容
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- 创建机器人每日活跃数据表
 CREATE TABLE IF NOT EXISTS bot_dau (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    date DATE NOT NULL,
-    received_messages INT DEFAULT 0,
-    sent_messages INT DEFAULT 0,
-    user_count INT DEFAULT 0,
-    group_count INT DEFAULT 0,
-    usage_frequency INT DEFAULT 0,
-    channel_private_chat INT DEFAULT 0,
-    group_private_chat INT DEFAULT 0
+    date DATE NOT NULL,                     -- 日期
+    received_messages INT DEFAULT 0,        -- 接收的消息数量
+    sent_messages INT DEFAULT 0,            -- 发送的消息数量
+    user_count INT DEFAULT 0,               -- 用户数量
+    group_count INT DEFAULT 0,              -- 使用群数
+    usage_frequency INT DEFAULT 0,          -- 使用人数
+    channel_private_chat INT DEFAULT 0,     -- 忘记了
+    group_private_chat INT DEFAULT 0        -- 忘记了
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- 创建机器人用户信息表
@@ -79,11 +80,11 @@ CREATE TABLE IF NOT EXISTS bot_menu (
 -- 创建指令表
 CREATE TABLE `bot_directives` (
     id INT AUTO_INCREMENT PRIMARY KEY,
-    directives varchar(255) NOT NULL,
-    newdirectives varchar(255) DEFAULT NULL,
-    content text,
-    permission int(11) NOT NULL DEFAULT 0,
-    status tinyint(4) NOT NULL DEFAULT 1
+    directives varchar(255) NOT NULL,        -- 原指令，固定不可修改
+    newdirectives varchar(255) DEFAULT NULL, -- 新指令，触发指令，可修改
+    content text,                            -- 回复内容
+    permission int(11) NOT NULL DEFAULT 0,   -- 权限级别，默认为0
+    status tinyint(4) NOT NULL DEFAULT 1     -- 状态，1表示启用，0表示禁用，默认启用
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- 创建接口表
@@ -108,10 +109,10 @@ CREATE TABLE bot_api(
 -- 创建机器人信息表
 CREATE TABLE bot_info (
     id int(11) NOT NULL,
-    appid varchar(255) NOT NULL,
-    status tinyint(4) DEFAULT '0',
-    send_mode int(11) DEFAULT NULL,
-    message_signature tinyint(4) DEFAULT '0'
+    appid varchar(255) NOT NULL,             -- appid
+    status tinyint(4) DEFAULT '0',           -- 状态，1表示启用，0表示禁用，默认启用
+    send_mode int(11) DEFAULT NULL,          -- 发送模式，0为文本，1为图片，2为卡片，3为大图
+    message_signature tinyint(4) DEFAULT '0' -- 忘记了
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- 数据

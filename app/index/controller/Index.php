@@ -640,4 +640,56 @@ class Index
             }
         }
     }
+
+    public function directives(): View
+    {
+        if ($this->checkLogin()) {
+            $botDirectivesData = Db::name('bot_directives')->select()->toArray();
+            return view('index/directives', ['botDirectivesData' => $botDirectivesData]);
+        } else {
+            return view('index/login/login');
+        }
+    }
+
+    public function updateDirectives(Request $request): \think\response\Json
+    {
+        if (!$this->checkLogin()) {
+            return json(['code' => 1, 'msg' => '未登录']);
+        }
+
+        // 验证请求是否为POST
+        if (!$request->isPost()) {
+            return json(['success' => false, 'message' => 'Invalid request method.'], 405);
+        }
+
+        // 获取并验证输入数据
+        $data = $request->post();
+        $rules = [
+            'id|ID' => 'require|integer',
+            'newdirectives|新指令' => 'max:255',
+            'content|回复内容' => 'require',
+            'permission|权限级别' => 'integer|min:0|max:999999',
+            'status|状态' => 'in:0,1'
+        ];
+        $validate = validate($rules);
+        if (!$validate->check($data)) {
+            return json(['success' => false, 'message' => $validate->getError()], 400);
+        }
+
+        // 更新数据库中的记录
+        $result = Db::name('bot_directives')
+            ->where('id', $data['id'])
+            ->update([
+                'newdirectives' => $data['newdirectives'] ?? null,
+                'content' => $data['content'],
+                'permission' => $data['permission'],
+                'status' => $data['status']
+            ]);
+
+        if ($result !== false) {
+            return json(['success' => true, 'message' => '指令更新成功']);
+        } else {
+            return json(['success' => false, 'message' => '指令更新失败，请重试。'], 500);
+        }
+    }
 }

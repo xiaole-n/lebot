@@ -1,0 +1,232 @@
+{extend name="index/layout"}
+{block name="head"}
+{include file="index/head" /}
+<style>
+    /* 这里是您的CSS样式 */
+    .directive-management-container {
+        margin-top: 70px;
+        padding: 20px;
+        background-color: transparent; /* 设置背景为透明 */
+        border-radius: 5px;
+    }
+    .directive-management-container .table {
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+    }
+    .directive-management-container th, .directive-management-container td {
+        padding: 8px;
+        text-align: left;
+    }
+    .directive-management-container .edit-mode {
+        padding: 0;
+    }
+    .directive-management-container input[type="text"], .directive-management-container input[type="number"] {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+    }
+    .directive-management-container .actions {
+        min-width: 60px; /* 减少操作栏宽度 */
+        display: flex;
+        gap: 5px; /* 减少按钮间距 */
+    }
+    .directive-management-container .btn {
+        font-size: 12px;
+        padding: 5px 10px;
+    }
+    .modal {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+    .modal-content {
+        background-color: white;
+        padding: 10px;
+        border-radius: 5px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        max-width: 300px;
+        width: 100%;
+    }
+    .modal-content header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .modal-content label {
+        display: block;
+        margin-bottom: 5px;
+        font-size: 12px;
+    }
+    .modal-content input, .modal-content textarea {
+        width: 100%;
+        padding: 5px;
+        margin-bottom: 8px;
+        box-sizing: border-box;
+        font-size: 12px;
+    }
+    .modal-content button {
+        padding: 6px 12px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 12px;
+    }
+    .modal-content button.close-modal {
+        background-color: transparent;
+        color: #007bff;
+        border: none;
+        font-size: 14px;
+    }
+</style>
+<div class="directive-management-container">
+    <div class="block block-rounded">
+        <div class="block-header">
+            <h3 class="block-title">指令管理</h3>
+        </div>
+        <div class="block-content block-content-full">
+            <table class="table table-bordered table-striped table-vcenter js-dataTable-responsive">
+                <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>原指令</th>
+                    <th>新指令</th>
+                    <th>回复内容</th>
+                    <th>权限级别</th>
+                    <th>状态</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody>
+                {volist name="botDirectivesData" id="directive"}
+                <tr>
+                    <td data-field="ID" class="not-editable">{$directive.id}</td>
+                    <td data-field="directives" class="not-editable">{$directive.directives}</td>
+                    <td data-field="newdirectives" class="editable">{$directive.newdirectives}</td>
+                    <td data-field="content" class="editable">{$directive.content}</td>
+                    <td data-field="permission" class="editable">{$directive.permission}</td>
+                    <td data-field="status" class="editable">{$directive.status ? '启用' : '禁用'}</td>
+                    <td class="actions">
+                        <button class="btn btn-sm btn-primary edit-directive-btn" data-id="{$directive.id}">编辑</button>
+                    </td>
+                </tr>
+                {/volist}
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<!-- 编辑模态框 -->
+<div id="edit-directive-modal" class="modal" style="display:none;">
+    <div class="modal-content">
+        <header>
+            <h3>编辑指令</h3>
+            <button class="close-modal">&times;</button>
+        </header>
+        <form id="edit-directive-form">
+            <input type="hidden" id="directive-id" name="id">
+            <label for="directives">原指令</label>
+            <input type="text" id="directives" name="directives" readonly>
+            <label for="newdirectives">新指令</label>
+            <input type="text" id="newdirectives" name="newdirectives" required>
+            <label for="content">回复内容</label>
+            <textarea id="content" name="content" required></textarea>
+            <label for="permission">权限级别</label>
+            <input type="number" id="permission" name="permission" required>
+            <label for="status">状态</label>
+            <select id="status" name="status">
+                <option value="1">启用</option>
+                <option value="0">禁用</option>
+            </select>
+            <button type="submit">保存</button>
+        </form>
+    </div>
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        // 编辑按钮点击事件
+        const rows = document.querySelectorAll('.directive-management-container tr');
+        rows.forEach(function(row) {
+            const editBtn = row.querySelector('.edit-directive-btn');
+            if (editBtn) {
+                editBtn.addEventListener('click', function() {
+                    showEditModal(row);
+                });
+            } else {
+                console.error('Edit button not found in row:', row);
+            }
+        });
+
+        // 取消按钮点击事件
+        document.querySelectorAll('.close-modal').forEach(function(button) {
+            button.addEventListener('click', function() {
+                const modal = this.closest('.modal');
+                if (modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        });
+
+        // 表单提交事件
+        const editDirectiveForm = document.getElementById('edit-directive-form');
+        if (editDirectiveForm) {
+            editDirectiveForm.addEventListener('submit', function(event) {
+                event.preventDefault();
+                const formData = new FormData(this);
+                fetch('update_directives', {
+                    method: 'POST',
+                    body: formData
+                }).then(response => response.json())
+                    .then(data => {
+                        if (data.success) {
+                            alert('指令已成功更新！');
+                            const editDirectiveModal = document.getElementById('edit-directive-modal');
+                            if (editDirectiveModal) {
+                                editDirectiveModal.style.display = 'none';
+                            }
+                            location.reload(); // 刷新页面以显示新的记录
+                        } else {
+                            alert('更新指令失败，请重试。');
+                        }
+                    })
+                    .catch(error => console.error('Error:', error));
+            });
+        } else {
+            console.error('Edit directive form not found');
+        }
+
+        function showEditModal(row) {
+            const data = {};
+            const id = row.querySelector('.edit-directive-btn').getAttribute('data-id'); // 自动从表格行的编辑按钮获取id
+            Array.from(row.cells).forEach(cell => {
+                if (!cell.classList.contains('not-editable')) {
+                    data[cell.dataset.field] = cell.textContent.trim();
+                }
+            });
+            populateEditModal(data, id);
+            const modal = document.getElementById('edit-directive-modal');
+            if (modal) {
+                modal.style.display = 'flex';
+            } else {
+                console.error('Edit directive modal not found!');
+            }
+        }
+
+        function populateEditModal(data, id) {
+            document.getElementById('directive-id').value = id;
+            document.getElementById('directives').value = data.directives || '';
+            document.getElementById('newdirectives').value = data.newdirectives || '';
+            document.getElementById('content').value = data.content || '';
+            document.getElementById('permission').value = data.permission || 0;
+            document.getElementById('status').value = data.status || 1;
+        }
+    });
+</script>
+{/block}
