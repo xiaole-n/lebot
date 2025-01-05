@@ -110,20 +110,23 @@ CREATE TABLE bot_api(
 CREATE TABLE bot_info (
     id int(11) NOT NULL,
     appid varchar(255) NOT NULL,             -- appid
-    status tinyint(4) DEFAULT '0',           -- 状态，1表示启用，0表示禁用，默认启用
-    send_mode int(11) DEFAULT NULL,          -- 发送模式，0为文本，1为图片，2为卡片，3为大图
+    status tinyint(4) DEFAULT '0',           -- 状态，0表示启用，1+365表示禁用，默认启用
+    send_mode int(11) DEFAULT 0,          -- 发送模式，0为文本，1为图片，2为卡片，3为大图
     message_signature tinyint(4) DEFAULT '0' -- 忘记了
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- 数据
 
 -- 菜单
-INSERT INTO `bot_menu` (`id`, `menu`, `content`, `permission`, `status`) VALUES (NULL, '菜单', '功能菜单\r\n-------------\r\n运行信息\r\n我的信息\r\n-------------\r\nPs:开发中', '0', '1');
-
+INSERT INTO `bot_menu` (`id`, `menu`, `content`, `permission`, `status`) VALUES (NULL, '菜单', '功能菜单\r\n-------------\r\n运行信息\r\n我的信息\r\n主人功能\r\n-------------\r\nPs:开发中', '0', '1');
+INSERT INTO `bot_menu` (`id`, `menu`, `content`, `permission`, `status`) VALUES (NULL, '主人功能', '主人功能\r\n-------------\r\n开启\r\n关闭\r\n切换文字\r\n切换图片\r\n-------------\r\nPs:仅管理员可用', '3', '1');
 -- 指令
 INSERT INTO `bot_directives` (`id`, `directives`, `newdirectives`, `content`, `permission`, `status`) VALUES (NULL, '运行信息', '运行信息', '运行信息\r\n-----------\r\n账号信息\r\n----\r\n接收消息：[接收消息]\r\n发送消息：[发送消息]\r\n用户总数：[用户总数]\r\n托管账号：[托管账号]\r\n----\r\n系统信息\r\n----\r\n系统名称：[系统名称]\r\n系统版本：[系统版本]\r\n系统详情：[系统详情]\r\n机器架构：[机器架构]\r\nPHP版本: [PHP版本]\r\n系统语言: [系统语言]\r\n运行时间: [运行时间]\r\n内存占用: [内存占用]\r\n磁盘大小: [磁盘大小]\r\n磁盘剩余: [磁盘剩余]\r\n磁盘占用: [磁盘占用]\r\nCPU占用: [CPU占用]\r\n----\r\n当前时间：[当前时间]', '0', '1');
 INSERT INTO `bot_directives` (`id`, `directives`, `newdirectives`, `content`, `permission`, `status`) VALUES (NULL, '我的信息', '我的信息', '个人信息\r\n-------------\r\n用户标识：[用户标识]\r\n用户权限：[用户权限]\r\n用户积分：[用户积分]\r\n用户余额：[用户余额]\r\n-------------\r\nPs:你的信息', '0', '1');
 INSERT INTO `bot_directives` (`id`, `directives`, `newdirectives`, `content`, `permission`, `status`) VALUES (NULL, '开启', '开启', '开启成功！', '3', '1');
 INSERT INTO `bot_directives` (`id`, `directives`, `newdirectives`, `content`, `permission`, `status`) VALUES (NULL, '关闭', '关闭', '关闭成功！', '3', '1');
 INSERT INTO `bot_directives` (`id`, `directives`, `newdirectives`, `content`, `permission`, `status`) VALUES (NULL, '兽语转换', '兽语转换', '[转换结果]', '0', '1');
+
+INSERT INTO `bot_directives` (`id`, `directives`, `newdirectives`, `content`, `permission`, `status`) VALUES (NULL, '切换文字', '切换文字', '切换成功！', '3', '1');
+INSERT INTO `bot_directives` (`id`, `directives`, `newdirectives`, `content`, `permission`, `status`) VALUES (NULL, '切换图片', '切换图片', '切换成功！', '3', '1');
 -- 接口

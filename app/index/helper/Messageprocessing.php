@@ -9,6 +9,14 @@ function le_sendMessage($appid,$group_openid,$union_openid,$msg_id,$msg,$msg_typ
     //全局变量
     $msg = le_variable($msg,$union_openid);
     //很迷惑。为啥没传入$group_openid 的值是-
+
+    if(le_Enquirenew('bot_info', 'appid', $appid, 'send_mode') == 1){
+        //转换图片
+        $file_path = text_to_image_promax($msg,app_path() . 'helper/tool/arial.ttf',25);
+        $msg = " ";
+        $msg_type = 11;
+    }
+
     if($group_openid == '-'){
 
         $msg = ltrim($msg);
@@ -17,7 +25,7 @@ function le_sendMessage($appid,$group_openid,$union_openid,$msg_id,$msg,$msg_typ
             sendunionMessage($appid,$union_openid, $msg_id, $msg, 0);
         }
 
-        if($msg_type == 1){
+        if($msg_type == 1 || $msg_type == 11){
             $media = uploadunionFile($appid,$union_openid,1, $file_path);
             sendunionMessage($appid,$union_openid, $msg_id, $msg, 1, $media);
         }
@@ -48,7 +56,7 @@ function le_sendMessage($appid,$group_openid,$union_openid,$msg_id,$msg,$msg_typ
             sendGroupMessage($appid, $group_openid, $union_openid, $msg_id, $msg, 0);
         }
 
-        if($msg_type == 1){
+        if($msg_type == 1 || $msg_type == 11){
             $media = uploadGroupFile($appid, $group_openid,1, $file_path);
             sendGroupMessage($appid, $group_openid, $union_openid, $msg_id, $msg, 1, $media);
         }
@@ -72,6 +80,10 @@ function le_sendMessage($appid,$group_openid,$union_openid,$msg_id,$msg,$msg_typ
         }
     }
 
+    if($msg_type == 11){
+        //删除本地临时图片
+        deleteFile($file_path);
+    }
 }
 
 
@@ -230,6 +242,16 @@ function le_directives($appid,$group_openid,$union_openid,$msg_id,$content)
     if ($array[0] == '兽语转换') {
         //这里应该验证一下成员是否存在
         $return = str_replace("[转换结果]", "1", le_languageconversion($array[1]));
+    }
+
+    if ($array[0] == '切换文字') {
+
+        le_updateColumn('bot_info', 'appid', $appid, 'send_mode', 0);
+    }
+
+    if ($array[0] == '切换图片') {
+
+        le_updateColumn('bot_info', 'appid', $appid, 'send_mode', 1);
     }
 
     le_sendMessage($appid,$group_openid,$union_openid,$msg_id,$return,0);

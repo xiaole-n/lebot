@@ -634,3 +634,27 @@ function text_to_image_promax($text, $fontFile, $fontSize, $maxCharsPerLine = PH
     // 返回绝对路径
     return realpath($filePath);
 }
+
+function deleteFile($filePath) {
+    // 检查文件路径是否为null或者是一个空字符串
+    if ($filePath === null || $filePath === '') {
+        return 0; // 文件路径未提供
+    }
+
+    // 检查是否为网络地址（URL）
+    if (filter_var($filePath, FILTER_VALIDATE_URL) !== false) {
+        return 0; // 是网络地址，不进行删除操作
+    }
+
+    // 检查文件是否存在
+    if (!file_exists($filePath)) {
+        return 0; // 文件不存在
+    }
+
+    // 尝试删除文件
+    if (unlink($filePath)) {
+        return 1; // 文件删除成功
+    } else {
+        return -1; // 删除文件失败
+    }
+}
