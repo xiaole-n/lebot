@@ -271,25 +271,51 @@ function le_Enquirenew($table, $column, $row, $newColumn)
     return $result !== null ? $result : -1;
 }
 
-function le_updateColumn($table, $column, $row, $newColumn, $newValue) {
+function le_updateColumn($table, $matchCondition, $matchConditionValue, $newColumn, $newValue) {
     /**
-     * 数据库更新
+     * 更新或创建数据库记录
      *
-     * @param string $table      数据库表名
-     * @param string $column     用来匹配行的列名
-     * @param mixed  $row        匹配列的值
-     * @param string $newColumn  要更新的列名
-     * @param mixed  $newValue   新列的值
+     * @param string $table             数据库表名
+     * @param string $matchCondition      用来匹配行的列名
+     * @param mixed  $matchConditionValue 匹配列的值
+     * @param string $newColumn        要更新的列名
+     * @param mixed  $newValue         新列的值
      *
-     * @return int|false         返回受影响的行数，或者在失败时返回 false
+     * @return int|false               返回受影响的行数，或者在失败时返回 false
      */
-    // 执行更新操作
-    $result = Db::name($table)
-        ->where($column, '=', $row)
-        ->update([$newColumn => $newValue]);
 
-    // 检查是否有任何行受到影响
-    return $result !== false ? $result : false;
+    // 开始事务
+    Db::startTrans();
+    try {
+        // 尝试查找现有记录
+        $existingRecord = Db::name($table)
+            ->where($matchCondition, '=', $matchConditionValue)
+            ->find();
+
+        if ($existingRecord) {
+            // 如果找到匹配的记录，则更新
+            $result = Db::name($table)
+                ->where($matchCondition, '=', $matchConditionValue)
+                ->update([$newColumn => $newValue]);
+        } else {
+            // 如果没有找到匹配的记录，则插入新记录
+            $data = [
+                $matchCondition => $matchConditionValue,
+                $newColumn => $newValue,
+            ];
+            $result = Db::name($table)->insert($data);
+            $result = $result !== false ? 1 : false;
+        }
+
+        // 提交事务
+        Db::commit();
+        return $result;
+    } catch (\Exception $e) {
+        // 回滚事务
+        Db::rollback();
+        // 处理异常
+        throw $e;
+    }
 }
 
 /**
