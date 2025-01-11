@@ -684,3 +684,62 @@ function deleteFile($filePath) {
         return -1; // 删除文件失败
     }
 }
+
+function moveFile($filePath) {
+    // 获取文件名
+    $fileName = basename($filePath);
+
+    // 构建新的文件路径
+    $targetDir = root_path() . 'public' . DIRECTORY_SEPARATOR . 'temp';
+    $newPath = $targetDir . DIRECTORY_SEPARATOR . $fileName;
+
+    // 检查目标目录是否存在，如果不存在则创建
+    if (!is_dir($targetDir)) {
+        mkdir($targetDir, 0777, true); // 第三个参数true表示允许递归创建目录
+    }
+
+    // 移动文件
+    if(rename($filePath, $newPath)) {
+        // 构建网络路径
+        $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http";
+        $host = $_SERVER['HTTP_HOST'];
+
+        // 获取相对于网站根目录的路径，并去掉 'public/' 部分
+        $relativePath = str_replace(DIRECTORY_SEPARATOR, '/', substr($newPath, strlen(root_path())));
+        $relativePath = str_replace('public/', '', $relativePath);
+
+        // 返回完整的网络路径
+        return $protocol . "://" . $host . "/" . $relativePath;
+    } else {
+        return false; // 如果移动失败，返回false
+    }
+}
+
+function networkPathToLocalPath($networkPath) {
+    // 获取当前协议和主机名
+    $protocol = isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] === 'on' ? "https" : "http";
+    $host = $_SERVER['HTTP_HOST'];
+
+    // 构建完整的主机URL模式
+    $hostUrlPattern = $protocol . "://" . $host;
+
+    // 检查并移除协议和主机名部分
+    if (strpos($networkPath, $hostUrlPattern) !== 0) {
+        return false; // 如果网络路径不匹配当前主机，则返回false
+    }
+
+    // 移除协议和主机名部分，得到相对路径
+    $relativePath = substr($networkPath, strlen($hostUrlPattern));
+
+    // 去掉开头的斜杠
+    $relativePath = ltrim($relativePath, '/');
+
+    // 将URL路径中的斜杠替换为操作系统特定的目录分隔符
+    $relativePath = str_replace('/', DIRECTORY_SEPARATOR, $relativePath);
+
+    // 拼接根路径和相对路径
+    $localPath = root_path() . 'public' . DIRECTORY_SEPARATOR . $relativePath;
+
+    // 返回最终的本地路径
+    return $localPath;
+}

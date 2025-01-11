@@ -17,6 +17,18 @@ function le_sendMessage($appid,$group_openid,$union_openid,$msg_id,$msg,$msg_typ
         $msg_type = 11;
     }
 
+    if(le_Enquirenew('bot_info', 'appid', $appid, 'send_mode') == 2){
+        //转换卡片
+        $msg_type = 4;
+    }
+
+    if(le_Enquirenew('bot_info', 'appid', $appid, 'send_mode') == 3){
+        //转换大图
+        $msg = moveFile(text_to_image_promax($msg,app_path() . 'helper/tool/arial.ttf',25));
+        $msg_type = 5;
+
+    }
+
     if($group_openid == '-'){
 
         $msg = ltrim($msg);
@@ -252,6 +264,16 @@ function le_directives($appid,$group_openid,$union_openid,$msg_id,$content)
     if ($array[0] == '切换图片') {
 
         le_updateColumn('bot_info', 'appid', $appid, 'send_mode', 1);
+    }
+
+    if ($array[0] == '切换卡片') {
+
+        le_updateColumn('bot_info', 'appid', $appid, 'send_mode', 2);
+    }
+
+    if ($array[0] == '切换大图') {
+
+        le_updateColumn('bot_info', 'appid', $appid, 'send_mode', 3);
     }
 
     le_sendMessage($appid,$group_openid,$union_openid,$msg_id,$return,0);

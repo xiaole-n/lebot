@@ -129,4 +129,6 @@ INSERT INTO `bot_directives` (`id`, `directives`, `newdirectives`, `content`, `p
 
 INSERT INTO `bot_directives` (`id`, `directives`, `newdirectives`, `content`, `permission`, `status`) VALUES (NULL, '切换文字', '切换文字', '切换成功！', '3', '1');
 INSERT INTO `bot_directives` (`id`, `directives`, `newdirectives`, `content`, `permission`, `status`) VALUES (NULL, '切换图片', '切换图片', '切换成功！', '3', '1');
+INSERT INTO `bot_directives` (`id`, `directives`, `newdirectives`, `content`, `permission`, `status`) VALUES (NULL, '切换卡片', '切换卡片', '切换成功！', '3', '1');
+INSERT INTO `bot_directives` (`id`, `directives`, `newdirectives`, `content`, `permission`, `status`) VALUES (NULL, '切换大图', '切换大图', '切换成功！', '3', '1');
 -- 接口

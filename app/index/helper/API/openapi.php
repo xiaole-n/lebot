@@ -146,43 +146,6 @@ function le_groups_files($appid, $openid, $type, $path)
 }
 
 function sendGroupMessage($Appid, $group_openid, $union_openid, $msg_id, $msg, $msg_type, $media = null) {
-    //发送卡片的时候 $media的值为卡片外显(不想搞那么多参数啦)
-    //卡片可能有些问题，应该直接构建数组，下次修复
-    // 定义卡片模板
-    $cards = '{
-        "template_id": 23,
-        "kv": [
-          {
-            "key": "#DESC#",
-            "value": "descaaaaaa"
-          },
-          {
-            "key": "#PROMPT#",
-            "value": "[卡片外显]"
-          },
-          {
-            "key": "#LIST#",
-            "obj": [
-              {
-                "obj_kv": [
-                  {
-                    "key": "desc",
-                    "value": "[卡片内容]"
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-    }';
-
-    $largeImage = '{
-        "template_id": 37,
-        "kv": [
-            {"key": "#PROMPT#", "value": "[卡片外显]"},
-            {"key": "#METACOVER#", "value": "[图片链接]"}
-        ]
-    }';
 
     updateBotDau("发送消息");
 
@@ -194,7 +157,7 @@ function sendGroupMessage($Appid, $group_openid, $union_openid, $msg_id, $msg, $
     }
 
     $json = new stdClass();
-    if ($msg_type != "3") {
+    if (!in_array($msg_type, ["2","3","4"])) { // 如果不是特殊类型，则为普通文本
         $json->content = $msg;
     }
 
@@ -203,16 +166,24 @@ function sendGroupMessage($Appid, $group_openid, $union_openid, $msg_id, $msg, $
     $json->msg_seq = $seq;
 
     if ($msg_type == "2") { // markdown
-        // 处理markdown消息，这里假设局_ark已经被定义
-        $json->markdown = json_decode($largeImage );//暂时不写
+        // 这里假设markdown处理逻辑已经存在
     } elseif ($msg_type == "3") { // 卡片
-        $ark = str_replace("[卡片外显]", $media, $cards);
-        $ark = str_replace("[卡片内容]", $msg, $ark);
-        $json->ark = json_decode($ark);
+        $json->ark = [
+            "template_id" => 23,
+            "kv" => [
+                ["key" => "#DESC#", "value" => "descaaaaaa"],
+                ["key" => "#PROMPT#", "value" => $media],
+                ["key" => "#LIST#", "obj" => [["obj_kv" => [["key" => "desc", "value" => $msg]]]]]
+            ]
+        ];
     } elseif ($msg_type == "4") { // 大图
-        $ark = str_replace("[卡片外显]", $media, $largeImage);
-        $ark = str_replace("[图片链接]", $msg, $ark);
-        $json->ark = json_decode($ark);
+        $json->ark = [
+            "template_id" => 37,
+            "kv" => [
+                ["key" => "#PROMPT#", "value" => $media],
+                ["key" => "#METACOVER#", "value" => $msg]
+            ]
+        ];
         $json->msg_type = 3; // 都是ark，所以都是3
     } elseif ($msg_type == "7") {
         // 直接构造 media 数组
@@ -241,6 +212,8 @@ function sendGroupMessage($Appid, $group_openid, $union_openid, $msg_id, $msg, $
 
     $responseData = json_decode($response, true);
 
+    deleteFile(networkPathToLocalPath($msg));// 删除网络图片
+
     if (empty($responseData['id'])) {
         le_log('群聊发送', $union_openid, $group_openid, '发送失败-->' . $responseData['message']);
     } else {
@@ -251,41 +224,6 @@ function sendGroupMessage($Appid, $group_openid, $union_openid, $msg_id, $msg, $
 }
 
 function sendunionMessage($Appid,$union_openid, $msg_id, $msg, $msg_type, $media = null) {
-    // 定义卡片模板
-    $cards = '{
-        "template_id": 23,
-        "kv": [
-          {
-            "key": "#DESC#",
-            "value": "descaaaaaa"
-          },
-          {
-            "key": "#PROMPT#",
-            "value": "[卡片外显]"
-          },
-          {
-            "key": "#LIST#",
-            "obj": [
-              {
-                "obj_kv": [
-                  {
-                    "key": "desc",
-                    "value": "[卡片内容]"
-                  }
-                ]
-              }
-            ]
-          }
-        ]
-    }';
-
-    $largeImage = '{
-        "template_id": 37,
-        "kv": [
-            {"key": "#PROMPT#", "value": "[卡片外显]"},
-            {"key": "#METACOVER#", "value": "[图片链接]"}
-        ]
-    }';
 
     updateBotDau("发送消息");
 
@@ -297,7 +235,7 @@ function sendunionMessage($Appid,$union_openid, $msg_id, $msg, $msg_type, $media
     }
 
     $json = new stdClass();
-    if ($msg_type != "3") {
+    if (!in_array($msg_type, ["2","3","4"])) { // 如果不是特殊类型，则为普通文本
         $json->content = $msg;
     }
 
@@ -306,16 +244,24 @@ function sendunionMessage($Appid,$union_openid, $msg_id, $msg, $msg_type, $media
     $json->msg_seq = $seq;
 
     if ($msg_type == "2") { // markdown
-        // 处理markdown消息，这里假设局_ark已经被定义
-        $json->markdown = json_decode($largeImage );//暂时不写
+        // 这里假设markdown处理逻辑已经存在
     } elseif ($msg_type == "3") { // 卡片
-        $ark = str_replace("[卡片外显]", $media, $cards);
-        $ark = str_replace("[卡片内容]", $msg, $ark);
-        $json->ark = json_decode($ark);
+        $json->ark = [
+            "template_id" => 23,
+            "kv" => [
+                ["key" => "#DESC#", "value" => "descaaaaaa"],
+                ["key" => "#PROMPT#", "value" => $media],
+                ["key" => "#LIST#", "obj" => [["obj_kv" => [["key" => "desc", "value" => $msg]]]]]
+            ]
+        ];
     } elseif ($msg_type == "4") { // 大图
-        $ark = str_replace("[卡片外显]", $media, $largeImage);
-        $ark = str_replace("[图片链接]", $msg, $ark);
-        $json->ark = json_decode($ark);
+        $json->ark = [
+            "template_id" => 37,
+            "kv" => [
+                ["key" => "#PROMPT#", "value" => $media],
+                ["key" => "#METACOVER#", "value" => $msg]
+            ]
+        ];
         $json->msg_type = 3; // 都是ark，所以都是3
     } elseif ($msg_type == "7") {
         // 直接构造 media 数组
@@ -343,6 +289,8 @@ function sendunionMessage($Appid,$union_openid, $msg_id, $msg, $msg_type, $media
     curl_close($ch);
 
     $responseData = json_decode($response, true);
+
+    deleteFile(networkPathToLocalPath($msg));// 删除网络图片
 
     if (empty($responseData['id'])) {
         le_log('私聊发送', $union_openid, '-', '发送失败-->' . $responseData['message']);
